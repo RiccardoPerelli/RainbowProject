@@ -11,6 +11,21 @@ In questa guida vengono illustrati i passi per collegare sourcetree al proprio a
 Una volta sistemato il proprio ambiente si può già iniziare a lavorare sul progetto collegato alla repository in modo da avere un version control più che adeguato. 
 
 ## Repository Management
+Le repository si dividono in:
+- Locale: una copia del progetto su spazio di archiviazione locale utilizzato per sviluppi sul proprio pc.
+- Remota: l'effettiva repository contenuta in GitHub alla quale tutti siamo collegati che accoglierà le modifiche di tutti noi.
+
+### Operazioni di base
+le operazioni di base di git per la gestione di una repository sono le seguenti:
+- Commit: permette di salvare modifiche sulla repository locale in modo permanente (pensarci bene prima di commitare delle modifiche).
+- Push: trasferisce tutte le modifiche fatte sul proprio branch locale alla repository remota, rendendo quindi visibile a tutti le proprie modifiche.
+- Fetch: permette di sincronizzarsi con la repository remota verificando di fatto se sono state fatte modifiche da altri utenti.
+- Pull: scarica delle modifiche di altri utenti sulla repository locale, in pratica se A fa una modifica e B la necessita per proseguire B dovrà fare un pull 
+prima di andare avanti.
+- Merge: Unisce un branch con un altro, in questo caso possono presentarsi dei conflitti, nel caso accadesse andrà ispezionato con cura il conflitto e deciso come risolverlo.
+- Branch: Permette di creare un nuovo branch partendo da un già esistente (solitamente partendo da master).
+
+### Gestione degli sviluppi
 Per quanto riguarda la gestione della repository l'idea è quella di gestire separatamente i propri sviluppi su branches separati, questo è vero sia per la parte grafica che per la parte di programmazione. 
 
 ### Sviluppi sulla parte di programmazione
