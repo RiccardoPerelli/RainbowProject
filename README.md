@@ -15,6 +15,12 @@ Le repository si dividono in:
 - Locale: una copia del progetto su spazio di archiviazione locale utilizzato per sviluppi sul proprio pc.
 - Remota: l'effettiva repository contenuta in GitHub alla quale tutti siamo collegati che accoglierà le modifiche di tutti noi.
 
+### Alcuni termini usuali
+- Branch: storico di una collezione di modifiche, quello principale solitamente è il master/main. Solitamente per ogni tipo di modifica viene creato un branch.
+Ad esempio: se tizio dovesse implementare uno script di gioco deve *staccare* un branch dal principale, implementare la modifica e unire di nuovo il suo branch al principale.
+- Master/Main: è il branch delle modifiche principali che vengono fatte al progetto.
+- Storico/History: è la visualizzazione di tutte le modifiche effettuate, GitHub mantiene in automatico lo storico in modo che sia possibile visionare versioni del progetto precedenti.
+
 ### Operazioni di base
 le operazioni di base di git per la gestione di una repository sono le seguenti:
 - Commit: permette di salvare modifiche sulla repository locale in modo permanente (pensarci bene prima di commitare delle modifiche).
@@ -33,3 +39,7 @@ Per quanto riguarda la parte di programmazione la gestione del codice dovrebbe e
 
 ### sviluppi sulla parte grafica
 In questo caso le cose sono più delicate, gli asset grafici possono non essere riconosciuti facilmente ed è per questo che il metodo di lavoro ottimale è quello di evitare di fare modifiche allo stesso file grafico su due branches separati. In questo modo si eviteranno conflitti non facilmente risolvibili. Ad esempio se si vuole modificare la geografia di un livello conviene farlo in un solo branch e mergiare quando si concludono gli sviluppi. 
+
+
+### Risorse utili
+https://www.youtube.com/watch?v=0fKg7e37bQE
