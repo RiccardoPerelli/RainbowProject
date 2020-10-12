@@ -20,6 +20,8 @@ Le repository si dividono in:
 Ad esempio: se tizio dovesse implementare uno script di gioco deve *staccare* un branch dal principale, implementare la modifica e unire di nuovo il suo branch al principale.
 - Master/Main: è il branch delle modifiche principali che vengono fatte al progetto.
 - Storico/History: è la visualizzazione di tutte le modifiche effettuate, GitHub mantiene in automatico lo storico in modo che sia possibile visionare versioni del progetto precedenti.
+- Staged Files: Tutti i files pronti per essere inseriti definitivamente in una modifica (si segue con l'operazione di commit).
+- Unstaged Files: File non inseriti nel commit (non inseriti nella modifica).
 
 ### Operazioni di base
 le operazioni di base di git per la gestione di una repository sono le seguenti:
