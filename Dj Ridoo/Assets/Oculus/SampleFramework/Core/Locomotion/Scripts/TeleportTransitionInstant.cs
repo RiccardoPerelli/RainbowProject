@@ -15,12 +15,23 @@ using System.Collections;
 /// </summary>
 public class TeleportTransitionInstant : TeleportTransition
 {
+
+    public AudioClip dbz_teleport_sound;
+    
+    private AudioSource dbz_teleport;
     /// <summary>
     /// When the teleport state is entered, simply move the player to the new location
     /// without any delay or other side effects.
     /// </summary>
+    ///
+    private void Start()
+    {
+        dbz_teleport = gameObject.GetComponent<AudioSource>();
+    }
+
     protected override void LocomotionTeleportOnEnterStateTeleporting()
 	{
+        dbz_teleport.PlayOneShot(dbz_teleport_sound);
 		LocomotionTeleport.DoTeleport();
 	}
 }
