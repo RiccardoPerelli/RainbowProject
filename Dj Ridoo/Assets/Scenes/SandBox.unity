@@ -167,9 +167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -412,9 +412,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -524,9 +524,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -636,9 +636,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -748,9 +748,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -814,121 +814,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47554920}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &50302205
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1477017785}
-    m_Modifications:
-    - target: {fileID: 1465806368139354, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_Name
-      value: Button3D
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.015
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.989
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: localYFinalPressedPos
-      value: 0.014
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressDuration
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: unpressedColor.r
-      value: 0.12967247
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: unpressedColor.g
-      value: 0.8867924
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: unpressedColor.b
-      value: 0.15330918
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressedColor.r
-      value: 0.8962264
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressedColor.g
-      value: 0.26633143
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressedColor.b
-      value: 0.26633143
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
---- !u!114 &50302206 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-    type: 3}
-  m_PrefabInstance: {fileID: 50302205}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44abd509c7d4aac419b49a19894395b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &50302207 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049,
-    type: 3}
-  m_PrefabInstance: {fileID: 50302205}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &56764935 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1410422702909490929, guid: 615789ba086af32448082ee12d68447e,
@@ -949,38 +834,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _openDoorButton: {fileID: 2036744539}
   _door: {fileID: 1339841251}
---- !u!1 &73457163
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 73457164}
-  m_Layer: 0
-  m_Name: ScaleButtonPilar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &73457164
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73457163}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1960639847}
-  - {fileID: 1671053906}
-  m_Father: {fileID: 2144821308}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &77049953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1058,38 +911,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 77049953}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &102821704
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 102821705}
-  m_Layer: 0
-  m_Name: ColorButtonPilar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &102821705
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102821704}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0471201, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 988870895}
-  - {fileID: 1121699967}
-  m_Father: {fileID: 2144821308}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &107326095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,9 +957,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -1248,9 +1069,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -1483,9 +1304,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -1595,9 +1416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -1707,9 +1528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -1819,9 +1640,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -1931,9 +1752,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -2282,9 +2103,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -2532,9 +2353,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -2598,6 +2419,95 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201648674}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &206774178
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1732808951507650, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_Name
+      value: UIHelpers
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802744215004400, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802744215004400, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802744215004400, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114043904411177872, guid: a9d2de84afb308a4796cc671d3432b4d,
+        type: 3}
+      propertyPath: joyPadClickButton
+      value: 2097152
+      objectReference: {fileID: 0}
+    - target: {fileID: 114043904411177872, guid: a9d2de84afb308a4796cc671d3432b4d,
+        type: 3}
+      propertyPath: rayTransform
+      value: 
+      objectReference: {fileID: 77049955}
+    - target: {fileID: 114392411909336904, guid: a9d2de84afb308a4796cc671d3432b4d,
+        type: 3}
+      propertyPath: _laserBeamBehavior
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 120006741097097638, guid: a9d2de84afb308a4796cc671d3432b4d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e3444642a1d1346ba8683c66e1272378, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
 --- !u!1 &221706809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2644,9 +2554,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -2756,9 +2666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -2868,9 +2778,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -2980,9 +2890,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -3092,9 +3002,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -3204,9 +3114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -3439,9 +3349,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -3684,9 +3594,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -3796,9 +3706,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -3908,9 +3818,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -4020,9 +3930,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -4193,9 +4103,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -4259,6 +4169,108 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337102022}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &344951302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2144821308}
+    m_Modifications:
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000008146034
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4743
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4743
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4743
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083923, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_Name
+      value: ScaleButtonPilar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d8131130d54e9c489fbfa5fac1091e6, type: 3}
+--- !u!114 &344951303 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 326135029605727037, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 344951302}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67fa726803ae64297bbb4f9bdc4887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &344951304 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 344951302}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &351945354
 GameObject:
   m_ObjectHideFlags: 0
@@ -4305,9 +4317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -4540,9 +4552,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -4652,9 +4664,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -4764,9 +4776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -4968,9 +4980,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -5080,9 +5092,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -5146,6 +5158,336 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428559745}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &430405920
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 109254, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 132536, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_Name
+      value: IngameDebugConsole
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452418, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: toggleKey
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452418, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: toggleButtonforVR
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452418, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: startInPopupMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22331464, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_RenderMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 22331464, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 193972138}
+    - target: {fileID: 22400762, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426080, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426080, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426080, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22428984, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22428984, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22428984, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22428984, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22428984, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22428984, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22455554, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22455554, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22455554, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22455554, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22455554, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22455554, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468896, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468896, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468896, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468896, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468896, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468896, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488670, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488670, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488670, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488670, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488670, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488670, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495692, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495692, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495692, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495692, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495692, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495692, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224619367409363176, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224619367409363176, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224619367409363176, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224619367409363176, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224619367409363176, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224619367409363176, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224856348943071238, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224856348943071238, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224856348943071238, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224856348943071238, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224856348943071238, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224856348943071238, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11490438, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
 --- !u!1 &430578557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1410422702909490929, guid: 615789ba086af32448082ee12d68447e,
@@ -5212,9 +5554,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -5324,9 +5666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -5436,9 +5778,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -5548,9 +5890,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -5660,9 +6002,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -5772,9 +6114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -5884,9 +6226,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -5996,9 +6338,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -6108,9 +6450,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -6220,9 +6562,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -6332,9 +6674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -6444,9 +6786,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -6556,9 +6898,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -6668,9 +7010,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -6780,9 +7122,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -6892,9 +7234,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -7004,9 +7346,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -7152,9 +7494,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -7264,9 +7606,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -7575,9 +7917,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -7687,9 +8029,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -8057,9 +8399,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -8169,9 +8511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -8235,90 +8577,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626779134}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &632870496
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1732808951507650, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_Name
-      value: UIHelpers
-      objectReference: {fileID: 0}
-    - target: {fileID: 4802744215004400, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4802744215004400, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4802744215004400, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114043904411177872, guid: a9d2de84afb308a4796cc671d3432b4d,
-        type: 3}
-      propertyPath: rayTransform
-      value: 
-      objectReference: {fileID: 77049954}
-    - target: {fileID: 114392411909336904, guid: a9d2de84afb308a4796cc671d3432b4d,
-        type: 3}
-      propertyPath: _laserBeamBehavior
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 120006741097097638, guid: a9d2de84afb308a4796cc671d3432b4d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
 --- !u!1 &652291443
 GameObject:
   m_ObjectHideFlags: 0
@@ -8439,9 +8697,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -8551,9 +8809,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -8663,9 +8921,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -8775,9 +9033,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -8887,9 +9145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -8999,9 +9257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -9111,9 +9369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -9387,9 +9645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -9499,9 +9757,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -9611,9 +9869,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -9759,9 +10017,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -9871,9 +10129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -10107,9 +10365,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -10308,9 +10566,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -10550,9 +10808,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -10662,9 +10920,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -10971,9 +11229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -11083,9 +11341,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -11149,6 +11407,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954349577}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &958379232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 132536, guid: 67117722a812a2e46ab8cb8eafbf5f5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 430405920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &958379233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958379232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaf960227867044282d921171d2d7ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  pointer: {fileID: 0}
+  sortOrder: 0
 --- !u!1 &964856723
 GameObject:
   m_ObjectHideFlags: 0
@@ -11227,9 +11510,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -11293,121 +11576,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976113170}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &988870894
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 102821705}
-    m_Modifications:
-    - target: {fileID: 1465806368139354, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_Name
-      value: Button3D
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: localYFinalPressedPos
-      value: 0.014
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressDuration
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: unpressedColor.r
-      value: 0.12967247
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: unpressedColor.g
-      value: 0.8867924
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: unpressedColor.b
-      value: 0.15330918
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressedColor.r
-      value: 0.8962264
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressedColor.g
-      value: 0.26633143
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressedColor.b
-      value: 0.26633143
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
---- !u!4 &988870895 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049,
-    type: 3}
-  m_PrefabInstance: {fileID: 988870894}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &988870896 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-    type: 3}
-  m_PrefabInstance: {fileID: 988870894}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44abd509c7d4aac419b49a19894395b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &992766680
 GameObject:
   m_ObjectHideFlags: 0
@@ -11454,9 +11622,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -11857,9 +12025,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -11969,9 +12137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -12081,9 +12249,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -12193,9 +12361,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -12305,9 +12473,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -12417,9 +12585,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -12529,9 +12697,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -12641,9 +12809,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -12753,9 +12921,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -12865,9 +13033,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -12977,9 +13145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -13089,9 +13257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -13201,9 +13369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -13313,9 +13481,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -13379,99 +13547,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120063317}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1121699966
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1121699967}
-  - component: {fileID: 1121699970}
-  - component: {fileID: 1121699969}
-  - component: {fileID: 1121699968}
-  m_Layer: 0
-  m_Name: Pillar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1121699967
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121699966}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4912, z: -0}
-  m_LocalScale: {x: 0.2825405, y: 0.9832599, z: 0.2843892}
-  m_Children: []
-  m_Father: {fileID: 102821705}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1121699968
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121699966}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1121699969
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121699966}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d760ea8502195fe4e9a6973a043fb31c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1121699970
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121699966}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1129112111
 GameObject:
   m_ObjectHideFlags: 0
@@ -13518,9 +13593,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -13665,9 +13740,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -13777,9 +13852,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -13889,9 +13964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -14001,9 +14076,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -14113,9 +14188,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -14225,9 +14300,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -14337,9 +14412,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -14532,6 +14607,108 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1216104100}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1233751006
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2144821308}
+    m_Modifications:
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.04712
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000008146034
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4743
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4743
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4743
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083923, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_Name
+      value: ColorButtonPilar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d8131130d54e9c489fbfa5fac1091e6, type: 3}
+--- !u!114 &1233751007 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 326135029605727037, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1233751006}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67fa726803ae64297bbb4f9bdc4887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1233751008 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1233751006}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1254320422
 GameObject:
   m_ObjectHideFlags: 0
@@ -14717,99 +14894,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256567653}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1269075260
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1269075261}
-  - component: {fileID: 1269075264}
-  - component: {fileID: 1269075263}
-  - component: {fileID: 1269075262}
-  m_Layer: 0
-  m_Name: Pillar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1269075261
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269075260}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4912, z: -0}
-  m_LocalScale: {x: 0.2825405, y: 0.9832599, z: 0.2843892}
-  m_Children: []
-  m_Father: {fileID: 1477017785}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1269075262
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269075260}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1269075263
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269075260}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d760ea8502195fe4e9a6973a043fb31c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1269075264
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269075260}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1290912143 stripped
 GameObject:
@@ -15010,9 +15094,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -15254,9 +15338,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -15473,9 +15557,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -15585,9 +15669,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -15791,9 +15875,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -15903,9 +15987,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -16015,9 +16099,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -16127,9 +16211,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -16239,9 +16323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -16425,9 +16509,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -16570,9 +16654,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -16682,9 +16766,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -16794,9 +16878,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -17016,7 +17100,7 @@ RectTransform:
   - {fileID: 612998275}
   - {fileID: 2062503861}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -12.393001, y: -218.60599, z: -1.797}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17069,9 +17153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -17181,9 +17265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -17247,38 +17331,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452713965}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1477017784
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1477017785}
-  m_Layer: 0
-  m_Name: YPosButtonPilar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1477017785
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477017784}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0699997, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 50302207}
-  - {fileID: 1269075261}
-  m_Father: {fileID: 2144821308}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1478261036
 GameObject:
   m_ObjectHideFlags: 0
@@ -17325,9 +17377,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -17437,9 +17489,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -17549,9 +17601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -17661,9 +17713,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -17773,9 +17825,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -17885,9 +17937,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -17997,9 +18049,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -18239,9 +18291,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -18351,9 +18403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -18463,9 +18515,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -18705,9 +18757,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -18817,9 +18869,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -18929,9 +18981,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -19041,9 +19093,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -19153,9 +19205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -19265,9 +19317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -19377,9 +19429,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -19489,9 +19541,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -19601,9 +19653,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -19666,99 +19718,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670463217}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1671053905
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1671053906}
-  - component: {fileID: 1671053909}
-  - component: {fileID: 1671053908}
-  - component: {fileID: 1671053907}
-  m_Layer: 0
-  m_Name: Pillar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1671053906
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671053905}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4912, z: -0}
-  m_LocalScale: {x: 0.2825405, y: 0.9832599, z: 0.2843892}
-  m_Children: []
-  m_Father: {fileID: 73457164}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1671053907
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671053905}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1671053908
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671053905}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d760ea8502195fe4e9a6973a043fb31c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1671053909
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671053905}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1684004238
 GameObject:
@@ -19929,9 +19888,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -20041,9 +20000,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -20277,9 +20236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -20389,9 +20348,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -20501,9 +20460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -20613,9 +20572,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -20725,9 +20684,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -20837,9 +20796,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -20949,9 +20908,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -21061,9 +21020,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -21446,9 +21405,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -21558,9 +21517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -21670,9 +21629,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -21782,9 +21741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -22001,9 +21960,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -22174,9 +22133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -22286,9 +22245,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -22398,9 +22357,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -22633,9 +22592,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -22745,9 +22704,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -22857,9 +22816,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -22969,9 +22928,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -23081,9 +23040,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -23147,6 +23106,108 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921324818}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1935993827
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2144821308}
+    m_Modifications:
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000008146034
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4743
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4743
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4743
+      objectReference: {fileID: 0}
+    - target: {fileID: 326135028482083923, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+        type: 3}
+      propertyPath: m_Name
+      value: YPosButtonPilar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d8131130d54e9c489fbfa5fac1091e6, type: 3}
+--- !u!114 &1935993828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 326135029605727037, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1935993827}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67fa726803ae64297bbb4f9bdc4887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1935993829 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 326135028482083922, guid: 1d8131130d54e9c489fbfa5fac1091e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1935993827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1943694977
 GameObject:
   m_ObjectHideFlags: 0
@@ -23193,9 +23254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -23305,9 +23366,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -23445,121 +23506,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1001 &1960639846
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 73457164}
-    m_Modifications:
-    - target: {fileID: 1465806368139354, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_Name
-      value: Button3D
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.987
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: localYFinalPressedPos
-      value: 0.014
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressDuration
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: unpressedColor.r
-      value: 0.12967247
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: unpressedColor.g
-      value: 0.8867924
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: unpressedColor.b
-      value: 0.15330918
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressedColor.r
-      value: 0.8962264
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressedColor.g
-      value: 0.26633143
-      objectReference: {fileID: 0}
-    - target: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-        type: 3}
-      propertyPath: pressedColor.b
-      value: 0.26633143
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a8f2d97e50b964a4e87688767ba91049, type: 3}
---- !u!4 &1960639847 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4704533010072444, guid: a8f2d97e50b964a4e87688767ba91049,
-    type: 3}
-  m_PrefabInstance: {fileID: 1960639846}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1960639848 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114265594838913702, guid: a8f2d97e50b964a4e87688767ba91049,
-    type: 3}
-  m_PrefabInstance: {fileID: 1960639846}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44abd509c7d4aac419b49a19894395b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1971077567
 GameObject:
   m_ObjectHideFlags: 0
@@ -23606,9 +23552,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -23718,9 +23664,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -23830,9 +23776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -23942,9 +23888,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -24054,9 +24000,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -24166,9 +24112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -24353,9 +24299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -24554,9 +24500,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -24740,9 +24686,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -24852,9 +24798,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -24964,9 +24910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -25076,9 +25022,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -25321,9 +25267,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5705b9e57cd48b7478c19902cac09ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeColorButton: {fileID: 988870896}
-  changeScaleButton: {fileID: 1960639848}
-  changeYPosButton: {fileID: 50302206}
+  changeColorButton: {fileID: 1233751007}
+  changeScaleButton: {fileID: 344951303}
+  changeYPosButton: {fileID: 1935993828}
   colors: []
   maxScaleVariation: 2
   maxYPosVariation: 3
@@ -25414,9 +25360,9 @@ Transform:
   m_LocalPosition: {x: 0.082, y: 0, z: 0.141}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 102821705}
-  - {fileID: 73457164}
-  - {fileID: 1477017785}
+  - {fileID: 1233751008}
+  - {fileID: 344951304}
+  - {fileID: 1935993829}
   m_Father: {fileID: 1785414856}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

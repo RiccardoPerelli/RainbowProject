@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class ButtonReactableCube : MonoBehaviour
 {
-    public Button3D changeColorButton, changeScaleButton, changeYPosButton;
+    public ButtonPushClick changeColorButton, changeScaleButton, changeYPosButton;
 
     public List<Color> colors;
     public float maxScaleVariation = 2f;
