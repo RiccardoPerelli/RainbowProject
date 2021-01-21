@@ -19,10 +19,13 @@ public class Explosion : MonoBehaviour
         
     }
 
-    void OnCollisionEnter()
+    void OnCollisionEnter(Collision collision)
     {
-        //Destroy(this.gameObject, destroyTime);
-        GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity) as GameObject;
-        Destroy(expl, 3); // delete the explosion after 3 seconds
+        if(collision.collider.gameObject.tag == "musicBox" || collision.collider.gameObject.tag == "wall")
+        {
+            Destroy(this.gameObject, destroyTime);
+            GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity) as GameObject;
+            Destroy(expl, 3); // delete the explosion after 3 seconds
+        }
     }
 }
