@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2784702646982658352}
   - component: {fileID: 2784702646982658355}
   - component: {fileID: 217167543960881107}
+  - component: {fileID: -3926552796568004946}
   m_Layer: 0
   m_Name: Cube_Grabbable
   m_TagString: Untagged
@@ -142,3 +143,15 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 2784702646982658353}
+--- !u!114 &-3926552796568004946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2784702646982658357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c95e2e8c6d0f74d9fd9fb71513c048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

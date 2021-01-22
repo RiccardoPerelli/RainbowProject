@@ -21,7 +21,7 @@ public class Explosion : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.gameObject.tag == "musicBox" || collision.collider.gameObject.tag == "wall")
+        if(collision.collider.gameObject.tag == "Instrument" || collision.collider.gameObject.tag == "wall")
         {
             Destroy(this.gameObject, destroyTime);
             GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity) as GameObject;
