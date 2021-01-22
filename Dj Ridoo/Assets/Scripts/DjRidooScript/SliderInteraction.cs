@@ -23,25 +23,31 @@ public class SliderInteraction : MonoBehaviour
 	public void Start()
 	{
 		//lowPassFilter = lowPass.GetComponent<AudioLowPassFilter>();
-		//frequenzaDiTaglio.text = "Frequenza di taglio: " + lowPassFilter.cutoffFrequency.ToString() + " HZ";
-		//frequencySlider.value = lowPassFilter.cutoffFrequency / 22000f;
-		//risonanza.text = "Risonanza: " + lowPassFilter.lowpassResonanceQ.ToString();
-		//resonanceSlider.value = lowPassFilter.lowpassResonanceQ / 10f;
+		frequenzaDiTaglio.text = "Frequenza di taglio: " + cutOffFrequencyStartingValue.ToString() + " HZ";
+		frequencySlider.value = cutOffFrequencyStartingValue / 22000f;
+		risonanza.text = "Risonanza: " + resonanceStartingValue.ToString();
+		resonanceSlider.value = resonanceStartingValue / 10f;
 		//Adds a listener to the main slider and invokes a method when the value changes.
-		//frequencySlider.onValueChanged.AddListener(OnFrequencySliderValueChanged);
-		//resonanceSlider.onValueChanged.AddListener(OnResonanceSliderValueChanged);
+		frequencySlider.onValueChanged.AddListener(OnFrequencySliderValueChanged);
+		resonanceSlider.onValueChanged.AddListener(OnResonanceSliderValueChanged);
 	}
 
 	public void OnFrequencySliderValueChanged(float value)
 	{
-		//lowPassFilter.cutoffFrequency = value * 22000f;
-		//frequenzaDiTaglio.text = "Frequenza di taglio: " + lowPassFilter.cutoffFrequency.ToString() + " HZ";
+		foreach (var instrument in instruments)
+        {
+			instrument.GetComponent<AudioLowPassFilter>().cutoffFrequency = value * 22000f;
+			frequenzaDiTaglio.text = "Frequenza di taglio: " + lowPassFilter.cutoffFrequency.ToString() + " HZ";
+		}
 	}	
 
 	public void OnResonanceSliderValueChanged(float value)
 	{
-		//lowPassFilter.lowpassResonanceQ = value * 10f;
-		//risonanza.text = "Risonanza: " + lowPassFilter.lowpassResonanceQ.ToString();
+		foreach (var instrument in instruments)
+		{
+			instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = value * 10f;
+			risonanza.text = "Risonanza: " + lowPassFilter.lowpassResonanceQ.ToString();
+		}
 	}
 
 }
