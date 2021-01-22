@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - BackButton
   - Instrument
+  - wall
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - TeleportLayer
+  - Sliceable
   - 
   - 
   - 
