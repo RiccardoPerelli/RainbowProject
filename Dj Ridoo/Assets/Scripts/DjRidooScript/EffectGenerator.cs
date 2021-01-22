@@ -5,7 +5,6 @@ using UnityEngine.Audio;
 
 public abstract class EffectGenerator : MonoBehaviour
 {
-
     public float destroyTime;
     public GameObject EffectUI;
     public Vector3 offset;

@@ -18,8 +18,6 @@ public class SliderInteraction : MonoBehaviour
 	public float resonanceStartingValue = 5f;
 	public float cutOffFrequencyStartingValue = 10000f;
 
-	private AudioLowPassFilter lowPassFilter;
-
 	public void Start()
 	{
 		//lowPassFilter = lowPass.GetComponent<AudioLowPassFilter>();
@@ -37,7 +35,7 @@ public class SliderInteraction : MonoBehaviour
 		foreach (var instrument in instruments)
         {
 			instrument.GetComponent<AudioLowPassFilter>().cutoffFrequency = value * 22000f;
-			frequenzaDiTaglio.text = "Frequenza di taglio: " + lowPassFilter.cutoffFrequency.ToString() + " HZ";
+			frequenzaDiTaglio.text = "Frequenza di taglio: " + instrument.GetComponent<AudioLowPassFilter>().cutoffFrequency.ToString() + " HZ";
 		}
 	}	
 
@@ -46,7 +44,7 @@ public class SliderInteraction : MonoBehaviour
 		foreach (var instrument in instruments)
 		{
 			instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = value * 10f;
-			risonanza.text = "Risonanza: " + lowPassFilter.lowpassResonanceQ.ToString();
+			risonanza.text = "Risonanza: " + instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ.ToString();
 		}
 	}
 
