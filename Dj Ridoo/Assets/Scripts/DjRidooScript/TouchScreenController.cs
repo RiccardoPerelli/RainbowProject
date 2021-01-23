@@ -31,7 +31,7 @@ public class TouchScreenController : MonoBehaviour
         if(Physics.Raycast(fingerTip.transform.position, fingerTipForward, out RaycastHit ray, touchDistance))
         {
             Collider rayCollider = ray.collider;
-            if(rayCollider.gameObject.name.Equals("SoundButton1") && isPointing && !isTouching)
+            if(rayCollider.gameObject.name.Equals("SpawnLowPassFilter") && isPointing && !isTouching)
             {
                 isTouching = true;
                 Instantiate(cube, location.transform.position, new Quaternion(), gameObject.transform);
