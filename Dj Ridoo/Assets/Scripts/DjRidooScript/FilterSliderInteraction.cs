@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class FilterSliderInteraction : SliderInteraction
 {
+	public const float RESONANCE_MAX_VALUE = 10f;
+	public const float CUT_OFF_FREQUENCY_MAX_VALUE = 22000f;
+
 	public TextMeshProUGUI frequenzaDiTaglio;
 	public TextMeshProUGUI risonanza;
 
@@ -19,9 +22,9 @@ public class FilterSliderInteraction : SliderInteraction
 	{
 		//initialize the value of the slider
 		frequenzaDiTaglio.text = "Frequenza di taglio: " + cutOffFrequencyStartingValue.ToString() + " HZ";
-		frequencySlider.value = cutOffFrequencyStartingValue / 22000f;
+		frequencySlider.value = cutOffFrequencyStartingValue / CUT_OFF_FREQUENCY_MAX_VALUE;
 		risonanza.text = "Risonanza: " + resonanceStartingValue.ToString();
-		resonanceSlider.value = resonanceStartingValue / 10f;
+		resonanceSlider.value = resonanceStartingValue / RESONANCE_MAX_VALUE;
 
 		//Adds a listener to the main slider and invokes a method when the value changes.
 		frequencySlider.onValueChanged.AddListener(OnFrequencySliderValueChanged);

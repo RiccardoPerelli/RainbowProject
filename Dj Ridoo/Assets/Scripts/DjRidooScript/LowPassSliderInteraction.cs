@@ -6,12 +6,11 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 public class LowPassSliderInteraction : FilterSliderInteraction
 {
-
 	protected override void OnFrequencySliderValueChanged(float value)
 	{
 		foreach (var instrument in instruments)
         {
-			instrument.GetComponent<AudioLowPassFilter>().cutoffFrequency = value * 22000f;
+			instrument.GetComponent<AudioLowPassFilter>().cutoffFrequency = value * CUT_OFF_FREQUENCY_MAX_VALUE;
 			frequenzaDiTaglio.text = "Frequenza di taglio: " + instrument.GetComponent<AudioLowPassFilter>().cutoffFrequency.ToString() + " HZ";
 		}
 	}	
@@ -20,9 +19,8 @@ public class LowPassSliderInteraction : FilterSliderInteraction
 	{
 		foreach (var instrument in instruments)
 		{
-			instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = value * 10f;
+			instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = value * RESONANCE_MAX_VALUE;
 			risonanza.text = "Risonanza: " + instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ.ToString();
 		}
 	}
-
 }
