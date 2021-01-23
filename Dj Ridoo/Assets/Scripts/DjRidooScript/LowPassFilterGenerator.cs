@@ -23,10 +23,10 @@ public class LowPassFilterGenerator : EffectGenerator
         {
             GameObject lwp = Instantiate(EffectUI, collision.collider.gameObject.transform.position + offset, Quaternion.identity) as GameObject;
             //Destroy(expl, 3); // delete the explosion after 3 seconds 
-            lwp.GetComponent<SliderInteraction>().instruments.Add(collision.collider.gameObject);
+            lwp.GetComponent<LowPassSliderInteraction>().instruments.Add(collision.collider.gameObject);
             collision.collider.gameObject.AddComponent(typeof(AudioLowPassFilter));
-            collision.collider.gameObject.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = lwp.GetComponent<SliderInteraction>().resonanceStartingValue;
-            collision.collider.gameObject.GetComponent<AudioLowPassFilter>().cutoffFrequency = lwp.GetComponent<SliderInteraction>().cutOffFrequencyStartingValue;
+            collision.collider.gameObject.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = lwp.GetComponent<LowPassSliderInteraction>().resonanceStartingValue;
+            collision.collider.gameObject.GetComponent<AudioLowPassFilter>().cutoffFrequency = lwp.GetComponent<LowPassSliderInteraction>().cutOffFrequencyStartingValue;
             Destroy(this.gameObject, destroyTime);
         } else
         {
