@@ -329,6 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc872f170aa28bd459542b08b4d4386a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameForInstrument: AudioTest.mp3
 --- !u!65 &1798132438
 BoxCollider:
   m_ObjectHideFlags: 0

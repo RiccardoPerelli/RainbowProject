@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class InstrumentSettings : MonoBehaviour
 {
+
+    //nome dello strumento
+    [SerializeField]
+    private string nameForInstrument;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +24,10 @@ public class InstrumentSettings : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.S))
         {
-            //come recuperiamo il nome dello strumento? Pensaci intanto metto stringa di default
-            string data = "AudioTest.mp3";
+            
             //passo nome filtro selezionato
-            string filter = "low-pass";
-            Save(data, filter);
+            string filter = "high-pass";
+            Save(filter);
 
         }
 
@@ -37,7 +41,7 @@ public class InstrumentSettings : MonoBehaviour
         
     }
 
-    public void Save(string data_instrument, string filter)
+    public void Save(string filter)
     {
         string savedData = SaveLoadManager.Load();
 
@@ -52,7 +56,7 @@ public class InstrumentSettings : MonoBehaviour
             Debug.Log(player[k]);
             InstrumentData ins = JsonUtility.FromJson<InstrumentData>(player[k]);
             Debug.Log(ins.name);
-            if(ins.name == data_instrument)
+            if(ins.name == nameForInstrument)
             {
                 Debug.Log(filter);
                 

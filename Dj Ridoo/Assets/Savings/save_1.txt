@@ -1,1 +1,1 @@
-{"project_name":"","instruments":["{\"name\":\"AudioTest.mp3\",\"filter\":\"low-pass\"}","{\"name\":\"dbz-teleport.mp3\",\"filter\":\"\"}"]}
+{"project_name":"","instruments":["{\"name\":\"AudioTest.mp3\",\"filter\":\"high-pass\"}","{\"name\":\"dbz-teleport.mp3\",\"filter\":\"\"}"]}
