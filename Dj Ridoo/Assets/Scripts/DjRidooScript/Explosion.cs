@@ -7,18 +7,6 @@ public class Explosion : MonoBehaviour
     [SerializeField] float destroyTime;
     public GameObject explosion;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnCollisionEnter(Collision collision)
     {
         if(collision.collider.gameObject.tag == "Instrument" || collision.collider.gameObject.tag == "wall")

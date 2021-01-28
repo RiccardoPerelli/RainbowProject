@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3905196478235109001}
   - component: {fileID: 3905196478235109007}
   - component: {fileID: 3905196478235109000}
+  - component: {fileID: -8405723731196705955}
   m_Layer: 0
   m_Name: HighPass
   m_TagString: Untagged
@@ -99,6 +100,20 @@ MonoBehaviour:
   destroyTime: 3
   explosion: {fileID: 8847016492424775185, guid: 096946e2ab2103b42a2210d780249a22,
     type: 3}
+--- !u!114 &-8405723731196705955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3905196478235109005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddedcc1a248b4f429429383f7fe6e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EffectUI: {fileID: 0}
+  offset: {x: 0, y: 0.6, z: 1}
 --- !u!1 &3905196479073232777
 GameObject:
   m_ObjectHideFlags: 0

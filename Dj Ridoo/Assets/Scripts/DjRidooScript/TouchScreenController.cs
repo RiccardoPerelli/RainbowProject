@@ -8,7 +8,11 @@ public class TouchScreenController : MonoBehaviour
 
     public GameObject fingerTip;
     public GameObject location;
-    public GameObject cube;
+    public GameObject lowPassFilterPrefab;
+    public GameObject highPassFilterPrefab;
+    public GameObject chorusEffectPrefab;
+    public GameObject distorsionEffectPrefab;
+    public GameObject echoEffectEffectPrefab;
     bool isPointing;
     bool isTouching;
     Vector3 fingerTipForward;
@@ -31,14 +35,42 @@ public class TouchScreenController : MonoBehaviour
         if(Physics.Raycast(fingerTip.transform.position, fingerTipForward, out RaycastHit ray, touchDistance))
         {
             Collider rayCollider = ray.collider;
-            if(rayCollider.gameObject.name.Equals("SpawnLowPassFilter") && isPointing && !isTouching)
+            if (isPointing && !isTouching)
             {
-                isTouching = true;
-                Instantiate(cube, location.transform.position, new Quaternion(), gameObject.transform);
-            }
-            else
-            {
-                isTouching = false;
+                if (rayCollider.gameObject.name.Equals("LowPassFilterBtn"))
+                {
+                    isTouching = true;
+                    Instantiate(lowPassFilterPrefab, location.transform.position, new Quaternion(), gameObject.transform);
+                } 
+                else if (rayCollider.gameObject.name.Equals("HighPassFilterBtn"))
+                {
+                    isTouching = true;
+                    Instantiate(highPassFilterPrefab, location.transform.position, new Quaternion(), gameObject.transform);
+                }
+                else if (rayCollider.gameObject.name.Equals("ChorusEffectBtn"))
+                {
+                    isTouching = true;
+                    Instantiate(chorusEffectPrefab, location.transform.position, new Quaternion(), gameObject.transform);
+                }
+                else if (rayCollider.gameObject.name.Equals("DistorsionEffectBtn"))
+                {
+                    isTouching = true;
+                    Instantiate(distorsionEffectPrefab, location.transform.position, new Quaternion(), gameObject.transform);
+                }
+                else if (rayCollider.gameObject.name.Equals("EchoEffectBtn"))
+                {
+                    isTouching = true;
+                    Instantiate(echoEffectEffectPrefab, location.transform.position, new Quaternion(), gameObject.transform);
+                }
+                else if (rayCollider.gameObject.name.Equals("BackBtn"))
+                {
+                    isTouching = true;
+                    //Todo: back on the palette
+                }
+                else
+                {
+                    isTouching = false;
+                }
             }
         }
     }

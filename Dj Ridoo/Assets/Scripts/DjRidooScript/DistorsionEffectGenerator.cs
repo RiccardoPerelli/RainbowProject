@@ -25,7 +25,6 @@ public class DistorsionEffectGenerator : EffectGenerator
             gui.GetComponent<DistorsionSliderInteraction>().instruments.Add(collision.collider.gameObject);
             collision.collider.gameObject.AddComponent(typeof(AudioDistortionFilter));
             collision.collider.gameObject.GetComponent<AudioDistortionFilter>().distortionLevel = gui.GetComponent<DistorsionSliderInteraction>().distorsionLevelStartingValue;
-            Destroy(this.gameObject, destroyTime);
         }
         else
         {

@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 5310587018163062820}
   - component: {fileID: 8051477943571557682}
   m_Layer: 5
-  m_Name: SpawnHighPassFilter (2)
+  m_Name: DistorsionEffectBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 2003847058124188381}
   - component: {fileID: 4544212461112583885}
   m_Layer: 5
-  m_Name: SpawnHighPassFilter (3)
+  m_Name: EchoEffectBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -834,7 +834,7 @@ GameObject:
   - component: {fileID: 4875131421446217787}
   - component: {fileID: 8022464941270222857}
   m_Layer: 5
-  m_Name: SpawnHighPassFilter (1)
+  m_Name: ChorusEffectBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -978,7 +978,7 @@ GameObject:
   - component: {fileID: 8556234562434751130}
   - component: {fileID: 5498991593294302750}
   m_Layer: 5
-  m_Name: SpawnHighPassFilter (4)
+  m_Name: BackBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1122,7 +1122,7 @@ GameObject:
   - component: {fileID: 8931421302270558518}
   - component: {fileID: 8931421302270558507}
   m_Layer: 5
-  m_Name: SpawnHighPassFilter
+  m_Name: HighPassFilterBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1534,7 +1534,7 @@ GameObject:
   - component: {fileID: 8931421303735711100}
   - component: {fileID: 8931421303735711089}
   m_Layer: 5
-  m_Name: SpawnLowPassFilter
+  m_Name: LowPassFilterBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

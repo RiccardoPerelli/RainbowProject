@@ -726,7 +726,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c66e0c96c14e11541b74a5fa69512efa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c66e0c96c14e11541b74a5fa69512efa,
         type: 3}
@@ -1678,6 +1678,7 @@ GameObject:
   - component: {fileID: 150046030}
   - component: {fileID: 150046031}
   - component: {fileID: 150046024}
+  - component: {fileID: 150046032}
   m_Layer: 0
   m_Name: Sphere_Grabbable
   m_TagString: Instrument
@@ -1901,6 +1902,31 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 150046025}
+--- !u!169 &150046032
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150046023}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.22727273
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &174702551
 GameObject:
   m_ObjectHideFlags: 0
@@ -9909,7 +9935,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &954187249
 GameObject:
@@ -13083,7 +13109,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fingerTip: {fileID: 843004950}
   location: {fileID: 1890790221}
-  cube: {fileID: 2784702646982658357, guid: 21088d08a273ee2428111dcc92ebc14d, type: 3}
+  lowPassFilterPrefab: {fileID: 3992759948131775202, guid: c0f9120072078074e8df24e55163c335,
+    type: 3}
+  highPassFilterPrefab: {fileID: 3905196478235109005, guid: 74031c670b327814fbac4f5edab16500,
+    type: 3}
+  chorusEffectPrefab: {fileID: 3569883257921612344, guid: 29625f45a6793464eb217a0f2ba96bdc,
+    type: 3}
+  distorsionEffectPrefab: {fileID: 6951406044271507440, guid: eb477b1bd7850ec45bd81e40b191c63f,
+    type: 3}
+  echoEffectEffectPrefab: {fileID: 2406770500849917721, guid: 20589607728e3e745a6c790e0145d262,
+    type: 3}
 --- !u!4 &1262907919
 Transform:
   m_ObjectHideFlags: 0

@@ -28,7 +28,6 @@ public class EchoEffectGenerator : EffectGenerator
             collision.collider.gameObject.GetComponent<AudioEchoFilter>().decayRatio = gui.GetComponent<EchoSliderInteraction>().decayRationStartingValue;
             collision.collider.gameObject.GetComponent<AudioEchoFilter>().wetMix = gui.GetComponent<EchoSliderInteraction>().wetMixStartingValue;
             collision.collider.gameObject.GetComponent<AudioEchoFilter>().dryMix = gui.GetComponent<EchoSliderInteraction>().dryMixStartingValue;
-            Destroy(this.gameObject, destroyTime);
         }
         else
         {

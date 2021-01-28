@@ -26,7 +26,6 @@ public class LowPassFilterGenerator : EffectGenerator
             collision.collider.gameObject.AddComponent(typeof(AudioLowPassFilter));
             collision.collider.gameObject.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = gui.GetComponent<LowPassSliderInteraction>().resonanceStartingValue;
             collision.collider.gameObject.GetComponent<AudioLowPassFilter>().cutoffFrequency = gui.GetComponent<LowPassSliderInteraction>().cutOffFrequencyStartingValue;
-            Destroy(this.gameObject, destroyTime);
         } 
         else
         {

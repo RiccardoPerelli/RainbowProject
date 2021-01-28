@@ -35,8 +35,6 @@ public class ChorusEffectGenerator : EffectGenerator
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().rate = gui.GetComponent<ChorusSliderInteraction>().rateStartingValue;
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().depth = gui.GetComponent<ChorusSliderInteraction>().depthStartingValue;
             //collision.collider.gameObject.GetComponent<AudioChorusFilter>().feedback = gui.GetComponent<ChorusSliderInteraction>().feedbackStartingValue;
-
-            Destroy(this.gameObject, destroyTime);
         }
         else
         {

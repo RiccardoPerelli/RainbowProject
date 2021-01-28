@@ -26,7 +26,6 @@ public class HighPassFilterGenerator : EffectGenerator
             collision.collider.gameObject.AddComponent(typeof(AudioHighPassFilter));
             collision.collider.gameObject.GetComponent<AudioHighPassFilter>().highpassResonanceQ = gui.GetComponent<HighPassSliderInteraction>().resonanceStartingValue;
             collision.collider.gameObject.GetComponent<AudioHighPassFilter>().cutoffFrequency = gui.GetComponent<HighPassSliderInteraction>().cutOffFrequencyStartingValue;
-            Destroy(this.gameObject, destroyTime);
         }
         else
         {
