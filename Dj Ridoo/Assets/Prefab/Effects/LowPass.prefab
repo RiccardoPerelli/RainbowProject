@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3992759948131775201}
   - component: {fileID: 3992759948131775206}
   - component: {fileID: 3992759948131775200}
-  - component: {fileID: 3992759948131775207}
   - component: {fileID: 1872056510697688584}
   m_Layer: 0
   m_Name: LowPass
@@ -29,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3992759948131775202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.994, y: 1, z: 3.471}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3992759949037302759}
@@ -85,21 +84,6 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 3992759948131775206}
---- !u!114 &3992759948131775207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3992759948131775202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fda7ccd1fb4d64649b6d8a23ebb46721, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyTime: 3
-  explosion: {fileID: 8847016492424775185, guid: 096946e2ab2103b42a2210d780249a22,
-    type: 3}
 --- !u!114 &1872056510697688584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,9 +96,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 737a6fce9e8ad6f43bbaf24c0b9d1514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EffectUI: {fileID: 5938877445560713829, guid: 38d570b1286801a4d8f86b47e6e10563,
+  EffectUI: {fileID: 8598907601564072986, guid: 1b6e73fb6ef330a4cb65141b8451c1d5,
     type: 3}
   offset: {x: 0, y: 0.6, z: 1}
+  destroyTime: 0.1
+  explosion: {fileID: 2860211838891858026, guid: 84f239761215d0b47b4258c9f6c6a506,
+    type: 3}
 --- !u!1 &3992759948676660330
 GameObject:
   m_ObjectHideFlags: 0

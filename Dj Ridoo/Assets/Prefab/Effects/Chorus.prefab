@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3569883257921612347}
   - component: {fileID: 3569883257921612348}
   - component: {fileID: 3569883257921612346}
-  - component: {fileID: 3569883257921612349}
+  - component: {fileID: 5018324323655783095}
   m_Layer: 0
   m_Name: Chorus
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3569883257921612344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.476, y: 1, z: 3.471}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3569883259028597565}
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 3569883257921612348}
---- !u!114 &3569883257921612349
+--- !u!114 &5018324323655783095
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,12 +93,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3569883257921612344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fda7ccd1fb4d64649b6d8a23ebb46721, type: 3}
+  m_Script: {fileID: 11500000, guid: 28ead65a2e2bdb04893a36b2b553df0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 3
-  explosion: {fileID: 8847016492424775185, guid: 096946e2ab2103b42a2210d780249a22,
-    type: 3}
+  EffectUI: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
+  destroyTime: 0.1
+  explosion: {fileID: 0}
 --- !u!1 &3569883258354547374
 GameObject:
   m_ObjectHideFlags: 0

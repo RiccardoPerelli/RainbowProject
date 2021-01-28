@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6951406044271507443}
   - component: {fileID: 6951406044271507444}
   - component: {fileID: 6951406044271507442}
-  - component: {fileID: 6951406044271507445}
+  - component: {fileID: -8730818311990986244}
   m_Layer: 0
   m_Name: Distorsion
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6951406044271507440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.014, y: 1, z: 3.471}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6951406045378197237}
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 6951406044271507444}
---- !u!114 &6951406044271507445
+--- !u!114 &-8730818311990986244
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,12 +93,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6951406044271507440}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fda7ccd1fb4d64649b6d8a23ebb46721, type: 3}
+  m_Script: {fileID: 11500000, guid: e2dd34c00bf55ed4b97eab8e76672ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 3
-  explosion: {fileID: 8847016492424775185, guid: 096946e2ab2103b42a2210d780249a22,
-    type: 3}
+  EffectUI: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
+  destroyTime: 0.1
+  explosion: {fileID: 0}
 --- !u!1 &6951406045378197236
 GameObject:
   m_ObjectHideFlags: 0

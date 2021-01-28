@@ -1751,6 +1751,7 @@ GameObject:
   - component: {fileID: 8931421304157948570}
   - component: {fileID: 8931421304157948572}
   - component: {fileID: 2261695889411948734}
+  - component: {fileID: 465008453719537191}
   m_Layer: 5
   m_Name: Palette
   m_TagString: Untagged
@@ -1856,3 +1857,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &465008453719537191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931421304157948580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 661f81951c1d91e4594a3d022f224385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fingerTip: {fileID: 0}
+  location: {fileID: 0}
+  lowPassFilterPrefab: {fileID: 0}
+  highPassFilterPrefab: {fileID: 0}
+  chorusEffectPrefab: {fileID: 0}
+  distorsionEffectPrefab: {fileID: 0}
+  echoEffectEffectPrefab: {fileID: 0}
