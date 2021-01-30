@@ -50,8 +50,8 @@ public class ConnectingCables : MonoBehaviour
 				{
 					print("Individuato primo oggetto");
 					startTmpObj = hit.collider.gameObject;
+					firstClickCheck = true;
 				}
-				firstClickCheck = true;
 			}
 			if (Input.GetMouseButtonDown(1) && firstClickCheck)
 			{
@@ -80,7 +80,11 @@ public class ConnectingCables : MonoBehaviour
 			cutable = true;
 		}
 
-		for (int i=0; i<=countCable && cutable; i++)
+	}
+
+	void FixedUpdate()
+    {
+		for (int i = 0; i <= countCable && cutable; i++)
 		{
 			RaycastHit hit2;
 			if (Physics.Raycast(startPoint[i].transform.position, endPoint[i].transform.position - startPoint[i].transform.position, out hit2))
@@ -95,14 +99,13 @@ public class ConnectingCables : MonoBehaviour
 					cutCheck = true;
 				}
 			}
-			
+
 		}
 		if (cutCheck)
 		{
 			CutCable();
 			cutCheck = false;
 		}
-
 	}
 	
 	void CutCable()
@@ -141,10 +144,15 @@ public class ConnectingCables : MonoBehaviour
 		hitObjStart.GetComponent<CableComponent>().endPoint = midPoint1.transform;
 		hitObjStart.GetComponent<CableComponent>().cableMaterial = cableMaterial;
 
+		Destroy(midPoint1, 5);
+		Destroy(hitObjStart.GetComponent<LineRenderer>(), 5);
+
 		hitObjEnd.AddComponent<CableComponent>();
 		hitObjEnd.GetComponent<CableComponent>().endPoint = midPoint2.transform;
 		hitObjEnd.GetComponent<CableComponent>().cableMaterial = cableMaterial;
-	}
-	
+
+		Destroy(midPoint2, 5);
+		Destroy(hitObjEnd.GetComponent<LineRenderer>(), 5);
+    }
 }
 
