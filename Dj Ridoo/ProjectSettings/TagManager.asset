@@ -8,6 +8,9 @@ TagManager:
   - BackButton
   - Instrument
   - wall
+  - Sword
+  - Filter
+  - Cable
   layers:
   - Default
   - TransparentFX
