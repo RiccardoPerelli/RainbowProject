@@ -26,7 +26,13 @@ public class ConnectingCables : MonoBehaviour
 	private GameObject hitObjEnd;
 	private GameObject hitObj;
 
+	private GameObject tmp;
+
 	private int countCable = -1;
+
+	//Audio
+	private AudioClip plug;
+	private AudioClip swordHit;
 
 	#endregion
 
@@ -34,7 +40,8 @@ public class ConnectingCables : MonoBehaviour
 
 	void Start()
 	{
-		
+		plug = Resources.Load<AudioClip>("plugIn");
+		swordHit = Resources.Load<AudioClip>("sword");
 	}
 
 
@@ -50,7 +57,18 @@ public class ConnectingCables : MonoBehaviour
 				{
 					print("Individuato primo oggetto");
 					startTmpObj = hit.collider.gameObject;
+					startTmpObj.AddComponent<AudioSource>();
+					AudioSource sound = startTmpObj.GetComponent<AudioSource>();
+					sound.clip = plug;
 					firstClickCheck = true;
+					
+					//TODO: sostituire con mano
+					tmp = GameObject.Find("/InteractableFPSController/FirstPersonCamera");
+					tmp.AddComponent<CableComponent>();
+					tmp.GetComponent<CableComponent>().endPoint = startTmpObj.transform;
+					tmp.GetComponent<CableComponent>().cableMaterial = cableMaterial;
+
+					sound.Play();
 				}
 			}
 			if (Input.GetMouseButtonDown(1) && firstClickCheck)
@@ -61,6 +79,16 @@ public class ConnectingCables : MonoBehaviour
 					endTmpObj = hit.collider.gameObject;
 					firstClickCheck = false;
 					render = true;
+					Component component1 = tmp.GetComponent<CableComponent>();
+					Object.DestroyImmediate(component1 as Object, true);
+					Component component2 = tmp.GetComponent<LineRenderer>();
+					Object.DestroyImmediate(component2 as Object, true);
+
+					endTmpObj.AddComponent<AudioSource>();
+					AudioSource sound = startTmpObj.GetComponent<AudioSource>();
+					sound.clip = plug;
+					sound.Play();
+					firstClickCheck = false;
 				}
 			}
 		}
@@ -70,9 +98,15 @@ public class ConnectingCables : MonoBehaviour
 			print("Inizializzo collegamento");
 			startPoint.Add(new GameObject("line" + startPoint.Count));
 			countCable++;
+			print(countCable);
+
 			startPoint[countCable].transform.parent = startTmpObj.transform;
 			startPoint[countCable].transform.position = startTmpObj.transform.position;
-			endPoint.Add(endTmpObj);
+
+			endPoint.Add(new GameObject("line" + endPoint.Count));
+			endPoint[countCable].transform.parent = endTmpObj.transform;
+			endPoint[countCable].transform.position = endTmpObj.transform.position;
+
 			startPoint[countCable].AddComponent<CableComponent>();
 			startPoint[countCable].GetComponent<CableComponent>().endPoint = endPoint[countCable].transform;
 			startPoint[countCable].GetComponent<CableComponent>().cableMaterial = cableMaterial;
@@ -93,9 +127,14 @@ public class ConnectingCables : MonoBehaviour
 				{
 					print("Sword detected");
 					hitObjStart = startPoint[i];
-					print(hitObjStart);
+					startPoint.RemoveAt(i);
 					hitObjEnd = endPoint[i];
+					endPoint.RemoveAt(i);
 					hitObj = hit2.collider.gameObject;
+					hitObj.AddComponent<AudioSource>();
+					AudioSource sound = hitObj.GetComponent<AudioSource>();
+					sound.clip = swordHit;
+					sound.Play();
 					cutCheck = true;
 				}
 			}
@@ -127,12 +166,12 @@ public class ConnectingCables : MonoBehaviour
 	
 	GameObject AddMidPoint(Vector3 position)
     {
-		GameObject mid = GameObject.CreatePrimitive(PrimitiveType.Cube);
+		GameObject mid = GameObject.CreatePrimitive(PrimitiveType.Sphere);
 		mid.transform.position = position;
 		mid.transform.localScale = new Vector3(.2f, .2f, .2f);
 		mid.GetComponent<Renderer>().enabled = false;
 		mid.AddComponent<Rigidbody>();
-		mid.GetComponent<Rigidbody>().mass = 0.2f;
+		mid.GetComponent<Rigidbody>().mass = 1f;
 
 		return mid;
 	}
@@ -145,14 +184,20 @@ public class ConnectingCables : MonoBehaviour
 		hitObjStart.GetComponent<CableComponent>().cableMaterial = cableMaterial;
 
 		Destroy(midPoint1, 5);
-		Destroy(hitObjStart.GetComponent<LineRenderer>(), 5);
+		Destroy(hitObjStart, 5);
 
 		hitObjEnd.AddComponent<CableComponent>();
 		hitObjEnd.GetComponent<CableComponent>().endPoint = midPoint2.transform;
 		hitObjEnd.GetComponent<CableComponent>().cableMaterial = cableMaterial;
 
 		Destroy(midPoint2, 5);
-		Destroy(hitObjEnd.GetComponent<LineRenderer>(), 5);
+		Destroy(hitObjEnd);
+
+		print(countCable);
+		countCable--;
+
+		if(countCable == -1)
+			cutable = false;
     }
 }
 

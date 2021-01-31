@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateSkybox : MonoBehaviour
 {
-    private float RotateSpeed = 1.2f;
+    public float RotateSpeed = 1.2f;
     // Start is called before the first frame update
     void Start()
     {
