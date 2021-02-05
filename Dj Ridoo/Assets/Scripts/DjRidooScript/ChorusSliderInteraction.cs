@@ -40,7 +40,7 @@ public class ChorusSliderInteraction : SliderInteraction
     {
         //initialize the value of the slider
         if(dryMixText != null)
-            dryMixText.text     = "Dry Mix: "   + dryMixStartingValue.ToString();
+            dryMixText.text = "Dry Mix: " + dryMixStartingValue.ToString();
         if (wetMixTap1Text != null)
             wetMixTap1Text.text = "Wet Mix 1: " + wetMixStartingValue.ToString();
         if (wetMixTap2Text != null)
@@ -48,11 +48,11 @@ public class ChorusSliderInteraction : SliderInteraction
         if (wetMixTap3Text != null)
             wetMixTap3Text.text = "Wet Mix 3: " + wetMixStartingValue.ToString();
         if (delayText != null)
-            delayText.text      = "Delay: "     + delayText.ToString();
+            delayText.text = "Delay: " + delayText.ToString();
         if (rateText != null)
-            rateText.text       = "Rate: "      + rateText.ToString();
+            rateText.text = "Rate: " + rateText.ToString();
         if (depthText != null)
-            depthText.text      = "Depth: "     + depthText.ToString();
+            depthText.text = "Depth: " + depthText.ToString();
 
         dryMixSlider.value   = dryMixStartingValue / DRY_MIX_MAX;
         wetMix1Slider.value  = wetMixStartingValue / WET_MIX_MAX;

@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class HighPassFilterGenerator : EffectGenerator
 {
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.tag == "Instrument")
         {
             Debug.Log("Collision Detected with the instrument");
+            GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
             applyEffect(collision);
+            Destroy(this.gameObject, destroyTime);
+            Destroy(expl, 3); // delete the explosion after 3 seconds
         }
         else
         {
@@ -21,7 +25,10 @@ public class HighPassFilterGenerator : EffectGenerator
     {
         if (collision.collider.gameObject.GetComponent<AudioHighPassFilter>() == null)
         {
+            Debug.Log("mixer is coming!");
             GameObject gui = Instantiate(EffectUI, collision.collider.gameObject.transform.position + offset, Quaternion.identity) as GameObject;
+            if (GameObject.FindGameObjectWithTag("Player") != null)
+                gui.transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
             gui.GetComponent<HighPassSliderInteraction>().instruments.Add(collision.collider.gameObject);
             collision.collider.gameObject.AddComponent(typeof(AudioHighPassFilter));
             collision.collider.gameObject.GetComponent<AudioHighPassFilter>().highpassResonanceQ = gui.GetComponent<HighPassSliderInteraction>().resonanceStartingValue;

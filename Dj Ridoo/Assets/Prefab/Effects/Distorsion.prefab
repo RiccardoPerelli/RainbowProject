@@ -96,10 +96,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2dd34c00bf55ed4b97eab8e76672ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EffectUI: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
+  EffectUI: {fileID: 1751242471078823001, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+    type: 3}
+  offset: {x: 0, y: 0.6, z: 1}
   destroyTime: 0.1
-  explosion: {fileID: 0}
+  explosion: {fileID: 805166908495680492, guid: 995e408467d2a22448c8ce4b298c20b3,
+    type: 3}
 --- !u!1 &6951406045378197236
 GameObject:
   m_ObjectHideFlags: 0

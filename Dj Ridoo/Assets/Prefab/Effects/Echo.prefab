@@ -14358,7 +14358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 991211b7507285e4e83911278483d7a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EffectUI: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
+  EffectUI: {fileID: 7623970409695875784, guid: 4f0220170b803fb4da432dd47433edb7,
+    type: 3}
+  offset: {x: 0, y: 0.6, z: 1}
   destroyTime: 0.1
-  explosion: {fileID: 0}
+  explosion: {fileID: 8847016492424775185, guid: 096946e2ab2103b42a2210d780249a22,
+    type: 3}
