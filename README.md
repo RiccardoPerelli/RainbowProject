@@ -1,1 +1,2 @@
-![plot](./CommandMapping.png)
+**HOW TO USE**
+![Command Instruction](./commandMapping.png)
