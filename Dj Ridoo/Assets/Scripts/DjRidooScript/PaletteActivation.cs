@@ -15,14 +15,18 @@ public class PaletteActivation : MonoBehaviour
     
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.Two)){
+        if (OVRInput.GetDown(OVRInput.Button.Four)){
             if (!activated)
             {
                 Activate();
                 activated = true;
             }
             else
+            {
                 Deactivate();
+                activated = false;
+            }
+                
         }
     }
 

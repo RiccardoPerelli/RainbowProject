@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SandBox.unity
     guid: 19da4feecd45d61438c5accd65ef219c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/DjRidoo Ambient.unity
     guid: e2ec5db54aede664f933e633c9de7d4b
   m_configObjects:
