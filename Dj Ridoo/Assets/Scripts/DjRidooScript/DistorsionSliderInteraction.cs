@@ -17,7 +17,9 @@ public class DistorsionSliderInteraction : SliderInteraction
     public void Start()
     {
         //initialize the value of the slider
-        distorsionLevelText.text = "Livello distorsione: " + distorsionLevelStartingValue.ToString();
+        if(distorsionLevelText != null)
+            distorsionLevelText.text = "Livello distorsione: " + distorsionLevelStartingValue.ToString();
+
         distorsionSlider.value = distorsionLevelStartingValue / DISTORSION_LEVEL_MAX;
 
         //Adds a listener to the main slider and invokes a method when the value changes.
@@ -29,7 +31,8 @@ public class DistorsionSliderInteraction : SliderInteraction
         foreach (var instrument in instruments)
         {
             instrument.GetComponent<AudioDistortionFilter>().distortionLevel = value * DISTORSION_LEVEL_MAX;
-            distorsionLevelText.text = "Livello distorsione: " + instrument.GetComponent<AudioDistortionFilter>().distortionLevel.ToString();
+            if (distorsionLevelText != null) 
+                distorsionLevelText.text = "Livello distorsione: " + instrument.GetComponent<AudioDistortionFilter>().distortionLevel.ToString();
         }
     }
 }

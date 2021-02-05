@@ -1112,6 +1112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1421546415102481068}
+  - component: {fileID: 5851929522526879880}
   m_Layer: 0
   m_Name: HighPassMixer
   m_TagString: Untagged
@@ -1150,6 +1151,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &5851929522526879880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8365190568513226244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d16f274edc478c49a6d574d8dfde899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instruments: []
+  frequenzaDiTaglio: {fileID: 5309575677751578599}
+  risonanza: {fileID: 2690378865070441058}
+  frequencySlider: {fileID: 938178641274373779}
+  resonanceSlider: {fileID: 366078429130612083}
+  resonanceStartingValue: 5
+  cutOffFrequencyStartingValue: 10000
 --- !u!1001 &8506522852210878561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1170,6 +1190,11 @@ PrefabInstance:
     - target: {fileID: 1824777144967466995, guid: fd3851cd5e77ecc4591d16827f9df4d6,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887844393104180886, guid: fd3851cd5e77ecc4591d16827f9df4d6,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2017553777311199444, guid: fd3851cd5e77ecc4591d16827f9df4d6,
@@ -1287,6 +1312,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2528070908088868162, guid: fd3851cd5e77ecc4591d16827f9df4d6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2866072215920626524, guid: fd3851cd5e77ecc4591d16827f9df4d6,
         type: 3}
       propertyPath: m_IsActive
@@ -1307,9 +1337,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: HighPassFilterUI
       objectReference: {fileID: 0}
+    - target: {fileID: 5284347996659305420, guid: fd3851cd5e77ecc4591d16827f9df4d6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5634212726551346048, guid: fd3851cd5e77ecc4591d16827f9df4d6,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269600539569205376, guid: fd3851cd5e77ecc4591d16827f9df4d6,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6313877749509620955, guid: fd3851cd5e77ecc4591d16827f9df4d6,
@@ -1340,6 +1380,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 8506522852210878561}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5309575677751578599 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4585327995185162118, guid: fd3851cd5e77ecc4591d16827f9df4d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8506522852210878561}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &938178641274373779 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8865382003130838770, guid: fd3851cd5e77ecc4591d16827f9df4d6,
@@ -1350,6 +1402,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2690378865070441058 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6006421071941315075, guid: fd3851cd5e77ecc4591d16827f9df4d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8506522852210878561}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &366078429130612083 stripped

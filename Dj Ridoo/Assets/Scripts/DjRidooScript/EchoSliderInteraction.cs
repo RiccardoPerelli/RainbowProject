@@ -31,10 +31,14 @@ public class EchoSliderInteraction : SliderInteraction
     void Start()
     {
         //initialize the value of the sliders
-        delayLevelText.text = "Livello delay: " + delayLevelStartingValue.ToString();
-        decayRatioLevelText.text = "Decay ratio: " + decayRationStartingValue.ToString();
-        wetMixLevelText.text = "Wet mix: " + wetMixStartingValue.ToString();
-        dryMixLevelText.text = "Dry mix: " + dryMixStartingValue.ToString();
+        if(delayLevelText != null)
+            delayLevelText.text = "Livello delay: " + delayLevelStartingValue.ToString();
+        if (decayRatioLevelText != null)
+            decayRatioLevelText.text = "Decay ratio: " + decayRationStartingValue.ToString();
+        if (wetMixLevelText != null)
+            wetMixLevelText.text = "Wet mix: " + wetMixStartingValue.ToString();
+        if (dryMixLevelText != null)
+            dryMixLevelText.text = "Dry mix: " + dryMixStartingValue.ToString();
 
         delaySlider.value = delayLevelStartingValue / DELAY_LEVEL_MAX;
         decayRatioSlider.value = decayRationStartingValue / DECAY_RATIO_MAX;
@@ -53,7 +57,8 @@ public class EchoSliderInteraction : SliderInteraction
         foreach (var instrument in instruments)
         {
             instrument.GetComponent<AudioEchoFilter>().delay = value * DELAY_LEVEL_MAX;
-            delayLevelText.text = "Livello delay: " + instrument.GetComponent<AudioEchoFilter>().delay.ToString();
+            if (delayLevelText != null)
+                delayLevelText.text = "Livello delay: " + instrument.GetComponent<AudioEchoFilter>().delay.ToString();
         }
     }
     protected void OnDecayRatioSliderValueChanged(float value)
@@ -61,7 +66,8 @@ public class EchoSliderInteraction : SliderInteraction
         foreach (var instrument in instruments)
         {
             instrument.GetComponent<AudioEchoFilter>().decayRatio = value * DECAY_RATIO_MAX;
-            decayRatioLevelText.text = "Livello distorsione: " + instrument.GetComponent<AudioEchoFilter>().decayRatio.ToString();
+            if (decayRatioLevelText != null)
+                decayRatioLevelText.text = "Livello distorsione: " + instrument.GetComponent<AudioEchoFilter>().decayRatio.ToString();
         }
     }
     protected void OnWetMixSliderValueChanged(float value)
@@ -69,7 +75,8 @@ public class EchoSliderInteraction : SliderInteraction
         foreach (var instrument in instruments)
         {
             instrument.GetComponent<AudioEchoFilter>().wetMix = value * WET_MIX_MAX;
-            wetMixLevelText.text = "Wet mix: " + instrument.GetComponent<AudioEchoFilter>().wetMix.ToString();
+            if (wetMixLevelText != null)
+                wetMixLevelText.text = "Wet mix: " + instrument.GetComponent<AudioEchoFilter>().wetMix.ToString();
         }
     }
     protected void OnDryMixSliderValueChanged(float value)
@@ -77,7 +84,8 @@ public class EchoSliderInteraction : SliderInteraction
         foreach (var instrument in instruments)
         {
             instrument.GetComponent<AudioEchoFilter>().dryMix = value * DRY_MIX_MAX;
-            dryMixLevelText.text = "Dry mix: " + instrument.GetComponent<AudioEchoFilter>().dryMix.ToString();
+            if (dryMixLevelText != null)
+                dryMixLevelText.text = "Dry mix: " + instrument.GetComponent<AudioEchoFilter>().dryMix.ToString();
         }
     }
 }

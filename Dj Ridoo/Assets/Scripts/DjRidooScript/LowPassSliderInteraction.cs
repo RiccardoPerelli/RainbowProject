@@ -11,7 +11,8 @@ public class LowPassSliderInteraction : FilterSliderInteraction
 		foreach (var instrument in instruments)
         {
 			instrument.GetComponent<AudioLowPassFilter>().cutoffFrequency = value * CUT_OFF_FREQUENCY_MAX_VALUE;
-			//frequenzaDiTaglio.text = "Frequenza di taglio: " + instrument.GetComponent<AudioLowPassFilter>().cutoffFrequency.ToString() + " HZ";
+			if (frequenzaDiTaglio != null)
+                frequenzaDiTaglio.text = "Frequenza di taglio: " + instrument.GetComponent<AudioLowPassFilter>().cutoffFrequency.ToString() + " HZ";
 		}
 	}	
 
@@ -20,7 +21,8 @@ public class LowPassSliderInteraction : FilterSliderInteraction
 		foreach (var instrument in instruments)
 		{
 			instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = value * RESONANCE_MAX_VALUE;
-			//risonanza.text = "Risonanza: " + instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ.ToString();
+			if (risonanza != null)
+                risonanza.text = "Risonanza: " + instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ.ToString();
 		}
 	}
 }
