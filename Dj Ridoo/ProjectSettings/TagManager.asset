@@ -8,6 +8,14 @@ TagManager:
   - BackButton
   - Instrument
   - wall
+  - Sword
+  - SecondButton
+  - FirstButton
+  - ThirdButton
+  - FourthButton
+  - FifthButton
+  - EffectButton
+  - InstrumentButton
   layers:
   - Default
   - TransparentFX
@@ -18,8 +26,8 @@ TagManager:
   - 
   - 
   - Sliceable
-  - 
-  - 
+  - Palette
+  - Pointer
   - 
   - 
   - 
