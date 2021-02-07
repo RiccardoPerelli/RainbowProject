@@ -1,34 +1,9 @@
 fileFormatVersion: 2
-guid: 80ff7cd4b90bd4e7baa8f14e95fb3a26
+guid: 0253bf91fafc0f641a7dd5fb9e9de2d1
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Corpo
-    second: {fileID: 2100000, guid: 72a80b76ccf1948fc805b5a06ad739e3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Manico
-    second: {fileID: 2100000, guid: 122834e5231464987b27fdb461748548, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Microfono
-    second: {fileID: 2100000, guid: da03485ab7fbb42118eb153e6719aaf1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Specchio
-    second: {fileID: 2100000, guid: acf000fe1b2f04bc4a277c0a65cd3ec8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Striscia_manico
-    second: {fileID: 2100000, guid: 9fb98ea5ecd1d4e07834d97debe79f50, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0

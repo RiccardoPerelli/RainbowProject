@@ -21,6 +21,8 @@ public class GrabChecker : MonoBehaviour
             if (gameObject.GetComponent<OVRGrabbable>().isGrabbed)
             {
                 thisAudio.Stop();
+                if(GetComponent<Rigidbody>().isKinematic)
+                    GetComponent<Rigidbody>().isKinematic = false;
             }
             else if(!thisAudio.isPlaying)
             {

@@ -1,59 +1,9 @@
 fileFormatVersion: 2
-guid: 1980e0cbfed5b4ac08e123e1bd6d9534
+guid: 33dbd1d7699f11c46850dc8617c15bc9
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Corpo
-    second: {fileID: 2100000, guid: 0ac57880921d14a87be6f537920449be, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 22c0ade06487441fcab25e9054a06fc4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: control_panel
-    second: {fileID: 2100000, guid: b68f7197552a44a0d84d70feb2f40239, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: metal_chain
-    second: {fileID: 2100000, guid: ded2e6c832c4749caa3f5bbe3dbe0764, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: neon
-    second: {fileID: 2100000, guid: aea37504994de435e8ce5b4d3722cab0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: neon2
-    second: {fileID: 2100000, guid: 329515d29ef4948dd87b6dcf9bcbf221, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: specchio
-    second: {fileID: 2100000, guid: 89ddc4ec843b7402383a980391fe7537, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: supporto
-    second: {fileID: 2100000, guid: d3bdb7d674e8d4e29a1536f3817b172d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: tasti_bianchi
-    second: {fileID: 2100000, guid: db38430e4f8844ad6aac201ac0efdedb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: tasti_neri
-    second: {fileID: 2100000, guid: cd7569722cf634695a3fcb864492ba9f, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0

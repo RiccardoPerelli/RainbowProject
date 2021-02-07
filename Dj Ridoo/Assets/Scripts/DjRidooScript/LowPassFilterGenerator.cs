@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class LowPassFilterGenerator : EffectGenerator
 {
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.tag == "Instrument")
         {
             Debug.Log("Collision Detected with the instrument");
+            GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
             applyEffect(collision);
+            Destroy(this.gameObject, destroyTime);
+            Destroy(expl, 3); // delete the explosion after 3 seconds
         } else
         {
             Debug.Log("Collision Detected");
@@ -21,7 +23,10 @@ public class LowPassFilterGenerator : EffectGenerator
     {
         if (collision.collider.gameObject.GetComponent<AudioLowPassFilter>() == null)
         {
-            GameObject gui = Instantiate(EffectUI, collision.collider.gameObject.transform.position + offset, Quaternion.identity) as GameObject;
+            Debug.Log("mixer is coming!");
+            GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
+            if (GameObject.FindGameObjectWithTag("Player") != null)
+                gui.transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
             gui.GetComponent<LowPassSliderInteraction>().instruments.Add(collision.collider.gameObject);
             collision.collider.gameObject.AddComponent(typeof(AudioLowPassFilter));
             collision.collider.gameObject.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = gui.GetComponent<LowPassSliderInteraction>().resonanceStartingValue;

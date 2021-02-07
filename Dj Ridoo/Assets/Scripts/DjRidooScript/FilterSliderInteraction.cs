@@ -21,9 +21,13 @@ public class FilterSliderInteraction : SliderInteraction
 	public void Start()
 	{
 		//initialize the value of the slider
-		frequenzaDiTaglio.text = "Frequenza di taglio: " + cutOffFrequencyStartingValue.ToString() + " HZ";
+		if (frequenzaDiTaglio != null)
+			frequenzaDiTaglio.text = "Frequenza di taglio: " + cutOffFrequencyStartingValue.ToString() + " HZ";
+
+		if(risonanza != null)
+			risonanza.text = "Risonanza: " + resonanceStartingValue.ToString();
+
 		frequencySlider.value = cutOffFrequencyStartingValue / CUT_OFF_FREQUENCY_MAX_VALUE;
-		risonanza.text = "Risonanza: " + resonanceStartingValue.ToString();
 		resonanceSlider.value = resonanceStartingValue / RESONANCE_MAX_VALUE;
 
 		//Adds a listener to the main slider and invokes a method when the value changes.

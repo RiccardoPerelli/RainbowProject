@@ -142,7 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 737a6fce9e8ad6f43bbaf24c0b9d1514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 1
-  EffectUI: {fileID: 5938877445560713829, guid: 38d570b1286801a4d8f86b47e6e10563,
+  EffectUI: {fileID: 8598907601564072986, guid: 1b6e73fb6ef330a4cb65141b8451c1d5,
     type: 3}
   offset: {x: 0, y: 1, z: 1}
