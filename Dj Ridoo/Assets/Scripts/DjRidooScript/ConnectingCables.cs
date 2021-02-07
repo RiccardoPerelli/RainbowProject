@@ -41,7 +41,7 @@ public class ConnectingCables : MonoBehaviour
 	void Start()
 	{
 		plug = Resources.Load<AudioClip>("plugIn");
-		swordHit = Resources.Load<AudioClip>("sword");
+		swordHit = Resources.Load<AudioClip>("SliceSound");
 	}
 
 

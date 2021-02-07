@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
+using UnityEditor;
 using UnityEngine;
 
 public class LightMover : MonoBehaviour
