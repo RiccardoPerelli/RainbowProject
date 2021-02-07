@@ -8,6 +8,8 @@ public class ConnectingCables : MonoBehaviour
 {
 	#region Class members
 
+	public GameObject rightHandCollisionChecker;
+
 	private List<GameObject> startPoint = new List<GameObject>();
 	private List<GameObject> endPoint = new List<GameObject>();
 	[SerializeField] private Material cableMaterial;
@@ -47,76 +49,93 @@ public class ConnectingCables : MonoBehaviour
 
 	void Update()
 	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hit;
-		if (Physics.Raycast(ray, out hit, 2.0f))
+		//Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		//RaycastHit hit;
+		//if (Physics.Raycast(ray, out hit, 2.0f))
+        //{
+		if (OVRInput.GetDown(OVRInput.Button.One) && !firstClickCheck)
         {
-			if (Input.GetMouseButtonDown(1) && !firstClickCheck)
+			if(rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject != null)
             {
-				if (hit.collider.tag.Equals("Instrument"))
-				{
-					print("Individuato primo oggetto");
-					startTmpObj = hit.collider.gameObject;
-					startTmpObj.AddComponent<AudioSource>();
-					AudioSource sound = startTmpObj.GetComponent<AudioSource>();
-					sound.clip = plug;
-					firstClickCheck = true;
-					
-					//TODO: sostituire con mano
-					tmp = GameObject.Find("/InteractableFPSController/FirstPersonCamera");
-					tmp.AddComponent<CableComponent>();
-					tmp.GetComponent<CableComponent>().endPoint = startTmpObj.transform;
-					tmp.GetComponent<CableComponent>().cableMaterial = cableMaterial;
-
-					sound.Play();
-				}
-			}
-			if (Input.GetMouseButtonDown(1) && firstClickCheck)
-			{
-				if (hit.collider.tag.Equals("Filter"))
-				{
-					print("Individuato secondo oggetto");
-					endTmpObj = hit.collider.gameObject;
-					firstClickCheck = false;
-					render = true;
-					Component component1 = tmp.GetComponent<CableComponent>();
-					Object.DestroyImmediate(component1 as Object, true);
-					Component component2 = tmp.GetComponent<LineRenderer>();
-					Object.DestroyImmediate(component2 as Object, true);
-
-					endTmpObj.AddComponent<AudioSource>();
-					AudioSource sound = startTmpObj.GetComponent<AudioSource>();
-					sound.clip = plug;
-					sound.Play();
-					firstClickCheck = false;
-				}
-			}
-		}
+                checkStartingPoint();
+            }
+        }
+		if (OVRInput.GetUp(OVRInput.Button.One) && firstClickCheck)
+		{
+			if (rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject != null)
+            {
+                checkEndPoint();
+            }
+        }
+		//}
 
         if (render)
         {
-			print("Inizializzo collegamento");
-			startPoint.Add(new GameObject("line" + startPoint.Count));
-			countCable++;
-			print(countCable);
+            renderMultipleLine();
+        }
 
-			startPoint[countCable].transform.parent = startTmpObj.transform;
-			startPoint[countCable].transform.position = startTmpObj.transform.position;
+    }
 
-			endPoint.Add(new GameObject("line" + endPoint.Count));
-			endPoint[countCable].transform.parent = endTmpObj.transform;
-			endPoint[countCable].transform.position = endTmpObj.transform.position;
+    private void checkStartingPoint()
+    {
+        print("Individuato primo oggetto");
+        startTmpObj = rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject;
+        //startTmpObj.AddComponent<AudioSource>();
+        //AudioSource sound = startTmpObj.GetComponent<AudioSource>();
+        //sound.clip = plug;
+        firstClickCheck = true;
 
-			startPoint[countCable].AddComponent<CableComponent>();
-			startPoint[countCable].GetComponent<CableComponent>().endPoint = endPoint[countCable].transform;
-			startPoint[countCable].GetComponent<CableComponent>().cableMaterial = cableMaterial;
-			render = false;
-			cutable = true;
-		}
+        //TODO: sostituire con mano
+        rightHandCollisionChecker.AddComponent<CableComponent>();
+        rightHandCollisionChecker.GetComponent<CableComponent>().endPoint = startTmpObj.transform;
+        rightHandCollisionChecker.GetComponent<CableComponent>().cableMaterial = cableMaterial;
+        //tmp = GameObject.Find("/InteractableFPSController/FirstPersonCamera");
+        //tmp.AddComponent<CableComponent>();
+        //tmp.GetComponent<CableComponent>().endPoint = startTmpObj.transform;
+        //tmp.GetComponent<CableComponent>().cableMaterial = cableMaterial;
 
-	}
+        //sound.Play();
+    }
 
-	void FixedUpdate()
+    private void checkEndPoint()
+    {
+        print("Individuato secondo oggetto");
+        endTmpObj = rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject;
+        Component component1 = rightHandCollisionChecker.GetComponent<CableComponent>();
+        Object.DestroyImmediate(component1 as Object, true);
+        Component component2 = rightHandCollisionChecker.GetComponent<LineRenderer>();
+        Object.DestroyImmediate(component2 as Object, true);
+
+        //endTmpObj.AddComponent<AudioSource>();
+        //AudioSource sound = startTmpObj.GetComponent<AudioSource>();
+        //sound.clip = plug;
+        //sound.Play();
+        render = true;
+        firstClickCheck = false;
+    }
+
+    private void renderMultipleLine()
+    {
+        print("Inizializzo collegamento");
+        startPoint.Add(new GameObject("line" + startPoint.Count));
+        countCable++;
+        print(countCable);
+
+        startPoint[countCable].transform.parent = startTmpObj.transform;
+        startPoint[countCable].transform.position = startTmpObj.transform.position;
+
+        endPoint.Add(new GameObject("line" + endPoint.Count));
+        endPoint[countCable].transform.parent = endTmpObj.transform;
+        endPoint[countCable].transform.position = endTmpObj.transform.position;
+
+        startPoint[countCable].AddComponent<CableComponent>();
+        startPoint[countCable].GetComponent<CableComponent>().endPoint = endPoint[countCable].transform;
+        startPoint[countCable].GetComponent<CableComponent>().cableMaterial = cableMaterial;
+        render = false;
+        cutable = true;
+    }
+
+    void FixedUpdate()
     {
 		for (int i = 0; i <= countCable && cutable; i++)
 		{
