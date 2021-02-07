@@ -206,6 +206,8 @@ MonoBehaviour:
   maxPosition: {fileID: 8446821976439317759}
   minPosition: {fileID: 8641309001871953374}
   effectSlider: {fileID: 8044668488752643549}
+  startingZPosition: 0
+  startingXPosition: 0
 --- !u!65 &3953633418289567564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -227,7 +229,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726034697799051144}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -411,6 +413,8 @@ MonoBehaviour:
   maxPosition: {fileID: 8268236594389294204}
   minPosition: {fileID: 2953124802860577859}
   effectSlider: {fileID: 1584169484381011922}
+  startingZPosition: 0
+  startingXPosition: 0
 --- !u!65 &8237676327960525668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -432,7 +436,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223624921907721018}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -537,6 +541,8 @@ MonoBehaviour:
   maxPosition: {fileID: 3297031085244042199}
   minPosition: {fileID: 4248385852940780054}
   effectSlider: {fileID: 4727539169237096865}
+  startingZPosition: 0
+  startingXPosition: 0
 --- !u!65 &4404737971112734709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -558,7 +564,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294449156250555559}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -979,6 +985,8 @@ MonoBehaviour:
   maxPosition: {fileID: 285121594188870913}
   minPosition: {fileID: 5324260341842371858}
   effectSlider: {fileID: 8023016147589034662}
+  startingZPosition: 0
+  startingXPosition: 0
 --- !u!65 &6607132812115877973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1000,7 +1008,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2156142216313820498}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -1443,6 +1451,8 @@ MonoBehaviour:
   maxPosition: {fileID: 2618712686827726682}
   minPosition: {fileID: 6958544416655776312}
   effectSlider: {fileID: 5423798156876274599}
+  startingZPosition: 0
+  startingXPosition: 0
 --- !u!65 &2430759279245605573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1464,7 +1474,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5123872403177151910}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -1938,6 +1948,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7111444496833966761}
   - component: {fileID: 7518571573335219550}
+  - component: {fileID: 1437756934155262266}
+  - component: {fileID: -8276784785870662801}
+  - component: {fileID: 1714101668310620947}
   m_Layer: 0
   m_Name: ChorusMixer
   m_TagString: Untagged
@@ -2029,6 +2042,53 @@ MonoBehaviour:
   delayStartingValue: 40
   rateStartingValue: 0.8
   depthStartingValue: 0.3
+--- !u!114 &1437756934155262266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636765466958080019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints:
+  - {fileID: -8276784785870662801}
+--- !u!65 &-8276784785870662801
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636765466958080019}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.4, z: 0.7}
+  m_Center: {x: 0, y: 0, z: 0.1}
+--- !u!54 &1714101668310620947
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636765466958080019}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7965151067128901944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2485,6 +2545,8 @@ MonoBehaviour:
   maxPosition: {fileID: 2239895580368261072}
   minPosition: {fileID: 4472650084538281043}
   effectSlider: {fileID: 2377787929260268104}
+  startingZPosition: 0
+  startingXPosition: 0
 --- !u!65 &3141793342576924944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2506,7 +2568,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8784307150758689075}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -2528,7 +2590,6 @@ GameObject:
   - component: {fileID: 8008282363159889863}
   - component: {fileID: 6566696619403823441}
   - component: {fileID: 7443540247108864563}
-  - component: {fileID: 5568542067807471308}
   m_Layer: 0
   m_Name: DryMixSlider
   m_TagString: Untagged
@@ -2612,6 +2673,8 @@ MonoBehaviour:
   maxPosition: {fileID: 9212064990676713789}
   minPosition: {fileID: 8440606487897202170}
   effectSlider: {fileID: 4684678856327071289}
+  startingZPosition: 0
+  startingXPosition: 0
 --- !u!54 &6566696619403823441
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2620,7 +2683,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9091865391592658647}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -2629,19 +2692,6 @@ Rigidbody:
   m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!65 &7443540247108864563
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9091865391592658647}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9999999, y: 2, z: 1.9999998}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &5568542067807471308
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

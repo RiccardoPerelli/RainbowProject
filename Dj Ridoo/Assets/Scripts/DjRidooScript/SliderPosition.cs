@@ -9,18 +9,32 @@ public class SliderPosition : MonoBehaviour
     public GameObject minPosition;
     public Slider effectSlider;
 
+    public float startingZPosition;
+    public float startingXPosition;
+
+    private void Start()
+    {
+        startingZPosition = gameObject.transform.localPosition.z;
+        startingXPosition = gameObject.transform.localPosition.x;
+    }
+
+    private void FixedUpdate()
+    {
+        gameObject.transform.localPosition = new Vector3(startingXPosition, gameObject.transform.localPosition.y, startingZPosition);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.transform.position.y < minPosition.gameObject.transform.position.y)
+        if (gameObject.transform.localPosition.y < minPosition.gameObject.transform.localPosition.y)
         {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x, minPosition.gameObject.transform.position.y, gameObject.transform.position.z);
+            gameObject.transform.localPosition = new Vector3(gameObject.transform.localPosition.x, minPosition.gameObject.transform.localPosition.y, gameObject.transform.localPosition.z);
         }
-        else if (gameObject.transform.position.y > maxPosition.gameObject.transform.position.y)
+        else if (gameObject.transform.localPosition.y > maxPosition.gameObject.transform.localPosition.y)
         {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x, maxPosition.gameObject.transform.position.y, gameObject.transform.position.z);
+            gameObject.transform.localPosition = new Vector3(gameObject.transform.localPosition.x, maxPosition.gameObject.transform.localPosition.y, gameObject.transform.localPosition.z);
         }
-        effectSlider.value = (gameObject.transform.position.y - minPosition.gameObject.transform.position.y) / 
-            (maxPosition.gameObject.transform.position.y - minPosition.gameObject.transform.position.y);
+        effectSlider.value = (gameObject.transform.localPosition.y - minPosition.gameObject.transform.localPosition.y) / 
+            (maxPosition.gameObject.transform.localPosition.y - minPosition.gameObject.transform.localPosition.y);
     }
 }

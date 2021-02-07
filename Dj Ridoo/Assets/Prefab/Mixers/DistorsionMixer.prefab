@@ -89,6 +89,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1370916259738902243}
   - component: {fileID: 8545859109744071513}
+  - component: {fileID: 4742497558370091674}
+  - component: {fileID: 7456221302668348315}
+  - component: {fileID: 828442024855379999}
   m_Layer: 0
   m_Name: DistorsionMixer
   m_TagString: Untagged
@@ -107,9 +110,9 @@ Transform:
   m_LocalPosition: {x: -12.027021, y: -3.0022385, z: 12.785635}
   m_LocalScale: {x: 0.29172, y: 0.29172, z: 0.29172}
   m_Children:
-  - {fileID: 6858527799214986508}
-  - {fileID: 4098619578383777299}
   - {fileID: 1832485230670216375}
+  - {fileID: 4098619578383777299}
+  - {fileID: 6858527799214986508}
   - {fileID: 2843987435547149702}
   - {fileID: 6271524336664430823}
   - {fileID: 3407119639513633913}
@@ -136,6 +139,53 @@ MonoBehaviour:
   distorsionLevelText: {fileID: 5174952991929517410}
   distorsionSlider: {fileID: 250884508086602774}
   distorsionLevelStartingValue: 0.5
+--- !u!114 &4742497558370091674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751242471078823001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints:
+  - {fileID: 7456221302668348315}
+--- !u!65 &7456221302668348315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751242471078823001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.45, z: 0.7}
+  m_Center: {x: -0.5, y: 0, z: 0.1}
+--- !u!54 &828442024855379999
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751242471078823001}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2233965607805782892
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,12 +370,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3571162175441160506}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -0.4, z: 0.386}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.49999902, y: -0.40000004, z: 0.38600075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1370916259738902243}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5056650818692732342
 GameObject:
@@ -350,8 +400,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5056650818692732342}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0.181, z: 0.386}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.49999902, y: 0.18100016, z: 0.38600075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1370916259738902243}
@@ -544,11 +594,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7807750715960555800}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0.41235828}
-  m_LocalScale: {x: 0.10846598, y: 0.026209844, z: 0.05771453}
+  m_LocalPosition: {x: 0, y: 0, z: 0.41235983}
+  m_LocalScale: {x: 0.10846598, y: 0.026209844, z: 0.057714526}
   m_Children: []
   m_Father: {fileID: 1370916259738902243}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -625,7 +675,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7807750715960555800}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0

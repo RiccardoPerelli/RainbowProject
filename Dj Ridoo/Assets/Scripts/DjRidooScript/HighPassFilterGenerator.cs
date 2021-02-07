@@ -26,7 +26,7 @@ public class HighPassFilterGenerator : EffectGenerator
         if (collision.collider.gameObject.GetComponent<AudioHighPassFilter>() == null)
         {
             Debug.Log("mixer is coming!");
-            GameObject gui = Instantiate(EffectUI, collision.collider.gameObject.transform.position + offset, Quaternion.identity) as GameObject;
+            GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
             if (GameObject.FindGameObjectWithTag("Player") != null)
                 gui.transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
             gui.GetComponent<HighPassSliderInteraction>().instruments.Add(collision.collider.gameObject);

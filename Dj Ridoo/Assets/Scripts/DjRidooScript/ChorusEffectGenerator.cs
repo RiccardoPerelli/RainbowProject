@@ -21,7 +21,7 @@ public class ChorusEffectGenerator : EffectGenerator
     {
         if (collision.collider.gameObject.GetComponent<AudioChorusFilter>() == null)
         {
-            GameObject gui = Instantiate(EffectUI, collision.collider.gameObject.transform.position + offset, Quaternion.identity) as GameObject;
+            GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
 
             gui.GetComponent<ChorusSliderInteraction>().instruments.Add(collision.collider.gameObject);
 

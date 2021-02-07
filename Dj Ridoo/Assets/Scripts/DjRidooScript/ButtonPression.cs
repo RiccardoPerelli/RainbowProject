@@ -6,8 +6,8 @@ using UnityEngine.TextCore;
 public class ButtonPression : MonoBehaviour
 {
     public GameObject location;
-    public float zOffset = -150f;
-    public float turnBackSpeed = 5f;
+    public float zOffset = -35f;
+    public float turnBackSpeed = 10f;
     bool touching = false;
 
     protected float startingYValue;

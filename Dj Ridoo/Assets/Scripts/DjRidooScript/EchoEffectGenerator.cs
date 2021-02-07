@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EchoEffectGenerator : EffectGenerator
 {
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.tag == "Instrument")
@@ -25,7 +26,7 @@ public class EchoEffectGenerator : EffectGenerator
         if (collision.collider.gameObject.GetComponent<AudioEchoFilter>() == null)
         {
             Debug.Log("mixer is coming!");
-            GameObject gui = Instantiate(EffectUI, collision.collider.gameObject.transform.position + offset, Quaternion.identity) as GameObject;
+            GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
             if (GameObject.FindGameObjectWithTag("Player") != null)
                 gui.transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
             gui.GetComponent<EchoSliderInteraction>().instruments.Add(collision.collider.gameObject);
