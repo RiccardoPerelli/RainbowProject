@@ -527,7 +527,9 @@ GameObject:
   - component: {fileID: 4164924809623077512}
   - component: {fileID: 9166134450243246873}
   - component: {fileID: 6480519474785096386}
-  m_Layer: 0
+  - component: {fileID: 1229900520470042966}
+  - component: {fileID: 90813654582160838}
+  m_Layer: 11
   m_Name: DistorsionSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,6 +617,35 @@ MonoBehaviour:
   maxPosition: {fileID: 5056650818692732342}
   minPosition: {fileID: 3571162175441160506}
   effectSlider: {fileID: 250884508086602774}
+--- !u!54 &1229900520470042966
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7807750715960555800}
+  serializedVersion: 2
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
+--- !u!65 &90813654582160838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7807750715960555800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999999, y: 1.9999996, z: 1.9999995}
+  m_Center: {x: -0.000030517578, y: 0, z: -0.000015258789}
 --- !u!1 &9025361269697762807
 GameObject:
   m_ObjectHideFlags: 0

@@ -170,8 +170,10 @@ GameObject:
   - component: {fileID: 5533491658293657673}
   - component: {fileID: 1412311953447897172}
   - component: {fileID: 1968083985915717123}
-  m_Layer: 0
-  m_Name: DryMix
+  - component: {fileID: 6762846460962030149}
+  - component: {fileID: 705083470582344900}
+  m_Layer: 11
+  m_Name: DryMixSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -253,6 +255,35 @@ MonoBehaviour:
   maxPosition: {fileID: 7214056018146428515}
   minPosition: {fileID: 8727773383008716536}
   effectSlider: {fileID: 3473270833639928676}
+--- !u!65 &6762846460962030149
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279087906528226940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999999, y: 2, z: 1.9999998}
+  m_Center: {x: 0, y: 0.000030517578, z: 0}
+--- !u!54 &705083470582344900
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279087906528226940}
+  serializedVersion: 2
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
 --- !u!1 &1381457964241669802
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +612,9 @@ GameObject:
   - component: {fileID: 5209723596543595545}
   - component: {fileID: 1059691413245005192}
   - component: {fileID: 6864751129427728543}
-  m_Layer: 0
+  - component: {fileID: 4981941401343482457}
+  - component: {fileID: 8976577532109743640}
+  m_Layer: 11
   m_Name: DecaySlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,6 +697,35 @@ MonoBehaviour:
   maxPosition: {fileID: 3305730376089916661}
   minPosition: {fileID: 8794457368653331113}
   effectSlider: {fileID: 2233613985239668835}
+--- !u!65 &4981941401343482457
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151263660051885961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999999, y: 2, z: 1.9999998}
+  m_Center: {x: 0.000015258789, y: 0.000030517578, z: 0}
+--- !u!54 &8976577532109743640
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151263660051885961}
+  serializedVersion: 2
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
 --- !u!1 &3305730376089916661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,8 +1796,10 @@ GameObject:
   - component: {fileID: 2194934829694875427}
   - component: {fileID: 5648521707131129823}
   - component: {fileID: 816397205347090327}
-  m_Layer: 0
-  m_Name: WetMix
+  - component: {fileID: 3355520508046082694}
+  - component: {fileID: 3194405379268442864}
+  m_Layer: 11
+  m_Name: WetMixSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1817,6 +1881,35 @@ MonoBehaviour:
   maxPosition: {fileID: 6188400607254957555}
   minPosition: {fileID: 5234666964518295788}
   effectSlider: {fileID: 4246099602665451874}
+--- !u!65 &3355520508046082694
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8141357458993987579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.9999999, z: 2.0000007}
+  m_Center: {x: 0.00006365776, y: 0.000038146973, z: -0.00000041723249}
+--- !u!54 &3194405379268442864
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8141357458993987579}
+  serializedVersion: 2
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
 --- !u!1 &8727773383008716536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,7 +1952,9 @@ GameObject:
   - component: {fileID: 1205795274036496562}
   - component: {fileID: 1286241387920918247}
   - component: {fileID: 3875086709474275835}
-  m_Layer: 0
+  - component: {fileID: 38419504261842197}
+  - component: {fileID: 6064160979358937052}
+  m_Layer: 11
   m_Name: DelaySlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1942,6 +2037,35 @@ MonoBehaviour:
   maxPosition: {fileID: 5278462046249321968}
   minPosition: {fileID: 3429424648344434530}
   effectSlider: {fileID: 5861302142032113805}
+--- !u!65 &38419504261842197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8781691367079773160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999999, y: 2, z: 1.9999998}
+  m_Center: {x: 0, y: 0.000030517578, z: 0}
+--- !u!54 &6064160979358937052
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8781691367079773160}
+  serializedVersion: 2
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
 --- !u!1 &8794457368653331113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,18 +2388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5861302142032113805 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 899581622399708582, guid: 61a2af4625bf7fe46b9f5c7c3d4e6989,
-    type: 3}
-  m_PrefabInstance: {fileID: 6713868165083159851}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8212973145730397612 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3230809406400686215, guid: 61a2af4625bf7fe46b9f5c7c3d4e6989,
@@ -2339,6 +2451,18 @@ MonoBehaviour:
 --- !u!114 &4246099602665451874 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7476360836653050953, guid: 61a2af4625bf7fe46b9f5c7c3d4e6989,
+    type: 3}
+  m_PrefabInstance: {fileID: 6713868165083159851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5861302142032113805 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 899581622399708582, guid: 61a2af4625bf7fe46b9f5c7c3d4e6989,
     type: 3}
   m_PrefabInstance: {fileID: 6713868165083159851}
   m_PrefabAsset: {fileID: 0}
