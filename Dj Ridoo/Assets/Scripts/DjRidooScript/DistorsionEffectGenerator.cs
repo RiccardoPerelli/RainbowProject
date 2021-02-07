@@ -9,7 +9,10 @@ public class DistorsionEffectGenerator : EffectGenerator
         if (collision.collider.gameObject.tag == "Instrument")
         {
             Debug.Log("Collision Detected with the instrument");
+            GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
             applyEffect(collision);
+            Destroy(this.gameObject, destroyTime);
+            Destroy(expl, 3); // delete the explosion after 3 seconds
         }
         else
         {
@@ -22,6 +25,8 @@ public class DistorsionEffectGenerator : EffectGenerator
         if (collision.collider.gameObject.GetComponent<AudioDistortionFilter>() == null)
         {
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
+            if (GameObject.FindGameObjectWithTag("Player") != null)
+                gui.transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
             gui.GetComponent<DistorsionSliderInteraction>().instruments.Add(collision.collider.gameObject);
             collision.collider.gameObject.AddComponent(typeof(AudioDistortionFilter));
             collision.collider.gameObject.GetComponent<AudioDistortionFilter>().distortionLevel = gui.GetComponent<DistorsionSliderInteraction>().distorsionLevelStartingValue;

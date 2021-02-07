@@ -9,7 +9,10 @@ public class ChorusEffectGenerator : EffectGenerator
         if (collision.collider.gameObject.tag == "Instrument")
         {
             Debug.Log("Collision Detected with the instrument");
+            GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
             applyEffect(collision);
+            Destroy(this.gameObject, destroyTime);
+            Destroy(expl, 3); // delete the explosion after 3 seconds
         }
         else
         {
@@ -22,11 +25,10 @@ public class ChorusEffectGenerator : EffectGenerator
         if (collision.collider.gameObject.GetComponent<AudioChorusFilter>() == null)
         {
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
-
+            if (GameObject.FindGameObjectWithTag("Player") != null)
+                gui.transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
             gui.GetComponent<ChorusSliderInteraction>().instruments.Add(collision.collider.gameObject);
-
             collision.collider.gameObject.AddComponent(typeof(AudioChorusFilter));
-
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().dryMix = gui.GetComponent<ChorusSliderInteraction>().dryMixStartingValue;
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().wetMix1 = gui.GetComponent<ChorusSliderInteraction>().wetMixStartingValue;
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().wetMix2 = gui.GetComponent<ChorusSliderInteraction>().wetMixStartingValue;
@@ -34,7 +36,6 @@ public class ChorusEffectGenerator : EffectGenerator
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().delay = gui.GetComponent<ChorusSliderInteraction>().delayStartingValue;
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().rate = gui.GetComponent<ChorusSliderInteraction>().rateStartingValue;
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().depth = gui.GetComponent<ChorusSliderInteraction>().depthStartingValue;
-            //collision.collider.gameObject.GetComponent<AudioChorusFilter>().feedback = gui.GetComponent<ChorusSliderInteraction>().feedbackStartingValue;
         }
         else
         {

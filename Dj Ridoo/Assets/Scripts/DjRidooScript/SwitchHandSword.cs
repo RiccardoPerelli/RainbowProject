@@ -5,9 +5,9 @@ using UnityEngine;
 public class SwitchHandSword : MonoBehaviour
 {
     bool switched;
-    GameObject hand;
-    GameObject sword;
 
+    public GameObject sword;
+    public GameObject hand;
     public Material swordMat;
     public Material bladeMat;
     public Material handMat;
@@ -18,8 +18,6 @@ public class SwitchHandSword : MonoBehaviour
     void Start()
     {
         switched = false;
-        sword = GameObject.FindWithTag("Sword");
-        hand = GameObject.FindWithTag("Hand");
     }
 
     // Update is called once per frame
