@@ -5,6 +5,8 @@ using UnityEngine;
 public class SwitchHandSword : MonoBehaviour
 {
     bool switched;
+    [SerializeField] private float noiseStrength = 0.25f;
+    [SerializeField] private float objectHeight = 1.0f;
 
     public GameObject sword;
     public GameObject hand;
@@ -23,37 +25,50 @@ public class SwitchHandSword : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.Two))
+        if (OVRInput.GetDown(OVRInput.Button.Two) || Input.GetKeyDown(KeyCode.A))
         {
             if (switched == false)
             {
                 sword.SetActive(true);
-                StartCoroutine(Fade(handMat, 0));
-                StartCoroutine(Fade(bladeMat, 1));
-                StartCoroutine(Fade(swordMat, 1));
+                StartCoroutine(FadeHand(handMat, 0));
+                StartCoroutine(FadeSword(bladeMat, swordMat, 3));
                 StartCoroutine("DeactiveHand");
                 switched = true;
             }
             else
             {
                 hand.SetActive(true);
-                StartCoroutine(Fade(handMat, 1));
-                StartCoroutine(Fade(bladeMat, 0));
-                StartCoroutine(Fade(swordMat, 0));
+                StartCoroutine(FadeHand(handMat, 2));
+                StartCoroutine(FadeSword(bladeMat, swordMat, 0));
                 StartCoroutine("DeactiveSword");
                 switched = false;
             }
         }
     }
 
-    IEnumerator Fade(Material mat, float targetAlpha)
+    IEnumerator FadeHand(Material mat, float targetAlpha)
     {
         print("Entra in Fade");
-        while (mat.color.a != targetAlpha)
+        float height = hand.transform.position.y;
+        while (mat.GetFloat("_CutoffHeight") != targetAlpha)
         {
-            Color c = mat.color;
-            var newAlpha = Mathf.MoveTowards(mat.color.a, targetAlpha, fadeSpeed * Time.deltaTime);
-            mat.color = new Color(mat.color.r, mat.color.g, mat.color.b, newAlpha); ;
+            height = Mathf.MoveTowards(mat.GetFloat("_CutoffHeight"), targetAlpha, fadeSpeed * Time.deltaTime);
+            SetHeight(mat, height);
+            yield return null;
+        }
+    }
+
+    IEnumerator FadeSword(Material mat1, Material mat2, float targetAlpha)
+    {
+        print("Entra in Fade");
+        float height1 = sword.transform.position.y;
+        float height2 = sword.transform.position.y;
+        while (mat1.GetFloat("_CutoffHeight") != targetAlpha)
+        {
+            height1 = Mathf.MoveTowards(mat1.GetFloat("_CutoffHeight"), targetAlpha, fadeSpeed * Time.deltaTime);
+            SetHeight(mat1, height1);
+            height2 = Mathf.MoveTowards(mat2.GetFloat("_CutoffHeight"), targetAlpha, fadeSpeed * Time.deltaTime);
+            SetHeight(mat2, height2);
             yield return null;
         }
     }
@@ -66,7 +81,13 @@ public class SwitchHandSword : MonoBehaviour
 
     IEnumerator DeactiveSword()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         sword.SetActive(false);
+    }
+
+    private void SetHeight(Material mat, float height)
+    {
+        mat.SetFloat("_CutoffHeight", height);
+        mat.SetFloat("_NoiseStrength", noiseStrength);
     }
 }
