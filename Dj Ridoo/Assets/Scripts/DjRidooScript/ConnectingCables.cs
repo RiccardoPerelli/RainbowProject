@@ -65,6 +65,9 @@ public class ConnectingCables : MonoBehaviour
 			if (rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject != null)
             {
                 checkEndPoint();
+            } else
+            {
+                DestroyLine();
             }
         }
 		//}
@@ -74,6 +77,15 @@ public class ConnectingCables : MonoBehaviour
             renderMultipleLine();
         }
 
+    }
+
+    private void DestroyLine()
+    {
+        Component component1 = rightHandCollisionChecker.GetComponent<CableComponent>();
+        Object.DestroyImmediate(component1 as Object, true);
+        Component component2 = rightHandCollisionChecker.GetComponent<LineRenderer>();
+        Object.DestroyImmediate(component2 as Object, true);
+        firstClickCheck = false;
     }
 
     private void checkStartingPoint()
@@ -101,17 +113,24 @@ public class ConnectingCables : MonoBehaviour
     {
         print("Individuato secondo oggetto");
         endTmpObj = rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject;
-        Component component1 = rightHandCollisionChecker.GetComponent<CableComponent>();
-        Object.DestroyImmediate(component1 as Object, true);
-        Component component2 = rightHandCollisionChecker.GetComponent<LineRenderer>();
-        Object.DestroyImmediate(component2 as Object, true);
+		if (endTmpObj.tag == startTmpObj.tag)
+		{
+			DestroyLine();
+		}
+		else
+		{
+			Component component1 = rightHandCollisionChecker.GetComponent<CableComponent>();
+			Object.DestroyImmediate(component1 as Object, true);
+			Component component2 = rightHandCollisionChecker.GetComponent<LineRenderer>();
+			Object.DestroyImmediate(component2 as Object, true);
 
-        //endTmpObj.AddComponent<AudioSource>();
-        //AudioSource sound = startTmpObj.GetComponent<AudioSource>();
-        //sound.clip = plug;
-        //sound.Play();
-        render = true;
-        firstClickCheck = false;
+			//endTmpObj.AddComponent<AudioSource>();
+			//AudioSource sound = startTmpObj.GetComponent<AudioSource>();
+			//sound.clip = plug;
+			//sound.Play();
+			render = true;
+			firstClickCheck = false;
+		}
     }
 
     private void renderMultipleLine()

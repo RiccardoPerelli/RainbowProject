@@ -18,7 +18,6 @@ public class TouchScreenController : TouchController
     void Update()
     {
         CheckIfPointing();
-        Debug.Log(Vector3.Distance(fingerTip.transform.position, transform.position));
 
         if (Physics.Raycast(fingerTip.transform.position, fingerTipForward, out RaycastHit ray, touchDistance))
         {

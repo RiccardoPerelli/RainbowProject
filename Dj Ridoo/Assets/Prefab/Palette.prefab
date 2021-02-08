@@ -39,7 +39,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.61032, y: 267}
+  m_AnchoredPosition: {x: -0.609375, y: 267}
   m_SizeDelta: {x: 265.94266, y: 48.12239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1728896086465339208
@@ -3288,7 +3288,7 @@ GameObject:
   - component: {fileID: 7543600410373233477}
   - component: {fileID: 7543600410373233476}
   m_Layer: 9
-  m_Name: Palette 1
+  m_Name: Palette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3301,8 +3301,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7543600410373233529}
-  m_LocalRotation: {x: 0, y: -0.52880865, z: 0, w: 0.8487411}
-  m_LocalPosition: {x: 0, y: 0, z: 0.034}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.00015, y: 0.00015, z: 0.00015}
   m_Children:
   - {fileID: 6881173122887713332}
@@ -3310,12 +3310,12 @@ RectTransform:
   - {fileID: 1526072032571110577}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -63.85, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.178, y: -0.045}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 2000, y: 1000}
-  m_Pivot: {x: 0.5, y: -0.8}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7543600410373233476
 Canvas:
   m_ObjectHideFlags: 0
