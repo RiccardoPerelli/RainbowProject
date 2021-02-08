@@ -19,25 +19,26 @@ public class SwitchHandSword : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        switched = false;
+        if (handMat.GetFloat("_CutoffHeight")==0)
+            switched = false;
+        else if (sword.activeSelf)
+            switched = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.Two) || Input.GetKeyDown(KeyCode.A))
+        if ((OVRInput.GetDown(OVRInput.Button.Two) || Input.GetKeyDown(KeyCode.A)))
         {
             if (switched == false)
             {
                 sword.SetActive(true);
                 StartCoroutine(FadeHand(handMat, 0));
                 StartCoroutine(FadeSword(bladeMat, swordMat, 3));
-                StartCoroutine("DeactiveHand");
                 switched = true;
             }
             else
             {
-                hand.SetActive(true);
                 StartCoroutine(FadeHand(handMat, 2));
                 StartCoroutine(FadeSword(bladeMat, swordMat, 0));
                 StartCoroutine("DeactiveSword");
@@ -71,12 +72,6 @@ public class SwitchHandSword : MonoBehaviour
             SetHeight(mat2, height2);
             yield return null;
         }
-    }
-
-    IEnumerator DeactiveHand()
-    {
-        yield return new WaitForSeconds(2);
-        hand.SetActive(false);
     }
 
     IEnumerator DeactiveSword()
