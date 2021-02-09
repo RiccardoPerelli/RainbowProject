@@ -174,9 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74354c9c2fbd92742b9f87a75c2cd49f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
+  zOffset: -35
+  turnBackSpeed: 10
   instrumentMenu: {fileID: 5111212588744748089}
 --- !u!1 &1593626244127613575
 GameObject:
@@ -325,7 +324,7 @@ GameObject:
   - component: {fileID: 6552867201807833593}
   - component: {fileID: 9006654197772385519}
   - component: {fileID: 1387821999962674610}
-  - component: {fileID: 1387821999962674622}
+  - component: {fileID: 5456350033003512222}
   m_Layer: 9
   m_Name: DistorsionEffectBtn
   m_TagString: FourthButton
@@ -473,7 +472,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387821999962674622
+--- !u!114 &5456350033003512222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -482,14 +481,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1640677544498785607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d7ed2643694714484d602edb322979, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b21f9c88e8a21a4ab5c571d6e232605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zOffset: -35
+  turnBackSpeed: 10
   location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  objectToSpawn: {fileID: 6951406044271507440, guid: eb477b1bd7850ec45bd81e40b191c63f,
-    type: 3}
+  objectToSpawn: {fileID: 0}
 --- !u!1 &1644328564281099404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,9 +1381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6795269074f188d4581247cc5b22c8de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
+  zOffset: -35
+  turnBackSpeed: 10
   effectMenu: {fileID: 2897409995169210155}
 --- !u!1 &2897409995169210155
 GameObject:
@@ -1469,7 +1466,7 @@ GameObject:
   - component: {fileID: 7571893662192150068}
   - component: {fileID: 8021600950228065913}
   - component: {fileID: 1387822001651754818}
-  - component: {fileID: 1387822001651754829}
+  - component: {fileID: 5568450564728900230}
   m_Layer: 9
   m_Name: PianoBtn
   m_TagString: Untagged
@@ -1617,7 +1614,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822001651754829
+--- !u!114 &5568450564728900230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1629,11 +1626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7ed2643694714484d602edb322979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zOffset: -35
+  turnBackSpeed: 10
   location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  objectToSpawn: {fileID: 8896213928605818026, guid: 0b4cf5fea3ea7b248948770db6611859,
-    type: 3}
+  objectToSpawn: {fileID: 0}
+  cableHandler: {fileID: 0}
 --- !u!1 &3997744882740158732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1645,7 @@ GameObject:
   - component: {fileID: 2756308799146292980}
   - component: {fileID: 6377543472896257319}
   - component: {fileID: 1387822001572737219}
-  - component: {fileID: 1387822001572737231}
+  - component: {fileID: 2392633935718823193}
   m_Layer: 9
   m_Name: MicrofoneBtn
   m_TagString: Untagged
@@ -1796,7 +1793,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822001572737231
+--- !u!114 &2392633935718823193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1808,11 +1805,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7ed2643694714484d602edb322979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zOffset: -35
+  turnBackSpeed: 10
   location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  objectToSpawn: {fileID: 1462060101255537210, guid: 1da2cd3d4acc05348b4dffdadc54179c,
-    type: 3}
+  objectToSpawn: {fileID: 0}
+  cableHandler: {fileID: 0}
 --- !u!1 &4188779948387091735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,7 +2164,7 @@ GameObject:
   - component: {fileID: 9147272327590720556}
   - component: {fileID: 7566654999731565554}
   - component: {fileID: 1387822001594611709}
-  - component: {fileID: 1387822001594611705}
+  - component: {fileID: 4235620744405183468}
   m_Layer: 9
   m_Name: ClassicGuitarBtn
   m_TagString: ThirdButton
@@ -2315,7 +2312,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822001594611705
+--- !u!114 &4235620744405183468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2327,11 +2324,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7ed2643694714484d602edb322979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zOffset: -35
+  turnBackSpeed: 10
   location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  objectToSpawn: {fileID: 3138726415636277457, guid: 9fa58a0683b9d914bb058e8bbb59e820,
-    type: 3}
+  objectToSpawn: {fileID: 0}
+  cableHandler: {fileID: 0}
 --- !u!1 &5111212588744748089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,7 +2544,7 @@ GameObject:
   - component: {fileID: 7892421625586104745}
   - component: {fileID: 2876433504053408308}
   - component: {fileID: 1387822000268876367}
-  - component: {fileID: 1387822000268876363}
+  - component: {fileID: 451149049057379303}
   m_Layer: 9
   m_Name: ElectricGuitarBtn
   m_TagString: SecondButton
@@ -2695,7 +2692,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822000268876363
+--- !u!114 &451149049057379303
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2707,11 +2704,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7ed2643694714484d602edb322979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zOffset: -35
+  turnBackSpeed: 10
   location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  objectToSpawn: {fileID: 8862681387266830846, guid: f34f2ea5489cc474180fc4f576798d7a,
-    type: 3}
+  objectToSpawn: {fileID: 0}
+  cableHandler: {fileID: 0}
 --- !u!1 &5678366242619902117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,7 +2797,7 @@ GameObject:
   - component: {fileID: 8552485526880857622}
   - component: {fileID: 7027139689815089169}
   - component: {fileID: 1387822001421100692}
-  - component: {fileID: 1387822001421100688}
+  - component: {fileID: 4850377715163672909}
   m_Layer: 9
   m_Name: DrumsBtn
   m_TagString: FirstButton
@@ -2948,7 +2945,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822001421100688
+--- !u!114 &4850377715163672909
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2960,11 +2957,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7ed2643694714484d602edb322979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zOffset: -35
+  turnBackSpeed: 10
   location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  objectToSpawn: {fileID: 6598274555177819569, guid: 8f8ef61bbf57fac4ab5b956a3b981df2,
-    type: 3}
+  objectToSpawn: {fileID: 0}
+  cableHandler: {fileID: 0}
 --- !u!1 &5799770073297674113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2979,7 +2976,7 @@ GameObject:
   - component: {fileID: 616307645020470016}
   - component: {fileID: 3193828295569159952}
   - component: {fileID: 1387822000789890910}
-  - component: {fileID: 1387822000789890906}
+  - component: {fileID: 7380693066715562288}
   m_Layer: 9
   m_Name: EchoEffectBtn
   m_TagString: FifthButton
@@ -3127,7 +3124,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822000789890906
+--- !u!114 &7380693066715562288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3136,14 +3133,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5799770073297674113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d7ed2643694714484d602edb322979, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b21f9c88e8a21a4ab5c571d6e232605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zOffset: -35
+  turnBackSpeed: 10
   location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  objectToSpawn: {fileID: 2406770500849917721, guid: 20589607728e3e745a6c790e0145d262,
-    type: 3}
+  objectToSpawn: {fileID: 0}
 --- !u!1 &6525365127086843858
 GameObject:
   m_ObjectHideFlags: 0
@@ -3425,7 +3421,7 @@ GameObject:
   - component: {fileID: 7543600410762454177}
   - component: {fileID: 7543600410762454188}
   - component: {fileID: 1387822000915534897}
-  - component: {fileID: 1387822000915534909}
+  - component: {fileID: 6068579124251762949}
   m_Layer: 9
   m_Name: LowPassFilterBtn
   m_TagString: FirstButton
@@ -3573,7 +3569,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822000915534909
+--- !u!114 &6068579124251762949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3582,14 +3578,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7543600410762454179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d7ed2643694714484d602edb322979, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b21f9c88e8a21a4ab5c571d6e232605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zOffset: -35
+  turnBackSpeed: 10
   location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  objectToSpawn: {fileID: 3992759948131775202, guid: c0f9120072078074e8df24e55163c335,
-    type: 3}
+  objectToSpawn: {fileID: 0}
 --- !u!1 &7543600411077285436
 GameObject:
   m_ObjectHideFlags: 0
@@ -3872,7 +3867,7 @@ GameObject:
   - component: {fileID: 7543600412243841259}
   - component: {fileID: 7543600412243841270}
   - component: {fileID: 1387822000382590702}
-  - component: {fileID: 1387822000382590698}
+  - component: {fileID: 1277783215314274379}
   m_Layer: 9
   m_Name: HighPassFilterBtn
   m_TagString: SecondButton
@@ -4020,7 +4015,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822000382590698
+--- !u!114 &1277783215314274379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4029,14 +4024,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7543600412243841261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d7ed2643694714484d602edb322979, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b21f9c88e8a21a4ab5c571d6e232605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zOffset: -35
+  turnBackSpeed: 10
   location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  objectToSpawn: {fileID: 3905196478235109005, guid: 74031c670b327814fbac4f5edab16500,
-    type: 3}
+  objectToSpawn: {fileID: 0}
 --- !u!1 &8227196796091234465
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,7 +4045,7 @@ GameObject:
   - component: {fileID: 5829200477851283942}
   - component: {fileID: 8941630540396009940}
   - component: {fileID: 1387822001711917910}
-  - component: {fileID: 1387822001711917906}
+  - component: {fileID: 1439815186105410491}
   m_Layer: 9
   m_Name: ChorusEffectBtn
   m_TagString: ThirdButton
@@ -4199,7 +4193,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822001711917906
+--- !u!114 &1439815186105410491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4208,14 +4202,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8227196796091234465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d7ed2643694714484d602edb322979, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b21f9c88e8a21a4ab5c571d6e232605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zOffset: -35
+  turnBackSpeed: 10
   location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  objectToSpawn: {fileID: 3569883257921612344, guid: 29625f45a6793464eb217a0f2ba96bdc,
-    type: 3}
+  objectToSpawn: {fileID: 0}
 --- !u!1 &8444084751785227442
 GameObject:
   m_ObjectHideFlags: 0
@@ -4230,7 +4223,6 @@ GameObject:
   - component: {fileID: 7349684108235017031}
   - component: {fileID: 6850783697781907395}
   - component: {fileID: 1387822001068051063}
-  - component: {fileID: 1387822001068051062}
   m_Layer: 9
   m_Name: BackBtn
   m_TagString: BackButton
@@ -4378,22 +4370,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822001068051062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8444084751785227442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d4cf2a4761589c419d6228ca576fcba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  PrincipalMenu: {fileID: 2308889958579396673}
 --- !u!1 &8523943144551493211
 GameObject:
   m_ObjectHideFlags: 0
@@ -4541,7 +4517,6 @@ GameObject:
   - component: {fileID: 5647714191181935372}
   - component: {fileID: 4453185013514973434}
   - component: {fileID: 1387822001641821936}
-  - component: {fileID: 1387822001641821939}
   m_Layer: 9
   m_Name: BackBtn
   m_TagString: BackButton
@@ -4689,22 +4664,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1387822001641821939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8996338903671768821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d4cf2a4761589c419d6228ca576fcba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  location: {fileID: 0}
-  zOffset: -150
-  turnBackSpeed: 5
-  PrincipalMenu: {fileID: 2308889958579396673}
 --- !u!1 &9063875032766933888
 GameObject:
   m_ObjectHideFlags: 0

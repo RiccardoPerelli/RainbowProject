@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnObjectButtonPression : ButtonPression
+public class SpawnEffectsButtonPression : ButtonPression
 {
+    public GameObject location;
     public GameObject objectToSpawn;
 
     protected override void TriggerAction()
