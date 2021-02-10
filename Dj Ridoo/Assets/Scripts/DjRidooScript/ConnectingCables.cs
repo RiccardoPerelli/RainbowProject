@@ -55,14 +55,16 @@ public class ConnectingCables : MonoBehaviour
         //{
 		if (OVRInput.GetDown(OVRInput.Button.One) && !firstClickCheck)
         {
-			if(rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject != null)
+			if(rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject != null && 
+				rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject.tag.Equals("Instrument"))
             {
                 checkStartingPoint();
             }
         }
 		if (OVRInput.GetUp(OVRInput.Button.One) && firstClickCheck)
 		{
-			if (rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject != null)
+			if (rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject != null && 
+				rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject.tag.Equals("Filter"))
             {
                 checkEndPoint();
             } else

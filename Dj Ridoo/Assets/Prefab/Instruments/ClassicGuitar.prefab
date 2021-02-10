@@ -726,6 +726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2882697539071237762}
+  - component: {fileID: 3564183111292661615}
   m_Layer: 0
   m_Name: ClassicGuitar
   m_TagString: Instrument
@@ -740,8 +741,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4473930735888210176}
-  m_LocalRotation: {x: -0, y: 0.31492588, z: -0, w: 0.9491163}
-  m_LocalPosition: {x: -2.255, y: 1.634, z: -8.998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.37632728, y: 0.37632728, z: 0.37632728}
   m_Children:
   - {fileID: 4036842422736500871}
@@ -766,7 +767,20 @@ Transform:
   - {fileID: 6470883275617641897}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 36.713, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3564183111292661615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473930735888210176}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 4.6, z: 0.6}
+  m_Center: {x: 0, y: 0.18, z: -0.25}
 --- !u!1 &5719150680870502963
 GameObject:
   m_ObjectHideFlags: 0
