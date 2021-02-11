@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6951406044271507444}
   - component: {fileID: 6951406044271507442}
   - component: {fileID: -8730818311990986244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Distorsion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 6951406045378197237}
   - component: {fileID: 6951406045378197239}
   - component: {fileID: 6951406045378197238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4866,7 +4866,7 @@ GameObject:
   - component: {fileID: 6951406045769000807}
   - component: {fileID: 6951406045769000729}
   - component: {fileID: 6951406045769000728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9620,7 +9620,7 @@ GameObject:
   - component: {fileID: 6951406045873060217}
   - component: {fileID: 6951406045873060219}
   - component: {fileID: 6951406045873060218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,7 +15,7 @@ public class PaletteActivation : MonoBehaviour
     
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.Four)){
+        if (OVRInput.GetDown(OVRInput.Button.Four) || Input.GetKeyDown(KeyCode.Alpha0)){
             if (!activated)
             {
                 Activate();

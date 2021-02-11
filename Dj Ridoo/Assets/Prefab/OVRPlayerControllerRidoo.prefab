@@ -643,7 +643,7 @@ GameObject:
   - component: {fileID: 4455820553344658974}
   - component: {fileID: 4455820553344756544}
   m_Layer: 12
-  m_Name: OVRPlayerController
+  m_Name: OVRPlayerControllerRidoo
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,7 +770,7 @@ Transform:
   - {fileID: 4455820553192349711}
   - {fileID: 5054315820941408199}
   m_Father: {fileID: 4455820553333753316}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4455820553333420034
 GameObject:
@@ -833,8 +833,8 @@ Transform:
   - {fileID: 4455820553333691290}
   - {fileID: 4455820553333691288}
   - {fileID: 4455820553333753314}
-  - {fileID: 4455820553333739252}
   - {fileID: 4455820553333743258}
+  - {fileID: 4455820553333739252}
   m_Father: {fileID: 4455820553333691294}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -869,7 +869,7 @@ Transform:
   - {fileID: 4455820551912015552}
   - {fileID: 4455820552639628640}
   m_Father: {fileID: 4455820553333753316}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3356529649861586050
 PrefabInstance:

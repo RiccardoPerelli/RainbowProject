@@ -18,9 +18,16 @@ public class FloatingUpandDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tempPos = posOffset;
-        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
+        if (!gameObject.GetComponent<OVRGrabbable>().isGrabbed)
+        {
+            tempPos = posOffset;
+            tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
 
-        transform.position = tempPos;
+            transform.position = tempPos;
+        } 
+        else
+        {
+            posOffset = transform.position;
+        }
     }
 }

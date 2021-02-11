@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2406770499809386012}
   - component: {fileID: 2406770499809386014}
   - component: {fileID: 2406770499809386015}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4765,7 +4765,7 @@ GameObject:
   - component: {fileID: 2406770500175024014}
   - component: {fileID: 2406770500175024112}
   - component: {fileID: 2406770500175024113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9519,7 +9519,7 @@ GameObject:
   - component: {fileID: 2406770500270690704}
   - component: {fileID: 2406770500270690706}
   - component: {fileID: 2406770500270690707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14275,7 +14275,7 @@ GameObject:
   - component: {fileID: 2406770500849917725}
   - component: {fileID: 2406770500849917723}
   - component: {fileID: -9028604135740768445}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Echo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

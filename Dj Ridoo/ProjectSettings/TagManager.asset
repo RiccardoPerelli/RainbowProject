@@ -19,7 +19,7 @@ TagManager:
   - EffectButton
   - InstrumentButton
   - Hand
-
+  - Effect
   layers:
   - Default
   - TransparentFX
@@ -29,13 +29,13 @@ TagManager:
   - UI
   - 
   - 
+  - Effect
   - Sliceable
-  - Palette
   - Pointer
   - Slider
+  - Instrument
+  - Palette
   - Player
-  - 
-  - 
   - 
   - 
   - 

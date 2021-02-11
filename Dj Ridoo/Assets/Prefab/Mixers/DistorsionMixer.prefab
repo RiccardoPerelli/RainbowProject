@@ -92,9 +92,10 @@ GameObject:
   - component: {fileID: 4742497558370091674}
   - component: {fileID: 7456221302668348315}
   - component: {fileID: 828442024855379999}
+  - component: {fileID: 2563616166239043740}
   m_Layer: 0
   m_Name: DistorsionMixer
-  m_TagString: Untagged
+  m_TagString: Filter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +109,7 @@ Transform:
   m_GameObject: {fileID: 1751242471078823001}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -12.027021, y: -3.0022385, z: 12.785635}
-  m_LocalScale: {x: 0.29172, y: 0.29172, z: 0.29172}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 1832485230670216375}
   - {fileID: 4098619578383777299}
@@ -186,6 +187,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2563616166239043740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751242471078823001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6995f0325a2d1b4992cf41288ed772b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.1
+  frequency: 0.5
 --- !u!1 &2233965607805782892
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,6 +682,8 @@ MonoBehaviour:
   maxPosition: {fileID: 5056650818692732342}
   minPosition: {fileID: 3571162175441160506}
   effectSlider: {fileID: 250884508086602774}
+  startingZPosition: 0
+  startingXPosition: 0
 --- !u!54 &1229900520470042966
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -76,7 +76,7 @@ public class ConnectingCables : MonoBehaviour
 
         if (render)
         {
-            renderMultipleLine();
+            RenderMultipleLine();
         }
 
     }
@@ -135,7 +135,7 @@ public class ConnectingCables : MonoBehaviour
 		}
     }
 
-    private void renderMultipleLine()
+    public void RenderMultipleLine()
     {
         print("Inizializzo collegamento");
         startPoint.Add(new GameObject("line" + startPoint.Count));
@@ -155,6 +155,15 @@ public class ConnectingCables : MonoBehaviour
         render = false;
         cutable = true;
     }
+
+	public void SpawnLinking(GameObject startPoint, GameObject endPoint)
+    {
+		startTmpObj = startPoint;
+		endTmpObj = endPoint;
+		Debug.Log("Spawning Link!");
+		RenderMultipleLine();
+
+	}
 
     void FixedUpdate()
     {

@@ -6,12 +6,12 @@ public class ChorusEffectGenerator : EffectGenerator
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.tag == "Instrument")
+        if (collision.collider.gameObject.tag.Equals("Instrument"))
         {
             Debug.Log("Collision Detected with the instrument");
             GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
-            applyEffect(collision);
             Destroy(this.gameObject, destroyTime);
+            applyEffect(collision);
             Destroy(expl, 3); // delete the explosion after 3 seconds
         }
         else
@@ -25,6 +25,7 @@ public class ChorusEffectGenerator : EffectGenerator
         if (collision.collider.gameObject.GetComponent<AudioChorusFilter>() == null)
         {
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
+            collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, gui);
             if (GameObject.FindGameObjectWithTag("Player") != null)
                 gui.transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
             gui.GetComponent<ChorusSliderInteraction>().instruments.Add(collision.collider.gameObject);

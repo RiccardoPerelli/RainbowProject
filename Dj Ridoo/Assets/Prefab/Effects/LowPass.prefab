@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3992759948131775206}
   - component: {fileID: 3992759948131775200}
   - component: {fileID: 1872056510697688584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LowPass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 3992759948676660331}
   - component: {fileID: 3992759948676660329}
   - component: {fileID: 3992759948676660328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4866,7 +4866,7 @@ GameObject:
   - component: {fileID: 3992759948773892725}
   - component: {fileID: 3992759948773892619}
   - component: {fileID: 3992759948773892618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9620,7 +9620,7 @@ GameObject:
   - component: {fileID: 3992759949037302759}
   - component: {fileID: 3992759949037302757}
   - component: {fileID: 3992759949037302756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

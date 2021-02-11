@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3569883257921612348}
   - component: {fileID: 3569883257921612346}
   - component: {fileID: 5018324323655783095}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chorus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ MonoBehaviour:
     type: 3}
   explosion: {fileID: 7305052572269903001, guid: 60dd39ed3c72c96488980c4829acc439,
     type: 3}
-  destroyTime: 0.1
+  destroyTime: 0.01
 --- !u!1 &3569883258354547374
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 3569883258354547375}
   - component: {fileID: 3569883258354547409}
   - component: {fileID: 3569883258354547408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4866,7 +4866,7 @@ GameObject:
   - component: {fileID: 3569883258449716401}
   - component: {fileID: 3569883258449716403}
   - component: {fileID: 3569883258449716402}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9620,7 +9620,7 @@ GameObject:
   - component: {fileID: 3569883259028597565}
   - component: {fileID: 3569883259028597567}
   - component: {fileID: 3569883259028597566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

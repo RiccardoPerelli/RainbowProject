@@ -31,7 +31,7 @@ public class SwitchHandSword : MonoBehaviour
                 StartCoroutine(Fade(handMat, 0));
                 StartCoroutine(Fade(bladeMat, 1));
                 StartCoroutine(Fade(swordMat, 1));
-                StartCoroutine("DeactiveHand");
+                //StartCoroutine("DeactiveHand");
                 switched = true;
             }
             else
