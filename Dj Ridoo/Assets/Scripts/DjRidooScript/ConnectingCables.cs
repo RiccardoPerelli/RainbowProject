@@ -38,8 +38,6 @@ public class ConnectingCables : MonoBehaviour
 
 	#endregion
 
-
-
 	void Start()
 	{
 		plug = Resources.Load<AudioClip>("plugIn");
@@ -228,6 +226,7 @@ public class ConnectingCables : MonoBehaviour
 	
 	void SlicedCable(GameObject midPoint1, GameObject midPoint2)
     {
+		//todo: eliminare filtro dallo strumento e riferimento del filtro 
 		hitObjStart.AddComponent<CableComponent>();
 		hitObjStart.GetComponent<CableComponent>().endPoint = midPoint1.transform;
 		hitObjStart.GetComponent<CableComponent>().cableMaterial = cableMaterial;
@@ -238,6 +237,32 @@ public class ConnectingCables : MonoBehaviour
 		hitObjEnd.AddComponent<CableComponent>();
 		hitObjEnd.GetComponent<CableComponent>().endPoint = midPoint2.transform;
 		hitObjEnd.GetComponent<CableComponent>().cableMaterial = cableMaterial;
+
+		if(hitObjEnd.GetComponent<LowPassSliderInteraction>() != null)
+        {
+			Component component = hitObjStart.GetComponent<AudioLowPassFilter>();
+			Object.DestroyImmediate(component as Object, true);
+		}
+		else if(hitObjEnd.GetComponent<HighPassSliderInteraction>() != null)
+        {
+			Component component = hitObjStart.GetComponent<AudioHighPassFilter>();
+			Object.DestroyImmediate(component as Object, true);
+		}
+		else if (hitObjEnd.GetComponent<EchoSliderInteraction>() != null)
+		{
+			Component component = hitObjStart.GetComponent<AudioEchoFilter>();
+			Object.DestroyImmediate(component as Object, true);
+		}
+		else if (hitObjEnd.GetComponent<DistorsionSliderInteraction>() != null)
+		{
+			Component component = hitObjStart.GetComponent<AudioDistortionFilter>();
+			Object.DestroyImmediate(component as Object, true);
+		}
+		else if (hitObjEnd.GetComponent<ChorusSliderInteraction>() != null)
+		{
+			Component component = hitObjStart.GetComponent<AudioChorusFilter>();
+			Object.DestroyImmediate(component as Object, true);
+		}
 
 		Destroy(midPoint2, 5);
 		Destroy(hitObjEnd);

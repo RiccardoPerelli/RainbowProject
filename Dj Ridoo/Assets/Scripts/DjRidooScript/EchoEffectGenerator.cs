@@ -10,10 +10,8 @@ public class EchoEffectGenerator : EffectGenerator
         if (collision.collider.gameObject.tag == "Instrument")
         {
             Debug.Log("Collision Detected with the instrument");
-            GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
             applyEffect(collision);
             Destroy(this.gameObject, destroyTime);
-            Destroy(expl, 3); // delete the explosion after 3 seconds
         }
         else
         {
@@ -25,6 +23,10 @@ public class EchoEffectGenerator : EffectGenerator
     {
         if (collision.collider.gameObject.GetComponent<AudioEchoFilter>() == null)
         {
+            GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
+            Destroy(expl, 3); // delete the explosion after 3 seconds
+            FindObjectOfType<LightMover>().Mover();
+            FindObjectOfType<LightMover>().UnMover();
             Debug.Log("mixer is coming!");
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
             collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, gui);

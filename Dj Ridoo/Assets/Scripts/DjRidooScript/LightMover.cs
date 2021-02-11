@@ -12,11 +12,6 @@ public class LightMover : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    void Update()
-    {
-
-    }
-
     public void Mover()
     {
         if (_animator == null)

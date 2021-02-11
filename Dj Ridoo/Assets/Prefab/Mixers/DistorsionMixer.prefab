@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6271524336664430823}
   - component: {fileID: 8067522082367365554}
   - component: {fileID: 4603793306539415886}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 7456221302668348315}
   - component: {fileID: 828442024855379999}
   - component: {fileID: 2563616166239043740}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DistorsionMixer
   m_TagString: Filter
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 2843987435547149702}
   - component: {fileID: 6812413592636961560}
   - component: {fileID: 3138028151871336391}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 5239504840000873273}
   - component: {fileID: 6842285037028393293}
   - component: {fileID: 8610701982037413847}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1832485230670216375}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'MinDistorsionPosition '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4098619578383777299}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MaxDistorsionPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 5264436498754333657}
   - component: {fileID: 3281789485112322329}
   - component: {fileID: 8551529956386329010}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 6498230862577218252}
   - component: {fileID: 6218098022381358485}
   - component: {fileID: 1954570154595127985}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 6480519474785096386}
   - component: {fileID: 1229900520470042966}
   - component: {fileID: 90813654582160838}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: DistorsionSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 3407119639513633913}
   - component: {fileID: 6923576233669257290}
   - component: {fileID: 8242046686736724155}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,10 +814,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1319477809522260418, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1326037000895500209, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326037000895500209, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1517349105257824686, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
         type: 3}
@@ -929,6 +939,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1723833668099419733, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2312084650079961547, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
         type: 3}
       propertyPath: m_Enabled
@@ -943,6 +958,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494302137489846366, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3341275813161464889, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
         type: 3}
@@ -959,10 +979,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5754585935626190658, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6590724584625461813, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590724584625461813, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6808351769710527733, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
         type: 3}
@@ -974,10 +1004,20 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7079153401404440630, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7107606721050768493, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915946529145712450, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9003984695018032929, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
         type: 3}
@@ -988,6 +1028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DistorsionEffectUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022566315210501724, guid: 85f35c05f3ea2a944b3ffe8397c383dd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f35c05f3ea2a944b3ffe8397c383dd, type: 3}
