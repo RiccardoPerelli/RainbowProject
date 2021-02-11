@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -598,6 +598,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2128561620}
     m_Modifications:
+    - target: {fileID: 8884567654917826892, guid: f0caa9888b292ca41b4626e7c5291c99,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c95eb1597de0e8443b508b54bce1f992, type: 2}
+    - target: {fileID: 8884567654917826894, guid: f0caa9888b292ca41b4626e7c5291c99,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 896e6a0873290a84fac89457ed11a43b, type: 2}
     - target: {fileID: 8884567654919596974, guid: f0caa9888b292ca41b4626e7c5291c99,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1858,8 +1868,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791485324}
   m_LocalRotation: {x: 0.63795835, y: -0.63795835, z: -0.30497405, w: 0.30497405}
-  m_LocalPosition: {x: -0.126, y: 0.008, z: 4.454}
-  m_LocalScale: {x: 0.26368448, y: 0.08394495, z: 0.15864299}
+  m_LocalPosition: {x: -0.098, y: 0.008, z: 4.476}
+  m_LocalScale: {x: 0.26368448, y: 0.08394495, z: 0.21453679}
   m_Children: []
   m_Father: {fileID: 1446502948}
   m_RootOrder: 0
@@ -4269,11 +4279,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49229c639e99a441a82669cd52a0336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noiseStrength: 0.25
+  objectHeight: 1
   sword: {fileID: 0}
   hand: {fileID: 0}
   swordMat: {fileID: 2100000, guid: bfd7b5cbdfbfd8e49969d72b08feb5ae, type: 2}
   bladeMat: {fileID: 2100000, guid: 87b07c5f274f7234a95f737593b114df, type: 2}
-  handMat: {fileID: 2100000, guid: 17df5bd2d796bb84e93adaec5e56caad, type: 2}
+  handMat: {fileID: 0}
   fadeSpeed: 0.5
 --- !u!1001 &1820735544
 PrefabInstance:
