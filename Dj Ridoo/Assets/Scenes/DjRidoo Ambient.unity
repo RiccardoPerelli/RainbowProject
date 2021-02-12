@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -736,6 +736,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2128561620}
     m_Modifications:
+    - target: {fileID: 4984715044109573761, guid: f0caa9888b292ca41b4626e7c5291c99,
+        type: 3}
+      propertyPath: sliceMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984715044109573763, guid: f0caa9888b292ca41b4626e7c5291c99,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809382878407256223, guid: f0caa9888b292ca41b4626e7c5291c99,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8884567654917826892, guid: f0caa9888b292ca41b4626e7c5291c99,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -816,6 +831,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8884567654920091532, guid: f0caa9888b292ca41b4626e7c5291c99,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8884567654920091534, guid: f0caa9888b292ca41b4626e7c5291c99,
         type: 3}
       propertyPath: m_Name
@@ -826,9 +846,19 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8884567654920091534, guid: f0caa9888b292ca41b4626e7c5291c99,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8969111931956823015, guid: f0caa9888b292ca41b4626e7c5291c99,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969111931956823015, guid: f0caa9888b292ca41b4626e7c5291c99,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4243,6 +4273,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2128561615}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1380117993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380117992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a13246c960c54d4f9f33f1fe1c5ca78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateSpeed: 1.2
 --- !u!114 &1380117997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6866,6 +6909,11 @@ PrefabInstance:
       propertyPath: reactivationDistance
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 4455820552639628654, guid: f8b4afe70cb105445b18aa006ce9b50b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5ba7d209f622bb44e87b47ce27ee27b7, type: 2}
     - target: {fileID: 4455820553192575709, guid: f8b4afe70cb105445b18aa006ce9b50b,
         type: 3}
       propertyPath: m_Layer
