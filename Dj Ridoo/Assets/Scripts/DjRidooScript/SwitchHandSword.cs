@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SwitchHandSword : MonoBehaviour
 {
-    bool switched;
+    bool switched = false;
     [SerializeField] private float noiseStrength = 0.25f;
     [SerializeField] private float objectHeight = 1.0f;
 
@@ -15,12 +15,6 @@ public class SwitchHandSword : MonoBehaviour
     public Material handMat;
 
     public float fadeSpeed;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
