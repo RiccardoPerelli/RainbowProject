@@ -19,10 +19,7 @@ public class SwitchHandSword : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (handMat.GetFloat("_CutoffHeight")==0)
-            switched = false;
-        else if (sword.activeSelf)
-            switched = true;
+        
     }
 
     // Update is called once per frame
@@ -34,18 +31,23 @@ public class SwitchHandSword : MonoBehaviour
             {
                 sword.SetActive(true);
                 //StartCoroutine("DeactiveHand");
-                StartCoroutine(FadeHand(handMat, 0));
-                StartCoroutine(FadeSword(bladeMat, swordMat, 3));
+                //StartCoroutine(FadeHand(handMat, 0));
+                StartCoroutine(FadeSword(bladeMat, swordMat, 200, true));
                 switched = true;
             }
             else
             {
-                StartCoroutine(FadeHand(handMat, 2));
-                StartCoroutine(FadeSword(bladeMat, swordMat, 0));
+                if (bladeMat.GetFloat("_CutoffHeight") > 3)
+                    bladeMat.SetFloat("_CutoffHeight", 2.9f);
+                if (swordMat.GetFloat("_CutoffHeight") > 3)
+                    swordMat.SetFloat("_CutoffHeight", 2.9f);
+                //StartCoroutine(FadeHand(handMat, 2));
+                StartCoroutine(FadeSword(bladeMat, swordMat, 0, false));
                 StartCoroutine("DeactiveSword");
                 switched = false;
             }
         }
+        
     }
 
     IEnumerator FadeHand(Material mat, float targetAlpha)
@@ -58,21 +60,33 @@ public class SwitchHandSword : MonoBehaviour
             SetHeight(mat, height);
             yield return null;
         }
+        
     }
 
-    IEnumerator FadeSword(Material mat1, Material mat2, float targetAlpha)
+    IEnumerator FadeSword(Material mat1, Material mat2, float targetAlpha, bool h)
     {
         print("Entra in Fade");
         float height1 = sword.transform.position.y;
         float height2 = sword.transform.position.y;
         while (mat1.GetFloat("_CutoffHeight") != targetAlpha)
         {
-            height1 = Mathf.MoveTowards(mat1.GetFloat("_CutoffHeight"), targetAlpha, fadeSpeed * Time.deltaTime);
-            SetHeight(mat1, height1);
-            height2 = Mathf.MoveTowards(mat2.GetFloat("_CutoffHeight"), targetAlpha, fadeSpeed * Time.deltaTime);
-            SetHeight(mat2, height2);
+            print("è nel while");
+            if (bladeMat.GetFloat("_CutoffHeight") < 3)
+            {
+                height1 = Mathf.MoveTowards(mat1.GetFloat("_CutoffHeight"), targetAlpha, fadeSpeed * Time.deltaTime);
+                SetHeight(mat1, height1);
+                height2 = Mathf.MoveTowards(mat2.GetFloat("_CutoffHeight"), targetAlpha, fadeSpeed * Time.deltaTime);
+                SetHeight(mat2, height2);
+            } 
+            if(bladeMat.GetFloat("_CutoffHeight") >= 3 && h)
+            {
+                SetHeight(mat1, targetAlpha);
+                SetHeight(mat2, targetAlpha);
+            }
+            
             yield return null;
         }
+
     }
 
     IEnumerator DeactiveSword()

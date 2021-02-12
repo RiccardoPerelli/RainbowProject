@@ -7,6 +7,7 @@ public class SliceListener : MonoBehaviour
     public Slicer slicer;
     private void OnTriggerEnter(Collider other)
     {
+        print("collisione");
         slicer.isTouched = true;
     }
 }
