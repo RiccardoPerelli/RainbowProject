@@ -25,8 +25,7 @@ public class HighPassFilterGenerator : EffectGenerator
         {
             GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
             Destroy(expl, 3); // delete the explosion after 3 seconds
-            FindObjectOfType<LightMover>().Mover();
-            FindObjectOfType<LightMover>().UnMover();
+            FindObjectOfType<LightMover>().MakeMove();
             Debug.Log("mixer is coming!");
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
             collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, gui);

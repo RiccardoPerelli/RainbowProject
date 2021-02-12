@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SwitchHandSword : MonoBehaviour
 {
-    bool switched;
+    bool switched = false;
     [SerializeField] private float noiseStrength = 0.25f;
     [SerializeField] private float objectHeight = 1.0f;
 
@@ -18,11 +18,11 @@ public class SwitchHandSword : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        if (handMat.GetFloat("_CutoffHeight")==0)
+    {  
+        /*if (handMat.GetFloat("_CutoffHeight")==0)
             switched = false;
         else if (sword.activeSelf)
-            switched = true;
+            switched = true;*/
     }
 
     // Update is called once per frame

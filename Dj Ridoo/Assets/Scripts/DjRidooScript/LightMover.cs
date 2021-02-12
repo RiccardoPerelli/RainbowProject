@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LightMover : MonoBehaviour
 {
+    private float delay = 2f;
     private Animator _animator;
 
     void Start()
@@ -24,5 +25,17 @@ public class LightMover : MonoBehaviour
         if (_animator == null)
             return;
         _animator.SetBool("makeMove", false);
+    }
+
+    IEnumerator MakeMoveCo(float time)
+    {
+        Mover();
+        yield return new WaitForSeconds(time);
+        UnMover();
+    }
+
+    public void MakeMove()
+    {
+        StartCoroutine(MakeMoveCo(delay));
     }
 }

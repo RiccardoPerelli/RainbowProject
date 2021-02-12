@@ -24,8 +24,7 @@ public class DistorsionEffectGenerator : EffectGenerator
         {
             GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
             Destroy(expl, 3); // delete the explosion after 3 seconds
-            FindObjectOfType<LightMover>().Mover();
-            FindObjectOfType<LightMover>().UnMover();
+            FindObjectOfType<LightMover>().MakeMove();
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
             collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, gui);
             if (GameObject.FindGameObjectWithTag("Player") != null)

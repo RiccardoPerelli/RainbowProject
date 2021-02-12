@@ -25,8 +25,7 @@ public class ChorusEffectGenerator : EffectGenerator
             GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
             Destroy(expl, 3); // delete the explosion after 3 seconds
             Debug.Log("light mover starting!");
-            FindObjectOfType<LightMover>().Mover();
-            FindObjectOfType<LightMover>().UnMover();
+            FindObjectOfType<LightMover>().MakeMove();
             Debug.Log("light mover finishing!");
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
             Debug.Log("Spawning link!");
