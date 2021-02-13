@@ -1952,7 +1952,7 @@ GameObject:
   - component: {fileID: -8276784785870662801}
   - component: {fileID: 1714101668310620947}
   - component: {fileID: 3185429123649529391}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: ChorusMixer
   m_TagString: Filter
   m_Icon: {fileID: 0}

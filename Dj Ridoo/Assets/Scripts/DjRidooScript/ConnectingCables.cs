@@ -40,18 +40,21 @@ public class ConnectingCables : MonoBehaviour
 
 	void Start()
 	{
-		plug = Resources.Load<AudioClip>("plugIn");
+        Slicer.InstrumentSliced += DestroyInstrumentLink;
+        plug = Resources.Load<AudioClip>("plugIn");
 		swordHit = Resources.Load<AudioClip>("SliceSound");
 	}
 
 
 	void Update()
 	{
-		//Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		//RaycastHit hit;
-		//if (Physics.Raycast(ray, out hit, 2.0f))
+        Debug.Log("Numero Linee: " + countCable);
+        Debug.Log("Lunghezza SPoint: " + startPoint.Count);
+        //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //RaycastHit hit;
+        //if (Physics.Raycast(ray, out hit, 2.0f))
         //{
-		if (OVRInput.GetDown(OVRInput.Button.One) && !firstClickCheck)
+        if (OVRInput.GetDown(OVRInput.Button.One) && !firstClickCheck)
         {
 			if(rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject != null && 
 				rightHandCollisionChecker.GetComponent<checkCollision>().collidedObject.tag.Equals("Instrument"))
@@ -160,7 +163,6 @@ public class ConnectingCables : MonoBehaviour
 		endTmpObj = endPoint;
 		Debug.Log("Spawning Link!");
 		RenderMultipleLine();
-
 	}
 
     void FixedUpdate()
@@ -168,23 +170,26 @@ public class ConnectingCables : MonoBehaviour
 		for (int i = 0; i <= countCable && cutable; i++)
 		{
 			RaycastHit hit2;
-			if (Physics.Raycast(startPoint[i].transform.position, endPoint[i].transform.position - startPoint[i].transform.position, out hit2))
-			{
-				if (hit2.collider.tag.Equals("Sword"))
-				{
-					print("Sword detected");
-					hitObjStart = startPoint[i];
-					startPoint.RemoveAt(i);
-					hitObjEnd = endPoint[i];
-					endPoint.RemoveAt(i);
-					hitObj = hit2.collider.gameObject;
-					hitObj.AddComponent<AudioSource>();
-					AudioSource sound = hitObj.GetComponent<AudioSource>();
-					sound.clip = swordHit;
-					sound.Play();
-					cutCheck = true;
-				}
-			}
+            if (startPoint[i] != null && endPoint[i] != null)
+            {
+                if (Physics.Raycast(startPoint[i].transform.position, endPoint[i].transform.position - startPoint[i].transform.position, out hit2))
+                {
+                    if (hit2.collider.tag.Equals("Sword"))
+                    {
+                        print("Sword detected");
+                        hitObjStart = startPoint[i];
+                        startPoint.RemoveAt(i);
+                        hitObjEnd = endPoint[i];
+                        endPoint.RemoveAt(i);
+                        hitObj = hit2.collider.gameObject;
+                        hitObj.AddComponent<AudioSource>();
+                        AudioSource sound = hitObj.GetComponent<AudioSource>();
+                        sound.clip = swordHit;
+                        sound.Play();
+                        cutCheck = true;
+                    }
+                }
+            }
 
 		}
 		if (cutCheck)
@@ -193,6 +198,31 @@ public class ConnectingCables : MonoBehaviour
 			cutCheck = false;
 		}
 	}
+
+    public void DestroyInstrumentLink(GameObject instrument)
+    {
+        Debug.Log("instrument destroyed!");
+        foreach (Transform child in instrument.transform)
+        {
+            for (int i = 0; i <= countCable; i++)
+            {
+                Debug.Log("instrument nome: " + child.name + " Start point nome: " + startPoint[i].name);
+                if (child.name.Equals(startPoint[i].name))
+                {
+                    Debug.Log("referenza trova");
+                    Component component1 = startPoint[i].GetComponent<CableComponent>();
+                    Object.DestroyImmediate(component1 as Object, true);
+                    Component component2 = startPoint[i].GetComponent<LineRenderer>();
+                    Object.DestroyImmediate(component2 as Object, true);
+                    startPoint.RemoveAt(i);
+                    Debug.Log("Distruggendo la linea");
+                    endPoint.RemoveAt(i);
+                    countCable--;
+                    i--;
+                }
+            }
+        }
+    }
 	
 	void CutCable()
     {
@@ -224,54 +254,64 @@ public class ConnectingCables : MonoBehaviour
 	}
 
 	
-	void SlicedCable(GameObject midPoint1, GameObject midPoint2)
+	public void SlicedCable(GameObject midPoint1, GameObject midPoint2)
     {
-		//todo: eliminare filtro dallo strumento e riferimento del filtro 
-		hitObjStart.AddComponent<CableComponent>();
-		hitObjStart.GetComponent<CableComponent>().endPoint = midPoint1.transform;
-		hitObjStart.GetComponent<CableComponent>().cableMaterial = cableMaterial;
+        //todo: eliminare filtro dallo strumento e riferimento del filtro 
+        hitObjStart.AddComponent<CableComponent>();
+        hitObjStart.GetComponent<CableComponent>().endPoint = midPoint1.transform;
+        hitObjStart.GetComponent<CableComponent>().cableMaterial = cableMaterial;
 
-		Destroy(midPoint1, 5);
-		Destroy(hitObjStart, 5);
+        Destroy(midPoint1, 5);
+        Destroy(hitObjStart, 5);
 
-		hitObjEnd.AddComponent<CableComponent>();
-		hitObjEnd.GetComponent<CableComponent>().endPoint = midPoint2.transform;
-		hitObjEnd.GetComponent<CableComponent>().cableMaterial = cableMaterial;
+        hitObjEnd.AddComponent<CableComponent>();
+        hitObjEnd.GetComponent<CableComponent>().endPoint = midPoint2.transform;
+        hitObjEnd.GetComponent<CableComponent>().cableMaterial = cableMaterial;
 
-		if(hitObjEnd.GetComponent<LowPassSliderInteraction>() != null)
+        CheckFilterType();
+
+        Destroy(midPoint2, 5);
+        Destroy(hitObjEnd);
+
+        print(countCable);
+        countCable--;
+
+        if (countCable == -1)
+            cutable = false;
+    }
+
+    private void CheckFilterType()
+    {
+        if (hitObjEnd.GetComponent<LowPassSliderInteraction>() != null)
         {
-			Component component = hitObjStart.GetComponent<AudioLowPassFilter>();
-			Object.DestroyImmediate(component as Object, true);
-		}
-		else if(hitObjEnd.GetComponent<HighPassSliderInteraction>() != null)
+            Component component = hitObjStart.GetComponent<AudioLowPassFilter>();
+            hitObjEnd.GetComponent<LowPassSliderInteraction>().RemoveObjectFromList(hitObjStart);
+            Object.DestroyImmediate(component as Object, true);
+        }
+        else if (hitObjEnd.GetComponent<HighPassSliderInteraction>() != null)
         {
-			Component component = hitObjStart.GetComponent<AudioHighPassFilter>();
-			Object.DestroyImmediate(component as Object, true);
-		}
-		else if (hitObjEnd.GetComponent<EchoSliderInteraction>() != null)
-		{
-			Component component = hitObjStart.GetComponent<AudioEchoFilter>();
-			Object.DestroyImmediate(component as Object, true);
-		}
-		else if (hitObjEnd.GetComponent<DistorsionSliderInteraction>() != null)
-		{
-			Component component = hitObjStart.GetComponent<AudioDistortionFilter>();
-			Object.DestroyImmediate(component as Object, true);
-		}
-		else if (hitObjEnd.GetComponent<ChorusSliderInteraction>() != null)
-		{
-			Component component = hitObjStart.GetComponent<AudioChorusFilter>();
-			Object.DestroyImmediate(component as Object, true);
-		}
-
-		Destroy(midPoint2, 5);
-		Destroy(hitObjEnd);
-
-		print(countCable);
-		countCable--;
-
-		if(countCable == -1)
-			cutable = false;
+            Component component = hitObjStart.GetComponent<AudioHighPassFilter>();
+            hitObjEnd.GetComponent<HighPassSliderInteraction>().RemoveObjectFromList(hitObjStart);
+            Object.DestroyImmediate(component as Object, true);
+        }
+        else if (hitObjEnd.GetComponent<EchoSliderInteraction>() != null)
+        {
+            Component component = hitObjStart.GetComponent<AudioEchoFilter>();
+            hitObjEnd.GetComponent<EchoSliderInteraction>().RemoveObjectFromList(hitObjStart);
+            Object.DestroyImmediate(component as Object, true);
+        }
+        else if (hitObjEnd.GetComponent<DistorsionSliderInteraction>() != null)
+        {
+            Component component = hitObjStart.GetComponent<AudioDistortionFilter>();
+            hitObjEnd.GetComponent<DistorsionSliderInteraction>().RemoveObjectFromList(hitObjStart);
+            Object.DestroyImmediate(component as Object, true);
+        }
+        else if (hitObjEnd.GetComponent<ChorusSliderInteraction>() != null)
+        {
+            Component component = hitObjStart.GetComponent<AudioChorusFilter>();
+            hitObjEnd.GetComponent<ChorusSliderInteraction>().RemoveObjectFromList(hitObjStart);
+            Object.DestroyImmediate(component as Object, true);
+        }
     }
 }
 

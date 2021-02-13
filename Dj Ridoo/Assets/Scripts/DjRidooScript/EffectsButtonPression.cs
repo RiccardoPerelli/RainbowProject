@@ -7,6 +7,14 @@ public class EffectsButtonPression : ButtonPression
 {
     public GameObject effectMenu;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            TriggerAction();
+        }
+    }
+
     protected override void TriggerAction()
     {
         effectMenu.SetActive(true);

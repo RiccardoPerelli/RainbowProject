@@ -38,6 +38,8 @@ public class ChorusSliderInteraction : SliderInteraction
     // Start is called before the first frame update
     void Start()
     {
+        Slicer.InstrumentSliced += RemoveObjectFromList;
+
         //initialize the value of the slider
         if(dryMixText != null)
             dryMixText.text = "Dry Mix: " + dryMixStartingValue.ToString();

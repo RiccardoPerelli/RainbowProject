@@ -6,6 +6,14 @@ public class InstrumentButtonPression : ButtonPression
 {
     public GameObject instrumentMenu;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            TriggerAction();
+        }
+    }
+
     protected override void TriggerAction()
     {
         instrumentMenu.SetActive(true);

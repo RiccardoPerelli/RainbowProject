@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 7456221302668348315}
   - component: {fileID: 828442024855379999}
   - component: {fileID: 2563616166239043740}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: DistorsionMixer
   m_TagString: Filter
   m_Icon: {fileID: 0}

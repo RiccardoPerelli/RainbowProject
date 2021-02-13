@@ -1183,7 +1183,7 @@ GameObject:
   - component: {fileID: -6232953705458795571}
   - component: {fileID: 279819939647776588}
   - component: {fileID: 7262399704591346315}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: HighPassMixer
   m_TagString: Filter
   m_Icon: {fileID: 0}

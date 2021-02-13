@@ -7,7 +7,6 @@ public class ButtonPression : MonoBehaviour
 {
     public float zOffset = -35f;
     public float turnBackSpeed = 10f;
-    bool touching = false;
 
     protected float startingYValue;
     protected float startingXValue;
@@ -22,14 +21,14 @@ public class ButtonPression : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (touching)
+        /*if (touching)
         {
             CheckPosition();
         }
         else if (zOffset < gameObject.GetComponent<RectTransform>().anchoredPosition3D.z)
         {
             LerpPosition();
-        }
+        }*/
     }
 
     private void LerpPosition()
@@ -54,28 +53,27 @@ public class ButtonPression : MonoBehaviour
         {
             TriggerAction();
             pointer.GetComponent<BoxCollider>().isTrigger = true;
-            touching = false;
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.name.Equals("Pointer"))
+        /*if (collision.collider.gameObject.name.Equals("Pointer"))
         {
             if(pointer == null)
             {
                 pointer = collision.collider.gameObject;
             }
             touching = true;
-        }
+        }*/
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.collider.gameObject.name.Equals("Pointer"))
+        /*if (collision.collider.gameObject.name.Equals("Pointer"))
         {
             touching = false;
-        }
+        }*/
     }
 
     protected virtual void TriggerAction()
@@ -87,5 +85,21 @@ public class ButtonPression : MonoBehaviour
     {
         gameObject.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(gameObject.GetComponent<RectTransform>().anchoredPosition3D.x,
             gameObject.GetComponent<RectTransform>().anchoredPosition3D.y, zOffset);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name.Equals("Pointer"))
+        {
+            if(pointer == null)
+            {
+                pointer = other.gameObject;
+            }
+            if (pointer.GetComponent<PointerController>().touched)
+            {
+                TriggerAction();
+                pointer.GetComponent<PointerController>().touched = false;
+            }
+        }
     }
 }

@@ -1183,7 +1183,7 @@ GameObject:
   - component: {fileID: 4399211635573484416}
   - component: {fileID: 5465333489711698888}
   - component: {fileID: 8270825478925817293}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: LowPassMixer
   m_TagString: Filter
   m_Icon: {fileID: 0}
