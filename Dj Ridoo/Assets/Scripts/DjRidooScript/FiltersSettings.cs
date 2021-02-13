@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class FiltersSettings : MonoBehaviour
 {
+    public GameObject highpass;
+    public GameObject lowpass;
+    public GameObject chorus;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +28,7 @@ public class FiltersSettings : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L))
         {
 
-            Load();
+            //Load();
         }
     }
 
@@ -66,10 +69,38 @@ public class FiltersSettings : MonoBehaviour
         {
             Debug.Log(savedData);
 
-            InstrumentData instrument = JsonUtility.FromJson<InstrumentData>(savedData);
+            AudioProject song = JsonUtility.FromJson<AudioProject>(savedData);
 
-            Debug.Log(instrument.name);
-            Debug.Log(instrument.filter);
+            List<string> filters = song.filters;
+
+            foreach (string filter in filters)
+            {
+                //prende il gameobject dello strumento, come si fa?
+                //GameObject o = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                //InstrumentData player = JsonUtility.FromJson<InstrumentData>(ins);
+
+                FiltersData fd = JsonUtility.FromJson<FiltersData>(filter);
+
+
+                if (fd.name.Equals("Lowpass"))
+                {
+                    Instantiate(lowpass);
+                    foreach(string p in fd.parameters)
+                    {
+                        LowPass lp = JsonUtility.FromJson<LowPass>(p);
+                        float cutofffreq = lp.cutoff_freq;
+                        float resonance = lp.resonance;
+
+
+                    }
+                    
+                }
+
+                //associarli al gameobject, come si fa?
+                //nameForInstrument = player.name;
+                //idForInstrument = player.id;
+
+            }
 
         }
     }

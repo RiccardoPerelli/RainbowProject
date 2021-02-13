@@ -141,7 +141,7 @@ public class FiltersData
                 lp.dry_mix = dry_mix;
                 lp.depth = depth;
                 lp.delay = delay;
-                lp.feedback = feedback;
+                
                 lp.rate = rate;
                 lp.wet_mix_tap_1 = wet_mix_tap_1;
                 lp.wet_mix_tap_2 = wet_mix_tap_2;
@@ -197,7 +197,7 @@ public class FiltersData
                 lp.delay = delay;
                 lp.decay = decay ;
                 lp.dry_mix = dry_mix;
-                lp.max_channels = max_channels;
+                
                 lp.wet_mix = wet_mix;
 
                 string par = JsonUtility.ToJson(lp);
@@ -243,7 +243,7 @@ public class Chorus
     public float delay;
     public float rate;
     public float depth;
-    public float feedback;
+    
 }
 
 public class LowPass
@@ -272,7 +272,7 @@ public class Echo
    
     public float delay;
     public float decay;
-    public float max_channels;
+    
     public float dry_mix;
     public float wet_mix;
 }

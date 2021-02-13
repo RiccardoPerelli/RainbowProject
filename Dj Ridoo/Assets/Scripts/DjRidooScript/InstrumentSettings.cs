@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class InstrumentSettings : MonoBehaviour
 {
-
+    public GameObject guitar;
+    public GameObject drums;
     //nome dello strumento
     [SerializeField]
     private string nameForInstrument;
@@ -167,11 +168,16 @@ public class InstrumentSettings : MonoBehaviour
             foreach(string ins in instruments)
             {
                 //prende il gameobject dello strumento, come si fa?
-                GameObject o = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                //GameObject o = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 InstrumentData player = JsonUtility.FromJson<InstrumentData>(ins);
+
+                if (player.name.Equals("guitar")){
+                    Instantiate(guitar);
+                }
+                
                 //associarli al gameobject, come si fa?
-                nameForInstrument = player.name;
-                idForInstrument = player.id;
+                //nameForInstrument = player.name;
+                //idForInstrument = player.id;
 
             }
            
