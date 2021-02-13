@@ -11,6 +11,7 @@ public class SliderPosition : MonoBehaviour
 
     public float startingZPosition;
     public float startingXPosition;
+    public float thisYPosition;
 
     private void Start()
     {
