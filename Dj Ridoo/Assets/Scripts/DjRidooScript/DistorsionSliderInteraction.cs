@@ -30,9 +30,12 @@ public class DistorsionSliderInteraction : SliderInteraction
     {
         foreach (var instrument in instruments)
         {
-            instrument.GetComponent<AudioDistortionFilter>().distortionLevel = value * DISTORSION_LEVEL_MAX;
-            if (distorsionLevelText != null) 
-                distorsionLevelText.text = "Livello distorsione: " + instrument.GetComponent<AudioDistortionFilter>().distortionLevel.ToString();
+            if (instrument.GetComponent<AudioDistortionFilter>() != null)
+            {
+                instrument.GetComponent<AudioDistortionFilter>().distortionLevel = value * DISTORSION_LEVEL_MAX;
+                if (distorsionLevelText != null)
+                    distorsionLevelText.text = "Livello distorsione: " + instrument.GetComponent<AudioDistortionFilter>().distortionLevel.ToString();
+            }
         }
     }
 }

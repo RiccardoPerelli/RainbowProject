@@ -48,4 +48,5 @@ public class ChorusEffectGenerator : EffectGenerator
             Debug.Log("Effect already applied!");
         }
     }
+
 }

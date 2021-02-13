@@ -48,8 +48,8 @@ public class ConnectingCables : MonoBehaviour
 
 	void Update()
 	{
-        Debug.Log("Numero Linee: " + countCable);
-        Debug.Log("Lunghezza SPoint: " + startPoint.Count);
+        //Debug.Log("Numero Linee: " + countCable);
+        //Debug.Log("Lunghezza SPoint: " + startPoint.Count);
         //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         //RaycastHit hit;
         //if (Physics.Raycast(ray, out hit, 2.0f))
@@ -127,11 +127,58 @@ public class ConnectingCables : MonoBehaviour
 			Component component2 = rightHandCollisionChecker.GetComponent<LineRenderer>();
 			Object.DestroyImmediate(component2 as Object, true);
 
-			//endTmpObj.AddComponent<AudioSource>();
-			//AudioSource sound = startTmpObj.GetComponent<AudioSource>();
-			//sound.clip = plug;
-			//sound.Play();
-			render = true;
+            if (endTmpObj.GetComponent<ChorusSliderInteraction>() != null)
+            {
+                FindObjectOfType<LightMover>().MakeMove();
+                endTmpObj.GetComponent<ChorusSliderInteraction>().instruments.Add(startTmpObj);
+                startTmpObj.AddComponent(typeof(AudioChorusFilter));
+                startTmpObj.GetComponent<AudioChorusFilter>().dryMix = endTmpObj.GetComponent<ChorusSliderInteraction>().dryMixStartingValue;
+                startTmpObj.GetComponent<AudioChorusFilter>().wetMix1 = endTmpObj.GetComponent<ChorusSliderInteraction>().wetMixStartingValue;
+                startTmpObj.GetComponent<AudioChorusFilter>().wetMix2 = endTmpObj.GetComponent<ChorusSliderInteraction>().wetMixStartingValue;
+                startTmpObj.GetComponent<AudioChorusFilter>().wetMix3 = endTmpObj.GetComponent<ChorusSliderInteraction>().wetMixStartingValue;
+                startTmpObj.GetComponent<AudioChorusFilter>().delay = endTmpObj.GetComponent<ChorusSliderInteraction>().delayStartingValue;
+                startTmpObj.GetComponent<AudioChorusFilter>().rate = endTmpObj.GetComponent<ChorusSliderInteraction>().rateStartingValue;
+                startTmpObj.GetComponent<AudioChorusFilter>().depth = endTmpObj.GetComponent<ChorusSliderInteraction>().depthStartingValue;
+            }
+            else if (endTmpObj.GetComponent<EchoSliderInteraction>() != null)
+            {
+                FindObjectOfType<LightMover>().MakeMove();
+                endTmpObj.GetComponent<EchoSliderInteraction>().instruments.Add(startTmpObj);
+                startTmpObj.AddComponent(typeof(AudioEchoFilter));
+                startTmpObj.GetComponent<AudioEchoFilter>().delay = endTmpObj.GetComponent<EchoSliderInteraction>().delayLevelStartingValue;
+                startTmpObj.GetComponent<AudioEchoFilter>().decayRatio = endTmpObj.GetComponent<EchoSliderInteraction>().decayRationStartingValue;
+                startTmpObj.GetComponent<AudioEchoFilter>().wetMix = endTmpObj.GetComponent<EchoSliderInteraction>().wetMixStartingValue;
+                startTmpObj.GetComponent<AudioEchoFilter>().dryMix = endTmpObj.GetComponent<EchoSliderInteraction>().dryMixStartingValue;
+            }
+            else if (endTmpObj.GetComponent<LowPassSliderInteraction>() != null)
+            {
+                FindObjectOfType<LightMover>().MakeMove();
+                endTmpObj.GetComponent<LowPassSliderInteraction>().instruments.Add(startTmpObj);
+                startTmpObj.AddComponent(typeof(AudioLowPassFilter));
+                startTmpObj.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = endTmpObj.GetComponent<LowPassSliderInteraction>().resonanceStartingValue;
+                startTmpObj.GetComponent<AudioLowPassFilter>().cutoffFrequency = endTmpObj.GetComponent<LowPassSliderInteraction>().cutOffFrequencyStartingValue;
+            }
+            else if (endTmpObj.GetComponent<HighPassSliderInteraction>() != null)
+            {
+                FindObjectOfType<LightMover>().MakeMove();
+                endTmpObj.GetComponent<HighPassSliderInteraction>().instruments.Add(startTmpObj);
+                startTmpObj.AddComponent(typeof(AudioHighPassFilter));
+                startTmpObj.GetComponent<AudioHighPassFilter>().highpassResonanceQ = endTmpObj.GetComponent<LowPassSliderInteraction>().resonanceStartingValue;
+                startTmpObj.GetComponent<AudioHighPassFilter>().cutoffFrequency = endTmpObj.GetComponent<LowPassSliderInteraction>().cutOffFrequencyStartingValue;
+            }
+            else if (endTmpObj.GetComponent<DistorsionSliderInteraction>() != null)
+            {
+                FindObjectOfType<LightMover>().MakeMove();
+                endTmpObj.GetComponent<DistorsionSliderInteraction>().instruments.Add(startTmpObj);
+                startTmpObj.AddComponent(typeof(AudioDistortionFilter));
+                startTmpObj.GetComponent<AudioDistortionFilter>().distortionLevel = endTmpObj.GetComponent<DistorsionSliderInteraction>().distorsionLevelStartingValue;
+            }
+
+            //endTmpObj.AddComponent<AudioSource>();
+            //AudioSource sound = startTmpObj.GetComponent<AudioSource>();
+            //sound.clip = plug;
+            //sound.Play();
+            render = true;
 			firstClickCheck = false;
 		}
     }
@@ -153,6 +200,7 @@ public class ConnectingCables : MonoBehaviour
         startPoint[countCable].AddComponent<CableComponent>();
         startPoint[countCable].GetComponent<CableComponent>().endPoint = endPoint[countCable].transform;
         startPoint[countCable].GetComponent<CableComponent>().cableMaterial = cableMaterial;
+
         render = false;
         cutable = true;
     }
@@ -176,11 +224,13 @@ public class ConnectingCables : MonoBehaviour
                 {
                     if (hit2.collider.tag.Equals("Sword"))
                     {
-                        print("Sword detected");
+                        //print("Sword detected");
                         hitObjStart = startPoint[i];
                         startPoint.RemoveAt(i);
                         hitObjEnd = endPoint[i];
                         endPoint.RemoveAt(i);
+                        CheckFilterType();
+                        Debug.Log("Filter Check done!");
                         hitObj = hit2.collider.gameObject;
                         hitObj.AddComponent<AudioSource>();
                         AudioSource sound = hitObj.GetComponent<AudioSource>();
@@ -190,13 +240,13 @@ public class ConnectingCables : MonoBehaviour
                     }
                 }
             }
-
-		}
-		if (cutCheck)
-		{
-			CutCable();
-			cutCheck = false;
-		}
+            if (cutCheck)
+            {
+                CutCable();
+                i--;
+                cutCheck = false;
+            }
+        }
 	}
 
     public void DestroyInstrumentLink(GameObject instrument)
@@ -209,7 +259,7 @@ public class ConnectingCables : MonoBehaviour
                 Debug.Log("instrument nome: " + child.name + " Start point nome: " + startPoint[i].name);
                 if (child.name.Equals(startPoint[i].name))
                 {
-                    Debug.Log("referenza trova");
+                    Debug.Log("referenza trovata");
                     Component component1 = startPoint[i].GetComponent<CableComponent>();
                     Object.DestroyImmediate(component1 as Object, true);
                     Component component2 = startPoint[i].GetComponent<LineRenderer>();
@@ -253,7 +303,6 @@ public class ConnectingCables : MonoBehaviour
 		return mid;
 	}
 
-	
 	public void SlicedCable(GameObject midPoint1, GameObject midPoint2)
     {
         //todo: eliminare filtro dallo strumento e riferimento del filtro 
@@ -268,12 +317,9 @@ public class ConnectingCables : MonoBehaviour
         hitObjEnd.GetComponent<CableComponent>().endPoint = midPoint2.transform;
         hitObjEnd.GetComponent<CableComponent>().cableMaterial = cableMaterial;
 
-        CheckFilterType();
-
         Destroy(midPoint2, 5);
         Destroy(hitObjEnd);
 
-        print(countCable);
         countCable--;
 
         if (countCable == -1)
@@ -282,34 +328,38 @@ public class ConnectingCables : MonoBehaviour
 
     private void CheckFilterType()
     {
-        if (hitObjEnd.GetComponent<LowPassSliderInteraction>() != null)
+        GameObject mixer = hitObjEnd.transform.parent.gameObject;
+        GameObject instrument = hitObjStart.transform.parent.gameObject;
+        Debug.Log(mixer.name);
+        if (mixer.GetComponent<LowPassSliderInteraction>() != null)
         {
-            Component component = hitObjStart.GetComponent<AudioLowPassFilter>();
-            hitObjEnd.GetComponent<LowPassSliderInteraction>().RemoveObjectFromList(hitObjStart);
+            Component component = instrument.GetComponent<AudioLowPassFilter>();
+            mixer.GetComponent<LowPassSliderInteraction>().RemoveObjectFromList(instrument);
             Object.DestroyImmediate(component as Object, true);
         }
-        else if (hitObjEnd.GetComponent<HighPassSliderInteraction>() != null)
+        else if (mixer.GetComponent<HighPassSliderInteraction>() != null)
         {
-            Component component = hitObjStart.GetComponent<AudioHighPassFilter>();
-            hitObjEnd.GetComponent<HighPassSliderInteraction>().RemoveObjectFromList(hitObjStart);
+            Component component = instrument.GetComponent<AudioHighPassFilter>();
+            mixer.GetComponent<HighPassSliderInteraction>().RemoveObjectFromList(instrument);
             Object.DestroyImmediate(component as Object, true);
         }
-        else if (hitObjEnd.GetComponent<EchoSliderInteraction>() != null)
+        else if (mixer.GetComponent<EchoSliderInteraction>() != null)
         {
-            Component component = hitObjStart.GetComponent<AudioEchoFilter>();
-            hitObjEnd.GetComponent<EchoSliderInteraction>().RemoveObjectFromList(hitObjStart);
+            Component component = instrument.GetComponent<AudioEchoFilter>();
+            mixer.GetComponent<EchoSliderInteraction>().RemoveObjectFromList(instrument);
             Object.DestroyImmediate(component as Object, true);
         }
-        else if (hitObjEnd.GetComponent<DistorsionSliderInteraction>() != null)
+        else if (mixer.GetComponent<DistorsionSliderInteraction>() != null)
         {
-            Component component = hitObjStart.GetComponent<AudioDistortionFilter>();
-            hitObjEnd.GetComponent<DistorsionSliderInteraction>().RemoveObjectFromList(hitObjStart);
+            Debug.Log("Sliceando il cavo del distorsion!");
+            Component component = instrument.GetComponent<AudioDistortionFilter>();
+            mixer.GetComponent<DistorsionSliderInteraction>().RemoveObjectFromList(instrument);
             Object.DestroyImmediate(component as Object, true);
         }
-        else if (hitObjEnd.GetComponent<ChorusSliderInteraction>() != null)
+        else if (mixer.GetComponent<ChorusSliderInteraction>() != null)
         {
-            Component component = hitObjStart.GetComponent<AudioChorusFilter>();
-            hitObjEnd.GetComponent<ChorusSliderInteraction>().RemoveObjectFromList(hitObjStart);
+            Component component = instrument.GetComponent<AudioChorusFilter>();
+            mixer.GetComponent<ChorusSliderInteraction>().RemoveObjectFromList(instrument);
             Object.DestroyImmediate(component as Object, true);
         }
     }

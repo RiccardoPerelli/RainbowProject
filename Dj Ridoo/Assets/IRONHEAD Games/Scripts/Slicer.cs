@@ -42,7 +42,7 @@ public class Slicer : MonoBehaviour
 
                 /*if (objectToBeSliced.gameObject.transform.childCount > 0){
                     Destroy(objectToBeSliced.gameObject.transform.GetChild(0).gameObject);
-                }*/
+                }*/ 
 
                 Destroy(objectToBeSliced.gameObject);
             }

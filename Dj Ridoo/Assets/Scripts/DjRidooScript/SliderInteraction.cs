@@ -7,13 +7,18 @@ public abstract class SliderInteraction : MonoBehaviour
 
     public List<GameObject> instruments;
 
+    private void Update()
+    {
+        Debug.Log("instrument lists size: " + instruments.Count);
+    }
+
     public void RemoveObjectFromList(GameObject gameObjectToRemove)
     {
-        foreach (var instrument in instruments)
+        for(int i = 0; i <= instruments.Count; i++)
         {
-            if (GameObject.ReferenceEquals(instrument, gameObjectToRemove))
+            if (GameObject.ReferenceEquals(instruments[i], gameObjectToRemove))
             {
-                instruments.Remove(gameObjectToRemove);
+                instruments.RemoveAt(i);
             }
         }
     }

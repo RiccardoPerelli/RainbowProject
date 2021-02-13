@@ -25,4 +25,5 @@ public class LowPassSliderInteraction : FilterSliderInteraction
                 risonanza.text = "Risonanza: " + instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ.ToString();
 		}
 	}
+
 }
