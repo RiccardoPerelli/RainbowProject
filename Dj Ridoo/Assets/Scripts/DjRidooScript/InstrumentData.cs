@@ -5,6 +5,7 @@ using UnityEngine;
 public class InstrumentData
 {
     public string name;
-    
+
+    public int id;
     public string filter;
 }

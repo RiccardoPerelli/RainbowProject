@@ -310,8 +310,10 @@ GameObject:
   - component: {fileID: 1798132438}
   - component: {fileID: 1798132437}
   - component: {fileID: 1798132442}
+  - component: {fileID: 1798132443}
+  - component: {fileID: 1798132444}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Lowpass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,5 +416,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebea02f30f5466a449ddf1160fd567ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1798132443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798132436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c96369ff68a6e4f89f7dc5fde18f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instruments: []
+  frequenzaDiTaglio: {fileID: 0}
+  risonanza: {fileID: 0}
+  frequencySlider: {fileID: 0}
+  resonanceSlider: {fileID: 0}
+  resonanceStartingValue: 5
+  cutOffFrequencyStartingValue: 10000
+--- !u!114 &1798132444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798132436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ef9d0c1e3b3934eb5b217dd83d8be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

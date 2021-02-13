@@ -6,5 +6,7 @@ public class AudioProject
 {
     public string project_name;
 
-    public string[] instruments;
+    public List<string> instruments;
+
+    public List<string> filters; // = new List<string>{ "Highpass", "Lowpass", "Chorus", "Distortion", "Echo"};
 }

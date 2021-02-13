@@ -22,7 +22,7 @@ public class AudioProjectSettings : MonoBehaviour
             DirectoryInfo dir = new DirectoryInfo(dir_track_path);
             int n_track = dir.GetFiles("*.mp3").Length;
             Debug.Log(n_track);
-            string[] instruments = new string[n_track];
+            List<string> instruments = new List<string>();
             int i = 0;
             foreach(FileInfo f in dir.GetFiles())
             {
@@ -33,12 +33,12 @@ public class AudioProjectSettings : MonoBehaviour
                 {
                     
                     InstrumentData player = new InstrumentData();
-
+                    player.id = i;
                     player.name = f.Name;
                     player.filter = "";
 
                     string json = JsonUtility.ToJson(player);
-                    instruments[i] = json;
+                    instruments.Add(json);
                     i++;
                 }
                 
@@ -50,10 +50,12 @@ public class AudioProjectSettings : MonoBehaviour
             //song è il project_name, instruments sono gli strumenti associati a quella song
             Save(song, instruments);
         }
+
+       
         
     }
 
-    private void Save(string project_name, string [] instruments )
+    private void Save(string project_name, List<string> instruments )
     {
         
         AudioProject project = new AudioProject();
@@ -61,7 +63,53 @@ public class AudioProjectSettings : MonoBehaviour
         project.project_name = project_name;
         project.instruments = instruments;
 
-        
+        List<string> filters = project.filters;
+
+        //for (int i= 0; i < filters.Length; i++)
+        //{
+        //    string j = "";
+        //    string filter = filters[i];
+            
+        //    switch (filter)
+        //    {
+        //        case "Chorus":
+                    
+        //            Chorus c = new Chorus();
+        //            c.name = filter;
+        //            j = JsonUtility.ToJson(c);
+        //            break;
+                    
+        //        case "Echo":
+        //            Echo e = new Echo();
+        //            e.name = filter;
+        //            j = JsonUtility.ToJson(e);
+        //            break;
+        //        case "Distortion":
+        //            Distortion d = new Distortion();
+        //            d.name = filter;
+        //            j = JsonUtility.ToJson(d);
+        //            break;
+        //        case "Lowpass":
+        //            LowPass l = new LowPass();
+        //            l.name = filter;
+        //            j = JsonUtility.ToJson(l);
+        //            break;
+        //        case "Highpass":
+        //            HighPass h = new HighPass();
+        //            h.name = filter;
+                    
+        //            j = JsonUtility.ToJson(h);
+        //            break;
+        //    }
+            
+        //    filters[i] = j;
+
+
+
+        //}
+
+        //project.filters = filters;
+
 
         string json = JsonUtility.ToJson(project);
         Debug.Log(json);
