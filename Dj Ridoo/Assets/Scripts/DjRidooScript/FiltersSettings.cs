@@ -90,7 +90,7 @@ public class FiltersSettings : MonoBehaviour
                         LowPass lp = JsonUtility.FromJson<LowPass>(p);
                         float cutofffreq = lp.cutoff_freq;
                         float resonance = lp.resonance;
-                        lowpass.transform.Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().thisYPosition = cutofffreq;
+                        lowpass.transform.Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().sliderValue = cutofffreq;
                         /*lowpass.transform.Find("FrequencySlider").position = new Vector3(lowpass.transform.Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().startingXPosition,
                             cutofffreq, lowpass.transform.Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().startingZPosition);*/
 
