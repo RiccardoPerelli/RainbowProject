@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -332,6 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guitar: {fileID: 1764338627654896538, guid: 13356a84d98683643bbd032685eb8e8f, type: 3}
+  drums: {fileID: 0}
   nameForInstrument: AudioTest.mp3
   idForInstrument: 1
 --- !u!65 &1798132438
@@ -451,3 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ef9d0c1e3b3934eb5b217dd83d8be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highpass: {fileID: 8365190568513226244, guid: 4ac019798adbbd74cbf69de9cfe97664,
+    type: 3}
+  lowpass: {fileID: 8598907601564072986, guid: 1b6e73fb6ef330a4cb65141b8451c1d5, type: 3}
+  chorus: {fileID: 7636765466958080019, guid: 3258f4ebca0e5e34a803bf63db012ef2, type: 3}
