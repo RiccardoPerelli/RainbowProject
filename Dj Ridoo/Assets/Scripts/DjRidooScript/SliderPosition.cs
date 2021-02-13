@@ -11,12 +11,14 @@ public class SliderPosition : MonoBehaviour
 
     public float startingZPosition;
     public float startingXPosition;
-    public float thisYPosition;
+    public float sliderValue;
 
     private void Start()
     {
         startingZPosition = gameObject.transform.localPosition.z;
         startingXPosition = gameObject.transform.localPosition.x;
+        float newY = (maxPosition.gameObject.transform.localPosition.y - minPosition.gameObject.transform.localPosition.y) * sliderValue + minPosition.gameObject.transform.localPosition.y;
+        gameObject.transform.localPosition = new Vector3(startingXPosition, newY, startingZPosition);
     }
 
     private void FixedUpdate()
@@ -29,13 +31,14 @@ public class SliderPosition : MonoBehaviour
     {
         if (gameObject.transform.localPosition.y < minPosition.gameObject.transform.localPosition.y)
         {
-            gameObject.transform.localPosition = new Vector3(gameObject.transform.localPosition.x, minPosition.gameObject.transform.localPosition.y, gameObject.transform.localPosition.z);
+            gameObject.transform.localPosition = new Vector3(startingXPosition, minPosition.gameObject.transform.localPosition.y, startingZPosition);
         }
         else if (gameObject.transform.localPosition.y > maxPosition.gameObject.transform.localPosition.y)
         {
-            gameObject.transform.localPosition = new Vector3(gameObject.transform.localPosition.x, maxPosition.gameObject.transform.localPosition.y, gameObject.transform.localPosition.z);
+            gameObject.transform.localPosition = new Vector3(startingXPosition, maxPosition.gameObject.transform.localPosition.y, startingZPosition);
         }
-        effectSlider.value = (gameObject.transform.localPosition.y - minPosition.gameObject.transform.localPosition.y) / 
+        sliderValue = (gameObject.transform.localPosition.y - minPosition.gameObject.transform.localPosition.y) /
             (maxPosition.gameObject.transform.localPosition.y - minPosition.gameObject.transform.localPosition.y);
+        effectSlider.value = sliderValue;
     }
 }
