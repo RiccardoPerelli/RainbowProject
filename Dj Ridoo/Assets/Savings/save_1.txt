@@ -1,0 +1,1 @@
+{"project_name":"","instruments":["{\"name\":\"AudioTest.mp3\",\"id\":0,\"filter\":\"\"}","{\"name\":\"dbz-teleport.mp3\",\"id\":1,\"filter\":\"\"}"],"filters":["{\"name\":\"Lowpass\",\"instruments\":[],\"parameters\":[\"{\\\"cutoff_freq\\\":100.0,\\\"resonance\\\":10.0}\"]}"]}
