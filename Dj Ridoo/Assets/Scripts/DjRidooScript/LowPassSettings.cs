@@ -18,7 +18,7 @@ public class LowPassSettings : FilterSliderInteraction
         {
 
             //passo nome filtro selezionato
-            FiltersData.Save(100, 10);
+            FiltersData.Save(0.08f, 0.2f);
             //Save(100, 10);
 
         }
