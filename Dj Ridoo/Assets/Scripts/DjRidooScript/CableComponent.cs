@@ -15,7 +15,7 @@ public class CableComponent : MonoBehaviour
 	[SerializeField] private int totalSegments = 5;
 	[SerializeField] private float segmentsPerUnit = 2f;
 	private int segments = 0;
-	[SerializeField] private float cableWidth = 0.1f;
+	[SerializeField] private float cableWidth = 0.05f;
 
 	// Solver config
 	[SerializeField] private int verletIterations = 1;
