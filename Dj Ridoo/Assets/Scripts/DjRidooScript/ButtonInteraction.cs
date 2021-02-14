@@ -7,6 +7,7 @@ using UnityEngine.Video;
 public class ButtonInteraction : MonoBehaviour
 {
     public VideoPlayer displayVideoPlayer;
+    public string videoFilePath;
     private bool displayVideoIsPaused = false;
 
     public void OnPlayClicked()
