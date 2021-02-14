@@ -22,6 +22,15 @@ VideoClipImporter:
       customHeight: 1024
       bitrateMode: 1
       spatialQuality: 1
+    7:
+      enableTranscoding: 1
+      codec: 2
+      resizeFormat: 5
+      aspectRatio: 5
+      customWidth: 1024
+      customHeight: 1024
+      bitrateMode: 1
+      spatialQuality: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

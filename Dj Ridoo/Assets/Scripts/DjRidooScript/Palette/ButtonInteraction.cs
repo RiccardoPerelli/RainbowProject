@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Video;
+using System.IO;
 
 public class ButtonInteraction : MonoBehaviour
 {
     public VideoPlayer displayVideoPlayer;
-    public string videoFilePath;
+    public string fileName;
     private bool displayVideoIsPaused = false;
 
     public void OnPlayClicked()
@@ -17,9 +18,23 @@ public class ButtonInteraction : MonoBehaviour
         if (!displayVideoIsPaused)
         {
             //2
-            displayVideoPlayer.playOnAwake = false;
+            //displayVideoPlayer.playOnAwake = false;
             displayVideoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.MaterialOverride;
-            displayVideoPlayer.url = videoFilePath;
+            Debug.Log("controllo piattaforma!");
+            if (Application.platform == RuntimePlatform.Android)
+            {
+                Debug.Log(Application.platform.ToString());
+                string rootPath = Application.persistentDataPath;
+                Debug.Log(rootPath);
+                displayVideoPlayer.url = Path.Combine(rootPath, fileName);
+                //Debug.Log(Directory.GetFiles(rootPath, "*." + "mp4", SearchOption.AllDirectories));
+                //string[] files = Directory.GetFiles(rootPath, "*." + "mp4", SearchOption.AllDirectories);
+                //displayVideoPlayer.source = VideoSource.Url;
+                //displayVideoPlayer.url = files[0];
+                //displayVideoPlayer.sendFrameReadyEvents = true;
+                //Debug.Log(displayVideoPlayer.url);
+            }
+
             displayVideoPlayer.frame = 0;
             displayVideoPlayer.isLooping = true;
         }
