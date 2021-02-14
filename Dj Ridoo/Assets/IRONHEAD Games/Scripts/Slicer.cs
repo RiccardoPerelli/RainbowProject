@@ -10,8 +10,14 @@ public class Slicer : MonoBehaviour
     public static event Action<GameObject> InstrumentSliced;
     public Material MaterialAfterSlice;
     public LayerMask sliceMask;
+    AudioSource audioData;
 
     public bool isTouched;
+
+    private void Start()
+    {
+        audioData = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {     
@@ -26,6 +32,7 @@ public class Slicer : MonoBehaviour
 
                 if (objectToBeSliced.gameObject != null && slicedObject != null)
                 {
+                    audioData.Play(0);
                     GameObject upperHullGameobject = slicedObject.CreateUpperHull(objectToBeSliced.gameObject, MaterialAfterSlice);
                     GameObject lowerHullGameobject = slicedObject.CreateLowerHull(objectToBeSliced.gameObject, MaterialAfterSlice);
                     upperHullGameobject.transform.position = objectToBeSliced.transform.position;

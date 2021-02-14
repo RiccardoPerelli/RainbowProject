@@ -97,6 +97,8 @@ public class ButtonPression : MonoBehaviour
             }
             if (pointer.GetComponent<PointerController>().touched)
             {
+                gameObject.GetComponent<AudioSource>().Play(0);
+                Debug.Log("clicked");
                 TriggerAction();
                 pointer.GetComponent<PointerController>().touched = false;
             }

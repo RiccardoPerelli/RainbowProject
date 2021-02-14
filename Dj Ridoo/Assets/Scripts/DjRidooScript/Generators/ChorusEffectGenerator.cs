@@ -32,7 +32,7 @@ public class ChorusEffectGenerator : EffectGenerator
             collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, gui);
             Debug.Log("link spawned!");
             if (GameObject.FindGameObjectWithTag("Player") != null)
-                gui.transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
+                gui.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
             gui.GetComponent<ChorusSliderInteraction>().instruments.Add(collision.collider.gameObject);
             collision.collider.gameObject.AddComponent(typeof(AudioChorusFilter));
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().dryMix = gui.GetComponent<ChorusSliderInteraction>().dryMixStartingValue;

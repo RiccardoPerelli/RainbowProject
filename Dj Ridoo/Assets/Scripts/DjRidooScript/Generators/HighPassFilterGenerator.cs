@@ -30,7 +30,7 @@ public class HighPassFilterGenerator : EffectGenerator
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
             collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, gui);
             if (GameObject.FindGameObjectWithTag("Player") != null)
-                gui.transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
+                gui.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
             gui.GetComponent<HighPassSliderInteraction>().instruments.Add(collision.collider.gameObject);
             collision.collider.gameObject.AddComponent(typeof(AudioHighPassFilter));
             collision.collider.gameObject.GetComponent<AudioHighPassFilter>().highpassResonanceQ = gui.GetComponent<HighPassSliderInteraction>().resonanceStartingValue;
