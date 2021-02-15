@@ -14,11 +14,14 @@ public abstract class SliderInteraction : MonoBehaviour
 
     public void RemoveObjectFromList(GameObject gameObjectToRemove)
     {
-        for(int i = 0; i <= instruments.Count; i++)
+        if (gameObjectToRemove.tag.Equals("Instrument"))
         {
-            if (GameObject.ReferenceEquals(instruments[i], gameObjectToRemove))
+            for (int i = 0; i <= instruments.Count; i++)
             {
-                instruments.RemoveAt(i);
+                if (GameObject.ReferenceEquals(instruments[i], gameObjectToRemove))
+                {
+                    instruments.RemoveAt(i);
+                }
             }
         }
     }

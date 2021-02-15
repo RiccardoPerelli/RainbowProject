@@ -1953,7 +1953,8 @@ GameObject:
   - component: {fileID: 1714101668310620947}
   - component: {fileID: 3185429123649529391}
   - component: {fileID: 7320690702903539706}
-  m_Layer: 0
+  - component: {fileID: 4505284221401682375}
+  m_Layer: 9
   m_Name: ChorusMixer
   m_TagString: Filter
   m_Icon: {fileID: 0}
@@ -1967,8 +1968,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7636765466958080019}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -7.3995314, y: 2.731205, z: 6.857328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 6251360794757097932}
@@ -2011,7 +2012,7 @@ Transform:
   - {fileID: 8887948794010022393}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7518571573335219550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2201,6 +2202,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!33 &4505284221401682375
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636765466958080019}
+  m_Mesh: {fileID: 659260312698383184, guid: b5ed4a3f98c649944b89575358c2c17e, type: 3}
 --- !u!1 &7965151067128901944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,8 +2348,8 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: cb5644534d063d44ca60a8b25e50f43c, type: 2}
-  - {fileID: 2100000, guid: a1323f8fcaa1f704c8c0b97dfa8ec288, type: 2}
-  - {fileID: 2100000, guid: b86f8e043f0b49a41b8962a759affdb2, type: 2}
+  - {fileID: 2100000, guid: 6d0cf48a9de34f146ae5603514dd6788, type: 2}
+  - {fileID: 2100000, guid: a8ebe76273a56094e9a5ca8197197f64, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
