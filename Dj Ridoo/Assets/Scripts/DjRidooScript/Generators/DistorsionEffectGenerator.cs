@@ -10,7 +10,6 @@ public class DistorsionEffectGenerator : EffectGenerator
         {
             Debug.Log("Collision Detected with the instrument");
             applyEffect(collision);
-            Destroy(this.gameObject, destroyTime);
         }
         else
         {
@@ -33,10 +32,15 @@ public class DistorsionEffectGenerator : EffectGenerator
             guiChild.GetComponent<DistorsionSliderInteraction>().instruments.Add(collision.collider.gameObject);
             collision.collider.gameObject.AddComponent(typeof(AudioDistortionFilter));
             collision.collider.gameObject.GetComponent<AudioDistortionFilter>().distortionLevel = guiChild.GetComponent<DistorsionSliderInteraction>().distorsionLevelStartingValue;
+            Destroy(this.gameObject, destroyTime);
         }
         else
         {
             Debug.Log("Effect already applied!");
+            thisAudioSource.clip = effectAlreadyApplied;
+            thisAudioSource.volume = 1f;
+            thisAudioSource.Play();
+            Destroy(this.gameObject, 3f);
         }
     }
 }
