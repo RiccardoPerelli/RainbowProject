@@ -7,5 +7,8 @@ public class InstrumentData
     public string name;
 
     public int id;
-    public string filter;
+    
+
+    public List<float> position;
+    public List<float> rotation;
 }

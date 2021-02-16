@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class InstrumentSettings : MonoBehaviour
 {
-    public GameObject guitar;
+    public GameObject eletricGuitar;
     public GameObject drums;
+    public GameObject classicGuitar;
+    public GameObject microfone;
+    public GameObject tastiera;
+
     //nome dello strumento
     [SerializeField]
     private string nameForInstrument;
@@ -38,54 +42,14 @@ public class InstrumentSettings : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L))
         {
            
-            Load();
+            //Load();
         }
         
         
         
     }
 
-    //public void Save(string filter)
-    //{
-    //    string savedData = SaveLoadManager.Load();
-
-    //    AudioProject song = JsonUtility.FromJson<AudioProject>(savedData);
-
-       
-
-    //    List<string> player = song.instruments;
-
-    //    for(int k=0; k<player.Length; k++)
-    //    {
-    //        Debug.Log(player[k]);
-    //        InstrumentData ins = JsonUtility.FromJson<InstrumentData>(player[k]);
-    //        Debug.Log(ins.name);
-    //        if(ins.name == nameForInstrument)
-    //        {
-    //            Debug.Log(filter);
-                
-    //            ins.filter = filter;
-    //            string updated = JsonUtility.ToJson(ins);
-    //            player[k] = updated;
-
-    //        }
-
-    //    }
-
-    //    //update savedData sul suo file senza crearne uno nuovo!
-    //    for (int j=0; j<player.Length; j++)
-    //    {
-    //        Debug.Log(player[j]);
-    //    }
-    //    song.instruments = player;
-    //    string updated_data = JsonUtility.ToJson(song);
-    //    Debug.Log(updated_data);
-    //    SaveLoadManager.UpdateSavings(updated_data);
-
-        
-
-        
-    //}
+    
 
     public void SaveInstrument(string instrument)
     {
@@ -118,40 +82,40 @@ public class InstrumentSettings : MonoBehaviour
     }
 
 
-    public void SaveInstrumentFilter(string filter)
-    {
-        //on collision between instruments e essenza filtro
-        string savedData = SaveLoadManager.Load();
+    //public void SaveInstrumentFilter(string filter)
+    //{
+    //    //on collision between instruments e essenza filtro
+    //    string savedData = SaveLoadManager.Load();
 
-        AudioProject song = JsonUtility.FromJson<AudioProject>(savedData);
+    //    AudioProject song = JsonUtility.FromJson<AudioProject>(savedData);
 
 
 
-        List<string> filters = song.filters;
+    //    List<string> filters = song.filters;
        
 
-        foreach(string f in filters)
-        {
-            FiltersData fil = new FiltersData();
+    //    foreach(string f in filters)
+    //    {
+    //        FiltersData fil = new FiltersData();
 
-            if (fil.name == filter)
-            {
-                fil.instruments.Add(idForInstrument);
-            }
-        }
+    //        if (fil.name == filter)
+    //        {
+    //            fil.instruments.Add(idForInstrument);
+    //        }
+    //    }
         
 
        
 
 
-        //update savedData sul suo file senza crearne uno nuovo!
+    //    //update savedData sul suo file senza crearne uno nuovo!
 
-        song.filters = filters;
-        string updated_data = JsonUtility.ToJson(song);
+    //    song.filters = filters;
+    //    string updated_data = JsonUtility.ToJson(song);
 
-        Debug.Log(updated_data);
-        SaveLoadManager.UpdateSavings(updated_data);
-    }
+    //    Debug.Log(updated_data);
+    //    SaveLoadManager.UpdateSavings(updated_data);
+    //}
 
     private void Load()
     {
@@ -171,10 +135,26 @@ public class InstrumentSettings : MonoBehaviour
                 //GameObject o = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 InstrumentData player = JsonUtility.FromJson<InstrumentData>(ins);
 
-                if (player.name.Equals("guitar")){
-                    Instantiate(guitar);
+                if (player.name.Equals("eletricGuitar")){
+                    Instantiate(eletricGuitar);
                 }
-                
+                if (player.name.Equals("classicGuitar"))
+                {
+                    Instantiate(classicGuitar);
+                }
+                if (player.name.Equals("drums"))
+                {
+                    Instantiate(drums);
+                }
+                if (player.name.Equals("tastiera"))
+                {
+                    Instantiate(tastiera);
+                }
+                if (player.name.Equals("microfone"))
+                {
+                    Instantiate(microfone);
+                }
+
                 //associarli al gameobject, come si fa?
                 //nameForInstrument = player.name;
                 //idForInstrument = player.id;

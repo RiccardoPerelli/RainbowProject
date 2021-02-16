@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class AudioProjectSettings : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,51 +18,57 @@ public class AudioProjectSettings : MonoBehaviour
         //seleziono song nella UI
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            string song = ""; // questa stringa in realtà è il risultato della selezione della song nella UI
-            string dir_track_path = Application.dataPath + "/Resources/AudioClips/" + song + "/";
-            DirectoryInfo dir = new DirectoryInfo(dir_track_path);
-            int n_track = dir.GetFiles("*.mp3").Length;
-            Debug.Log(n_track);
-            List<string> instruments = new List<string>();
-            int i = 0;
-            foreach(FileInfo f in dir.GetFiles())
+            int id_project = 1;
+            while (File.Exists(Application.dataPath + "/Savings/" + "save_" + id_project + ".txt"))
             {
-                if (f.Name.Contains(".mp3.meta")){
+                id_project++;
+            }
+            string song = "djridooProject_" + id_project;
+            
+            //string dir_track_path = Application.dataPath + "/Resources/AudioClips/" + song + "/";
+            //DirectoryInfo dir = new DirectoryInfo(dir_track_path);
+            //int n_track = dir.GetFiles("*.mp3").Length;
+            //Debug.Log(n_track);
+            //List<string> instruments = new List<string>();
+            //int i = 0;
+            //foreach(FileInfo f in dir.GetFiles())
+            //{
+            //    if (f.Name.Contains(".mp3.meta")){
 
-                }
-                else
-                {
+            //    }
+            //    else
+            //    {
                     
-                    InstrumentData player = new InstrumentData();
-                    player.id = i;
-                    player.name = f.Name;
-                    player.filter = "";
+            //        InstrumentData player = new InstrumentData();
+            //        player.id = i;
+            //        player.name = f.Name;
+            //        player.filter = "";
 
-                    string json = JsonUtility.ToJson(player);
-                    instruments.Add(json);
-                    i++;
-                }
+            //        string json = JsonUtility.ToJson(player);
+            //        instruments.Add(json);
+            //        i++;
+            //    }
                 
 
                
-            }
+            //}
 
             
             //song è il project_name, instruments sono gli strumenti associati a quella song
-            Save(song, instruments);
+            Save(song);
         }
 
        
         
     }
 
-    private void Save(string project_name, List<string> instruments )
+    private void Save(string project_name )
     {
         
         AudioProject project = new AudioProject();
         //capire come prendere nome progetto: nome della canzone scelta?
         project.project_name = project_name;
-        project.instruments = instruments;
+        //project.instruments = instruments;
 
         List<string> filters = project.filters;
 
