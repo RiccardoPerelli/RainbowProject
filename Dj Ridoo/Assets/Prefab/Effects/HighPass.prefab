@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ddedcc1a248b4f429429383f7fe6e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EffectUI: {fileID: 8365190568513226244, guid: 4ac019798adbbd74cbf69de9cfe97664,
+  EffectUI: {fileID: 5249719367446749155, guid: 5ac1daa69713b2247b98403be187d6d8,
     type: 3}
   explosion: {fileID: 7373860103541246407, guid: 386fc977f9e249a47b9d818b7436d289,
     type: 3}

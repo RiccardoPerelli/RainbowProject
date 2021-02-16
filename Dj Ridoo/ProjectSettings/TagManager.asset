@@ -20,6 +20,11 @@ TagManager:
   - InstrumentButton
   - Hand
   - Effect
+  - Distorsion
+  - HighPass
+  - LowPass
+  - Echo
+  - Chorus
   layers:
   - Default
   - TransparentFX

@@ -26,12 +26,13 @@ public class DistorsionEffectGenerator : EffectGenerator
             Destroy(expl, 3); // delete the explosion after 3 seconds
             FindObjectOfType<LightMover>().MakeMove();
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
-            collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, gui);
+            GameObject guiChild = gui.transform.GetChild(0).gameObject;
+            collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, guiChild);
             if (GameObject.FindGameObjectWithTag("Player") != null)
                 gui.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
-            gui.GetComponent<DistorsionSliderInteraction>().instruments.Add(collision.collider.gameObject);
+            guiChild.GetComponent<DistorsionSliderInteraction>().instruments.Add(collision.collider.gameObject);
             collision.collider.gameObject.AddComponent(typeof(AudioDistortionFilter));
-            collision.collider.gameObject.GetComponent<AudioDistortionFilter>().distortionLevel = gui.GetComponent<DistorsionSliderInteraction>().distorsionLevelStartingValue;
+            collision.collider.gameObject.GetComponent<AudioDistortionFilter>().distortionLevel = guiChild.GetComponent<DistorsionSliderInteraction>().distorsionLevelStartingValue;
         }
         else
         {

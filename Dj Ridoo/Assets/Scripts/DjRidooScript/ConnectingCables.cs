@@ -41,6 +41,7 @@ public class ConnectingCables : MonoBehaviour
 	void Start()
 	{
         Slicer.InstrumentSliced += DestroyInstrumentLink;
+        Slicer.MixerSliced += DestroyMixerLink;
         plug = Resources.Load<AudioClip>("plugIn");
 		swordHit = Resources.Load<AudioClip>("SliceSound");
 	}
@@ -273,8 +274,34 @@ public class ConnectingCables : MonoBehaviour
             }
         }
     }
-	
-	void CutCable()
+
+    public void DestroyMixerLink(GameObject mixer)
+    {
+        GameObject mixerSon = mixer.transform.GetChild(0).gameObject;
+        Debug.Log("mixer destroyed!");
+        foreach (Transform child in mixerSon.transform)
+        {
+            for (int i = 0; i <= countCable; i++)
+            {
+                Debug.Log("instrument nome: " + child.name + " Start point nome: " + endPoint[i].name);
+                if (child.name.Equals(endPoint[i].name))
+                {
+                    Debug.Log("referenza trovata");
+                    Component component1 = startPoint[i].GetComponent<CableComponent>();
+                    Object.DestroyImmediate(component1 as Object, true);
+                    Component component2 = startPoint[i].GetComponent<LineRenderer>();
+                    Object.DestroyImmediate(component2 as Object, true);
+                    startPoint.RemoveAt(i);
+                    Debug.Log("Distruggendo la linea");
+                    endPoint.RemoveAt(i);
+                    countCable--;
+                    i--;
+                }
+            }
+        }
+    }
+
+    void CutCable()
     {
 		ResetLine();
 		GameObject midPoint1 = AddMidPoint(hitObj.transform.position);

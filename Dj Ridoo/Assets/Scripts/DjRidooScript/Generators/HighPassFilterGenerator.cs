@@ -28,13 +28,14 @@ public class HighPassFilterGenerator : EffectGenerator
             FindObjectOfType<LightMover>().MakeMove();
             Debug.Log("mixer is coming!");
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
-            collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, gui);
+            GameObject guiChild = gui.transform.GetChild(0).gameObject;
+            collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, guiChild);
             if (GameObject.FindGameObjectWithTag("Player") != null)
                 gui.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
-            gui.GetComponent<HighPassSliderInteraction>().instruments.Add(collision.collider.gameObject);
+            guiChild.GetComponent<HighPassSliderInteraction>().instruments.Add(collision.collider.gameObject);
             collision.collider.gameObject.AddComponent(typeof(AudioHighPassFilter));
-            collision.collider.gameObject.GetComponent<AudioHighPassFilter>().highpassResonanceQ = gui.GetComponent<HighPassSliderInteraction>().resonanceStartingValue;
-            collision.collider.gameObject.GetComponent<AudioHighPassFilter>().cutoffFrequency = gui.GetComponent<HighPassSliderInteraction>().cutOffFrequencyStartingValue;
+            collision.collider.gameObject.GetComponent<AudioHighPassFilter>().highpassResonanceQ = guiChild.GetComponent<HighPassSliderInteraction>().resonanceStartingValue;
+            collision.collider.gameObject.GetComponent<AudioHighPassFilter>().cutoffFrequency = guiChild.GetComponent<HighPassSliderInteraction>().cutOffFrequencyStartingValue;
         }
         else
         {

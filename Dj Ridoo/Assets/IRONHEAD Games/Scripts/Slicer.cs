@@ -8,6 +8,7 @@ public class Slicer : MonoBehaviour
 {
 
     public static event Action<GameObject> InstrumentSliced;
+    public static event Action<GameObject> MixerSliced;
     public Material MaterialAfterSlice;
     public LayerMask sliceMask;
     AudioSource audioData;
@@ -37,10 +38,17 @@ public class Slicer : MonoBehaviour
                     GameObject lowerHullGameobject = slicedObject.CreateLowerHull(objectToBeSliced.gameObject, MaterialAfterSlice);
                     upperHullGameobject.transform.position = objectToBeSliced.transform.position;
                     lowerHullGameobject.transform.position = objectToBeSliced.transform.position;
-                    if (InstrumentSliced != null)
+                    if (InstrumentSliced != null && objectToBeSliced.gameObject.tag.Equals("Instrument"))
                     {
-                        Debug.Log("Action Called");
+                        Debug.Log("Action Instrument Sliced Called");
                         InstrumentSliced(objectToBeSliced.gameObject);
+                    }
+                    if(MixerSliced != null && objectToBeSliced.gameObject.tag.Equals("Echo") || objectToBeSliced.gameObject.tag.Equals("Chorus")
+                        || objectToBeSliced.gameObject.tag.Equals("Distorsion") || objectToBeSliced.gameObject.tag.Equals("LowPass")
+                        || objectToBeSliced.gameObject.tag.Equals("HighPass"))
+                    {
+                        Debug.Log("Action Filter Sliced Called");
+                        MixerSliced(objectToBeSliced.gameObject);
                     }
 
                     MakeItPhysical(upperHullGameobject, objectToBeSliced.gameObject.GetComponent<Rigidbody>().velocity);
