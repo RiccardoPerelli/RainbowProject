@@ -7,6 +7,8 @@ public class FiltersData
     public string name;
     public List<int> instruments;
     public List<string> parameters;
+    public List<float> position;
+    public List<float> rotation;
 
     public static void Save(float cutofffreq, float resonance)
     {
@@ -120,7 +122,7 @@ public class FiltersData
 
     }
 
-    public static void Save(float dry_mix, float wet_mix_tap_1, float wet_mix_tap_2, float wet_mix_tap_3, float delay, float rate, float depth, float feedback)
+    public static void Save(float dry_mix, float wet_mix_tap_1, float wet_mix_tap_2, float wet_mix_tap_3, float delay, float rate, float depth)
     {
         string savedData = SaveLoadManager.Load();
 

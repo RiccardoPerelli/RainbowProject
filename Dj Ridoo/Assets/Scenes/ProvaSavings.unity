@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -213,6 +213,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1226404722
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882697539071237762, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473930735888210176, guid: 2a86c4075220e2d4ab8619f4557fce76,
+        type: 3}
+      propertyPath: m_Name
+      value: ClassicGuitar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a86c4075220e2d4ab8619f4557fce76, type: 3}
 --- !u!1 &1656566569
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,8 +400,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc872f170aa28bd459542b08b4d4386a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guitar: {fileID: 1764338627654896538, guid: 13356a84d98683643bbd032685eb8e8f, type: 3}
-  drums: {fileID: 0}
+  eletricGuitar: {fileID: 2904156856587607574, guid: f34f2ea5489cc474180fc4f576798d7a,
+    type: 3}
+  drums: {fileID: 4158644931104454461, guid: 8f8ef61bbf57fac4ab5b956a3b981df2, type: 3}
+  classicGuitar: {fileID: 4473930735888210176, guid: 2a86c4075220e2d4ab8619f4557fce76,
+    type: 3}
+  microfone: {fileID: 6208603613791326498, guid: 590f0b1db17a56047a27fc2f5065acfa,
+    type: 3}
+  tastiera: {fileID: 450180388388286869, guid: 0b4cf5fea3ea7b248948770db6611859, type: 3}
   nameForInstrument: AudioTest.mp3
   idForInstrument: 1
 --- !u!65 &1798132438
@@ -456,3 +531,86 @@ MonoBehaviour:
     type: 3}
   lowpass: {fileID: 8598907601564072986, guid: 1b6e73fb6ef330a4cb65141b8451c1d5, type: 3}
   chorus: {fileID: 7636765466958080019, guid: 3258f4ebca0e5e34a803bf63db012ef2, type: 3}
+  echo: {fileID: 7623970409695875784, guid: 4f0220170b803fb4da432dd47433edb7, type: 3}
+  distortion: {fileID: 1751242471078823001, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+    type: 3}
+  filters: []
+  eletricGuitar: {fileID: 2904156856587607574, guid: f34f2ea5489cc474180fc4f576798d7a,
+    type: 3}
+  drums: {fileID: 4158644931104454461, guid: 8f8ef61bbf57fac4ab5b956a3b981df2, type: 3}
+  classicGuitar: {fileID: 4473930735888210176, guid: 2a86c4075220e2d4ab8619f4557fce76,
+    type: 3}
+  microfone: {fileID: 6208603613791326498, guid: 590f0b1db17a56047a27fc2f5065acfa,
+    type: 3}
+  tastiera: {fileID: 450180388388286869, guid: 0b4cf5fea3ea7b248948770db6611859, type: 3}
+  connectingCables: {fileID: 0}
+  instruments: []
+--- !u!1001 &1813775033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.027021
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0022385
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.785635
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370916259738902243, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751242471078823001, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f,
+        type: 3}
+      propertyPath: m_Name
+      value: DistorsionMixer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84bb4e7b6ceb22c42b725c9d0c349e6f, type: 3}

@@ -18,7 +18,8 @@ public class LowPassSettings : FilterSliderInteraction
         {
 
             //passo nome filtro selezionato
-            FiltersData.Save(0.08f, 0.2f);
+            FiltersData.Save(0.5f, 1f);
+            //FiltersData.Save(0.5f);
             //Save(100, 10);
 
         }
@@ -57,8 +58,19 @@ public class LowPassSettings : FilterSliderInteraction
                 string fd = JsonUtility.ToJson(fil);
                 filters[j] = fd;
             }
+            if (fil.name == "Distortion")
+            {
+                Distortion dt = new Distortion();
+                dt.level = cutofffreq;
+                
+                string par = JsonUtility.ToJson(dt);
+                Debug.Log(par);
+                fil.parameters.Add(par);
+                string fd = JsonUtility.ToJson(fil);
+                filters[j] = fd;
+            }
 
-           
+
         }
 
 
@@ -117,7 +129,7 @@ public class LowPassSettings : FilterSliderInteraction
             InstrumentData instrument = JsonUtility.FromJson<InstrumentData>(savedData);
 
             Debug.Log(instrument.name);
-            Debug.Log(instrument.filter);
+            //Debug.Log(instrument.filter);
 
         }
     }
