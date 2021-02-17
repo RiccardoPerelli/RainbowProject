@@ -114,9 +114,7 @@ public class SavingManager : MonoBehaviour
 
         Debug.Log(updated_data);
         SaveLoadManager.UpdateSavings(updated_data);
-
     }
-
 
     public void Save(string filter, GameObject filterReference, int first)
     {

@@ -18,5 +18,6 @@ public class SavingButtonPression : ButtonPression
     {
         savingMenu.SetActive(true);
         gameObject.transform.parent.gameObject.SetActive(false);
+        AudioProjectSettings.Instance.InitializeJson();
     }
 }

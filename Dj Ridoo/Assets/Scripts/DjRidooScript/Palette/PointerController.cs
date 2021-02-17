@@ -21,7 +21,8 @@ public class PointerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag.Equals("EffectButton") || other.gameObject.tag.Equals("InstrumentButton") || other.gameObject.tag.Equals("BackButton"))
+        if(other.gameObject.tag.Equals("EffectButton") || other.gameObject.tag.Equals("InstrumentButton") || other.gameObject.tag.Equals("BackButton") 
+            || other.gameObject.tag.Equals("SaveButton"))
         {
             gameObject.GetComponent<AudioSource>().Play(0);
         }

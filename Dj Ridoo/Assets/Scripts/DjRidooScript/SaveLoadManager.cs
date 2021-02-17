@@ -6,7 +6,7 @@ using UnityEngine;
 public static class SaveLoadManager
 {
 
-    public static readonly string SAVE_FOLDER = Application.dataPath + "/Savings/";
+    public static readonly string SAVE_FOLDER = Path.Combine(Application.persistentDataPath + "/Savings/");
 
     public static void Init()
     {
