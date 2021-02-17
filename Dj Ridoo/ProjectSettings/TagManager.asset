@@ -26,6 +26,7 @@ TagManager:
   - Echo
   - Chorus
   - Mixer
+  - SaveButton
   layers:
   - Default
   - TransparentFX

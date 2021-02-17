@@ -2,42 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuController : TouchController
+public class SaveController : TouchController
 {
-
-    public GameObject effectPanel;
-    public GameObject instrumentPanel;
-    public GameObject savingPanel;
+    public GameObject menuPanel;
 
     // Update is called once per frame
     void Update()
     {
         CheckIfPointing();
         Debug.Log(Vector3.Distance(fingerTip.transform.position, transform.position));
-        if(Physics.Raycast(fingerTip.transform.position, fingerTipForward, out RaycastHit ray, touchDistance))
+        if (Physics.Raycast(fingerTip.transform.position, fingerTipForward, out RaycastHit ray, touchDistance))
         {
             Collider rayCollider = ray.collider;
             if (isPointing && !isTouching)
             {
-                if (rayCollider.gameObject.tag.Equals("EffectButton"))
+                if (rayCollider.gameObject.tag.Equals("FirstButton"))
                 {
                     Debug.Log("first button pressed!");
                     isTouching = true;
-                    effectPanel.SetActive(true);
-                    gameObject.SetActive(false);
+                    //logica salvataggio
                 }
-                else if (rayCollider.gameObject.tag.Equals("InstrumentButton"))
+                else if (rayCollider.gameObject.tag.Equals("SecondButton"))
                 {
                     Debug.Log("second button pressed!");
                     isTouching = true;
-                    instrumentPanel.SetActive(true);
-                    gameObject.SetActive(false);
+                    //logica caricamento
                 }
-                else if (rayCollider.gameObject.tag.Equals("SaveButton"))
+                else if (rayCollider.gameObject.tag.Equals("ThirdButton"))
                 {
                     Debug.Log("third button pressed!");
                     isTouching = true;
-                    savingPanel.SetActive(true);
+                    menuPanel.SetActive(true);
                     gameObject.SetActive(false);
                 }
             }
