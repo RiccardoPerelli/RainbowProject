@@ -38,7 +38,7 @@ public class DistorsionEffectGenerator : EffectGenerator
         {
             Debug.Log("Effect already applied!");
             thisAudioSource.clip = effectAlreadyApplied;
-            thisAudioSource.volume = 1f;
+            thisAudioSource.volume = 1.2f;
             thisAudioSource.Play();
             Destroy(this.gameObject, 3f);
         }

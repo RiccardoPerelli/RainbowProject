@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 7713540363798397422}
   - component: {fileID: -523960484776809712}
   m_Layer: 9
-  m_Name: Mixer2UnicoHighPass
-  m_TagString: HighPass
+  m_Name: HighPassMixerFather
+  m_TagString: Mixer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

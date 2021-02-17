@@ -25,6 +25,7 @@ TagManager:
   - LowPass
   - Echo
   - Chorus
+  - Mixer
   layers:
   - Default
   - TransparentFX

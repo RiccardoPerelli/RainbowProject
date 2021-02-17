@@ -121,6 +121,80 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &12245320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 12245323}
+  - component: {fileID: 12245322}
+  - component: {fileID: 12245321}
+  m_Layer: 0
+  m_Name: SavingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &12245321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12245320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea02f30f5466a449ddf1160fd567ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &12245322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12245320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ef9d0c1e3b3934eb5b217dd83d8be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highpass: {fileID: 5249719367446749155, guid: 5ac1daa69713b2247b98403be187d6d8,
+    type: 3}
+  lowpass: {fileID: 2042039079258134242, guid: 334a5eb32547f364f8abcc85d4035274, type: 3}
+  chorus: {fileID: 3053723319524577628, guid: 043b34f7a3abb36488d04e11c5596325, type: 3}
+  echo: {fileID: 1680631297510113097, guid: 1e054fa801843e241a786f77233787ee, type: 3}
+  distortion: {fileID: 6619486089376382636, guid: e741ceb612c8ba140b3ed835a74c0952,
+    type: 3}
+  filters: []
+  eletricGuitar: {fileID: 8449966153977548235, guid: 02a4f467368521e49bb951baf9f251ca,
+    type: 3}
+  drums: {fileID: 952495719747478317, guid: 79b1c80ddf6ff414094e365273e6c2a0, type: 3}
+  classicGuitar: {fileID: 8341894148942586612, guid: 5b0ae254705ed98479cf853e4ef847a9,
+    type: 3}
+  microfone: {fileID: 6208603613791326498, guid: 590f0b1db17a56047a27fc2f5065acfa,
+    type: 3}
+  tastiera: {fileID: 450180388388286869, guid: 0b4cf5fea3ea7b248948770db6611859, type: 3}
+  connectingCables: {fileID: 1769747615}
+  instruments: []
+--- !u!4 &12245323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12245320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.60099405, y: 4.7123046, z: 6.4773083}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &62916294
 PrefabInstance:
   m_ObjectHideFlags: 0

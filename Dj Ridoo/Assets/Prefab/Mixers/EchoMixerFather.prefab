@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4753949941986923184}
   m_Layer: 9
   m_Name: EchoMixerFather
-  m_TagString: Echo
+  m_TagString: Mixer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

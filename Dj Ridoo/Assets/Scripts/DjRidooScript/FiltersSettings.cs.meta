@@ -3,7 +3,26 @@ guid: b0ef9d0c1e3b3934eb5b217dd83d8be6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - highpass: {fileID: 5249719367446749155, guid: 5ac1daa69713b2247b98403be187d6d8,
+      type: 3}
+  - lowpass: {fileID: 2042039079258134242, guid: 334a5eb32547f364f8abcc85d4035274,
+      type: 3}
+  - chorus: {fileID: 3053723319524577628, guid: 043b34f7a3abb36488d04e11c5596325,
+      type: 3}
+  - echo: {fileID: 1680631297510113097, guid: 1e054fa801843e241a786f77233787ee, type: 3}
+  - distortion: {fileID: 6619486089376382636, guid: e741ceb612c8ba140b3ed835a74c0952,
+      type: 3}
+  - eletricGuitar: {fileID: 8449966153977548235, guid: 02a4f467368521e49bb951baf9f251ca,
+      type: 3}
+  - drums: {fileID: 952495719747478317, guid: 79b1c80ddf6ff414094e365273e6c2a0, type: 3}
+  - classicGuitar: {fileID: 8341894148942586612, guid: 5b0ae254705ed98479cf853e4ef847a9,
+      type: 3}
+  - microfone: {fileID: 6208603613791326498, guid: 590f0b1db17a56047a27fc2f5065acfa,
+      type: 3}
+  - tastiera: {fileID: 450180388388286869, guid: 0b4cf5fea3ea7b248948770db6611859,
+      type: 3}
+  - connectingCables: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

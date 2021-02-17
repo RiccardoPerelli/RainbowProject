@@ -208,6 +208,7 @@ MonoBehaviour:
   effectSlider: {fileID: 8044668488752643549}
   startingZPosition: 0
   startingXPosition: 0
+  sliderValue: 0
 --- !u!65 &3953633418289567564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -415,6 +416,7 @@ MonoBehaviour:
   effectSlider: {fileID: 1584169484381011922}
   startingZPosition: 0
   startingXPosition: 0
+  sliderValue: 0
 --- !u!65 &8237676327960525668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -543,6 +545,7 @@ MonoBehaviour:
   effectSlider: {fileID: 4727539169237096865}
   startingZPosition: 0
   startingXPosition: 0
+  sliderValue: 0
 --- !u!65 &4404737971112734709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -987,6 +990,7 @@ MonoBehaviour:
   effectSlider: {fileID: 8023016147589034662}
   startingZPosition: 0
   startingXPosition: 0
+  sliderValue: 0
 --- !u!65 &6607132812115877973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1453,6 +1457,7 @@ MonoBehaviour:
   effectSlider: {fileID: 5423798156876274599}
   startingZPosition: 0
   startingXPosition: 0
+  sliderValue: 0
 --- !u!65 &2430759279245605573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2668,6 +2673,7 @@ MonoBehaviour:
   effectSlider: {fileID: 2377787929260268104}
   startingZPosition: 0
   startingXPosition: 0
+  sliderValue: 0
 --- !u!65 &3141793342576924944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2796,6 +2802,7 @@ MonoBehaviour:
   effectSlider: {fileID: 4684678856327071289}
   startingZPosition: 0
   startingXPosition: 0
+  sliderValue: 0
 --- !u!54 &6566696619403823441
 Rigidbody:
   m_ObjectHideFlags: 0

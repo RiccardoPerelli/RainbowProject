@@ -41,27 +41,18 @@ public class FiltersSettings : MonoBehaviour
                 Debug.Log(o.name);
                 first_ins++;
                 SaveInstrument(o.name, o, first_ins);
-
-
-
             }
             int first = 0;
             
-            filters = GameObject.FindGameObjectsWithTag("Filter");
+            filters = GameObject.FindGameObjectsWithTag("Mixer");
             foreach(GameObject o in filters)
             {
                 Debug.Log(o.name);
                 first++;
-                Save(o.name, o, first);
-                
-                
-                
+                Save(o.name, o, first);             
             }
-            
-
 
         }
-
         if (Input.GetKeyDown(KeyCode.L))
         {
 
@@ -127,7 +118,7 @@ public class FiltersSettings : MonoBehaviour
     }
 
 
-    public void Save(string filter, GameObject o, int first)
+    public void Save(string filter, GameObject filterReference, int first)
     {
         string savedData = SaveLoadManager.Load();
 
@@ -151,17 +142,18 @@ public class FiltersSettings : MonoBehaviour
         List<float> position = new List<float>();
         List<float> rotation = new List<float>();
         string par = "";
-        position.Add(o.transform.position.x);
-        position.Add(o.transform.position.y);
-        position.Add(o.transform.position.z);
+        position.Add(filterReference.transform.position.x);
+        position.Add(filterReference.transform.position.y);
+        position.Add(filterReference.transform.position.z);
 
-        rotation.Add(o.transform.rotation.x);
-        rotation.Add(o.transform.rotation.y);
-        rotation.Add(o.transform.rotation.z);
+        rotation.Add(filterReference.transform.rotation.eulerAngles.x);
+        rotation.Add(filterReference.transform.rotation.eulerAngles.y);
+        rotation.Add(filterReference.transform.rotation.eulerAngles.z);
+        //rotation.Add(filterReference.transform.rotation.eulerAngles.w);
 
-        Debug.Log(o.transform.rotation.x);
-        Debug.Log(o.transform.rotation.y);
-        Debug.Log(o.transform.rotation.z);
+        Debug.Log(filterReference.transform.rotation.x);
+        Debug.Log(filterReference.transform.rotation.y);
+        Debug.Log(filterReference.transform.rotation.z);
         fd.position = position;
         fd.rotation = rotation;
 
@@ -170,97 +162,60 @@ public class FiltersSettings : MonoBehaviour
 
         if (filter.Contains("LowPassMixer"))
         {
-            instruments = o.GetComponent<LowPassSliderInteraction>().instruments;
+            instruments = filterReference.transform.GetChild(0).gameObject.GetComponent<LowPassSliderInteraction>().instruments;
 
         }
         if (filter.Contains("HighPassMixer"))
         {
-            instruments = o.GetComponent<HighPassSliderInteraction>().instruments;
+            instruments = filterReference.transform.GetChild(0).gameObject.GetComponent<HighPassSliderInteraction>().instruments;
 
         }
         if (filter.Contains("ChorusMixer"))
         {
-            instruments = o.GetComponent<ChorusSliderInteraction>().instruments;
+            instruments = filterReference.transform.GetChild(0).gameObject.GetComponent<ChorusSliderInteraction>().instruments;
 
         }
         if (filter.Contains("EchoMixer"))
         {
-            instruments = o.GetComponent<EchoSliderInteraction>().instruments;
+            instruments = filterReference.transform.GetChild(0).gameObject.GetComponent<EchoSliderInteraction>().instruments;
 
         }
         if (filter.Contains("DistorsionMixer"))
         {
-            instruments = o.GetComponent<DistorsionSliderInteraction>().instruments;
-
+            instruments = filterReference.transform.GetChild(0).gameObject.GetComponent<DistorsionSliderInteraction>().instruments;
         }
-
-
-
-
 
         foreach (GameObject instrument in instruments)
         {
-            
             player.Add(instrument.GetInstanceID());
         }
-
-        
-
-
-        //fd.instruments = player;
-
-        //caso d'esempio poi cancellalo
-        //GameObject cg = GameObject.FindGameObjectWithTag("Instrument");
-        //InstrumentData ins_cg = new InstrumentData();
-        //ins_cg.name = cg.name;
-
-
-        //List<float> cg_position = new List<float>();
-        //List<float> cg_rotation = new List<float>();
-
-        //cg_position.Add(cg.transform.position.x);
-        //cg_position.Add(cg.transform.position.y);
-        //cg_position.Add(cg.transform.position.z);
-        //cg_rotation.Add(cg.transform.rotation.eulerAngles.x);
-        //cg_rotation.Add(cg.transform.rotation.eulerAngles.y);
-        //cg_rotation.Add(cg.transform.rotation.eulerAngles.z);
-
-
-
-        //ins_cg.position = cg_position;
-        //ins_cg.rotation = cg_rotation;
-
-        //string updated_cg = JsonUtility.ToJson(ins_cg);
-        //player.Add(updated_cg);
-
         fd.instruments = player;
 
         if (filter.Contains("LowPassMixer"))
         {
             LowPass lp = new LowPass();
-            lp.cutoff_freq = o.transform.GetChild(0).Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().sliderValue;
-            lp.resonance = o.transform.GetChild(0).Find("ResonanceSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
-            par = JsonUtility.ToJson(lp);
-            
+            lp.cutoff_freq = filterReference.transform.GetChild(0).Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            lp.resonance = filterReference.transform.GetChild(0).Find("ResonanceSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            par = JsonUtility.ToJson(lp);    
         }
         if (filter.Contains("ChorusMixer"))
         {
             Chorus ch = new Chorus();
-            ch.dry_mix = chorus.transform.GetChild(0).Find("DryMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            ch.dry_mix = filterReference.transform.GetChild(0).Find("DryMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
 
-            ch.wet_mix_tap_1 = chorus.transform.GetChild(0).Find("WetMixTap1Slider").gameObject.GetComponent<SliderPosition>().sliderValue;
-            ch.wet_mix_tap_2 = chorus.transform.GetChild(0).Find("WetMixTap2Slider").gameObject.GetComponent<SliderPosition>().sliderValue;
-            ch.wet_mix_tap_3 = chorus.transform.GetChild(0).Find("WetMixTap3Slider").gameObject.GetComponent<SliderPosition>().sliderValue;
-            ch.delay = chorus.transform.GetChild(0).Find("DelaySlider").gameObject.GetComponent<SliderPosition>().sliderValue;
-            ch.depth = chorus.transform.GetChild(0).Find("DepthSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
-            ch.rate = chorus.transform.GetChild(0).Find("RateSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            ch.wet_mix_tap_1 = filterReference.transform.GetChild(0).Find("WetMixTap1Slider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            ch.wet_mix_tap_2 = filterReference.transform.GetChild(0).Find("WetMixTap2Slider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            ch.wet_mix_tap_3 = filterReference.transform.GetChild(0).Find("WetMixTap3Slider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            ch.delay = filterReference.transform.GetChild(0).Find("DelaySlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            ch.depth = filterReference.transform.GetChild(0).Find("DepthSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            ch.rate = filterReference.transform.GetChild(0).Find("RateSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
 
             par = JsonUtility.ToJson(ch);
         }
         if (filter.Contains("DistorsionMixer"))
         {
             Distortion d = new Distortion();
-            d.level= o.transform.Find("DistorsionSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            d.level = filterReference.transform.GetChild(0).Find("DistorsionSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
 
             par = JsonUtility.ToJson(d);
         }
@@ -268,21 +223,18 @@ public class FiltersSettings : MonoBehaviour
         {
             HighPass hp = new HighPass();
             
-            hp.cutoff_freq = o.transform.GetChild(0).Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().sliderValue;
-            hp.resonance = o.transform.GetChild(0).Find("ResonanceSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            hp.cutoff_freq = filterReference.transform.GetChild(0).Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            hp.resonance = filterReference.transform.GetChild(0).Find("ResonanceSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
             par = JsonUtility.ToJson(hp);
         }
         if (filter.Contains("EchoMixer"))
         {
             Echo eco = new Echo();
 
-            eco.dry_mix = o.transform.GetChild(0).Find("DryMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
-
-            eco.wet_mix = o.transform.GetChild(0).Find("WetMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
-
-            eco.delay= o.transform.GetChild(0).Find("DelaySlider").gameObject.GetComponent<SliderPosition>().sliderValue;
-            
-            eco.decay =  o.transform.GetChild(0).Find("DecaySlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            eco.dry_mix = filterReference.transform.GetChild(0).Find("DryMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            eco.wet_mix = filterReference.transform.GetChild(0).Find("WetMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            eco.delay = filterReference.transform.GetChild(0).Find("DelaySlider").gameObject.GetComponent<SliderPosition>().sliderValue;
+            eco.decay = filterReference.transform.GetChild(0).Find("DecaySlider").gameObject.GetComponent<SliderPosition>().sliderValue;
 
             par = JsonUtility.ToJson(eco);
         }
@@ -297,9 +249,6 @@ public class FiltersSettings : MonoBehaviour
         string updated = JsonUtility.ToJson(fd);
         Debug.Log(updated);
         filters.Add(updated);
-
-       
-
         //update savedData sul suo file senza crearne uno nuovo!
       
         song.filters = filters;
@@ -307,13 +256,7 @@ public class FiltersSettings : MonoBehaviour
         
         Debug.Log(updated_data);
         SaveLoadManager.UpdateSavings(updated_data);
-
-        
-
-
     }
-
-   
 
     private void Load()
     {
@@ -330,34 +273,31 @@ public class FiltersSettings : MonoBehaviour
             {
                 InstrumentData player = JsonUtility.FromJson<InstrumentData>(ins);
 
-                switch (player.name)
+                if (player.name.Contains("ElectricGuitar"))
                 {
-                    case "ElectricGuitar":
-                        Instantiate(eletricGuitar, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
-
-                        break;
-                    case "ClassicGuitar":
-
-                        Instantiate(classicGuitar, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
-                        break;
-                    case "Drums":
-
-                        Instantiate(drums, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
-
-                        break;
-                    case "Tastiera":
-
-                        Instantiate(tastiera, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
-
-                        break;
-                    case "Microfone":
-
-                        Instantiate(microfone, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
-
-                        break;
+                    GameObject o = Instantiate(eletricGuitar, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
+                    o.GetComponent<IdChecker>().id = player.id;
                 }
-
-
+                else if (player.name.Contains("ClassicGuitar"))
+                {
+                    GameObject o1 = Instantiate(classicGuitar, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
+                    o1.GetComponent<IdChecker>().id = player.id;
+                }
+                else if (player.name.Contains("Drums"))
+                {
+                    GameObject o2 = Instantiate(drums, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
+                    o2.GetComponent<IdChecker>().id = player.id;
+                }
+                else if (player.name.Contains("Tastiera"))
+                {
+                    GameObject o3 = Instantiate(tastiera, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
+                    o3.GetComponent<IdChecker>().id = player.id;
+                }
+                else if (player.name.Contains("Microfone"))
+                {
+                    GameObject o4 = Instantiate(microfone, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
+                    o4.GetComponent<IdChecker>().id = player.id;
+                }
             }
 
             List<string> filters = song.filters;
@@ -365,74 +305,46 @@ public class FiltersSettings : MonoBehaviour
             foreach (string filter in filters)
             {
                 
-
                 FiltersData fd = JsonUtility.FromJson<FiltersData>(filter);
                 Debug.Log(fd.name);
-
-               
+  
                 if (fd.name.Contains("LowPassMixer"))
                 {
-                    Instantiate(lowpass, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
+                    GameObject lowPassSpawned = Instantiate(lowpass, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
                     foreach(string p in fd.parameters)
                     {
                         LowPass lp = JsonUtility.FromJson<LowPass>(p);
                         float cutofffreq = lp.cutoff_freq;
                         Debug.Log(cutofffreq);
                         float resonance = lp.resonance;
-                        lowpass.transform.GetChild(0).Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().sliderValue = cutofffreq;
+                        lowPassSpawned.transform.GetChild(0).Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().sliderValue = cutofffreq;
                         /*lowpass.transform.Find("FrequencySlider").position = new Vector3(lowpass.transform.Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().startingXPosition,
                             cutofffreq, lowpass.transform.Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().startingZPosition);*/
-                        lowpass.transform.GetChild(0).Find("ResonanceSlider").gameObject.GetComponent<SliderPosition>().sliderValue = resonance;
-
-                       
-                        
-                        
+                        lowPassSpawned.transform.GetChild(0).Find("ResonanceSlider").gameObject.GetComponent<SliderPosition>().sliderValue = resonance;   
                     }
-
-                    
-
 
                     foreach (int id in fd.instruments)
-
                     {
-
-                        
-                        connectFilterInstrument(id, lowpass);
-
-
-
+                        connectFilterInstrument(id, lowPassSpawned.transform.GetChild(0).gameObject);
                     }
-
-
-
-
                 }
                 if (fd.name.Contains("HighPassMixer"))
                 {
-                    Instantiate(highpass, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
+                    GameObject highPassSpawned = Instantiate(highpass, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
                     foreach (string p in fd.parameters)
                     {
                         HighPass hp = JsonUtility.FromJson<HighPass>(p);
                         float cutofffreq = hp.cutoff_freq;
                         Debug.Log(cutofffreq);
                         float resonance = hp.resonance;
-                        highpass.transform.GetChild(0).Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().sliderValue = cutofffreq;
-                        highpass.transform.GetChild(0).Find("ResonanceSlider").gameObject.GetComponent<SliderPosition>().sliderValue = resonance;
-                        
+                        highPassSpawned.transform.GetChild(0).Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().sliderValue = cutofffreq;
+                        highPassSpawned.transform.GetChild(0).Find("ResonanceSlider").gameObject.GetComponent<SliderPosition>().sliderValue = resonance;   
                     }
 
                     foreach (int id in fd.instruments)
-
                     {
-
-
-                        connectFilterInstrument(id, lowpass);
-
-
-
+                        connectFilterInstrument(id, highPassSpawned.transform.GetChild(0).gameObject);
                     }
-
-
                 }
                 if (fd.name.Contains("ChorusMixer"))
                 {
@@ -440,7 +352,7 @@ public class FiltersSettings : MonoBehaviour
                     Debug.Log(RestoreAngles(fd.rotation[0]));
                     Debug.Log(RestoreAngles(fd.rotation[1]));
                     Debug.Log(RestoreAngles(fd.rotation[2]));
-                    Instantiate(chorus, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
+                    GameObject chorusSpawned = Instantiate(chorus, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
                     foreach (string p in fd.parameters)
                     {
                         Debug.Log(p);
@@ -453,33 +365,24 @@ public class FiltersSettings : MonoBehaviour
                         float wet_mix_tap_2 = ch.wet_mix_tap_2;
                         float wet_mix_tap_3 = ch.wet_mix_tap_3;
 
-                        chorus.transform.GetChild(0).Find("DryMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue = dry_mix ;
-                        
-                        chorus.transform.GetChild(0).Find("WetMixTap1Slider").gameObject.GetComponent<SliderPosition>().sliderValue = wet_mix_tap_1;
-                        chorus.transform.GetChild(0).Find("WetMixTap2Slider").gameObject.GetComponent<SliderPosition>().sliderValue = wet_mix_tap_2;
-                        chorus.transform.GetChild(0).Find("WetMixTap3Slider").gameObject.GetComponent<SliderPosition>().sliderValue = wet_mix_tap_3;
-                        chorus.transform.GetChild(0).Find("DelaySlider").gameObject.GetComponent<SliderPosition>().sliderValue = delay;
-                        chorus.transform.GetChild(0).Find("DepthSlider").gameObject.GetComponent<SliderPosition>().sliderValue = depth;
-                        chorus.transform.GetChild(0).Find("RateSlider").gameObject.GetComponent<SliderPosition>().sliderValue = rate;
+                        chorusSpawned.transform.GetChild(0).Find("DryMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue = dry_mix ;
 
-                        
+                        chorusSpawned.transform.GetChild(0).Find("WetMixTap1Slider").gameObject.GetComponent<SliderPosition>().sliderValue = wet_mix_tap_1;
+                        chorusSpawned.transform.GetChild(0).Find("WetMixTap2Slider").gameObject.GetComponent<SliderPosition>().sliderValue = wet_mix_tap_2;
+                        chorusSpawned.transform.GetChild(0).Find("WetMixTap3Slider").gameObject.GetComponent<SliderPosition>().sliderValue = wet_mix_tap_3;
+                        chorusSpawned.transform.GetChild(0).Find("DelaySlider").gameObject.GetComponent<SliderPosition>().sliderValue = delay;
+                        chorusSpawned.transform.GetChild(0).Find("DepthSlider").gameObject.GetComponent<SliderPosition>().sliderValue = depth;
+                        chorusSpawned.transform.GetChild(0).Find("RateSlider").gameObject.GetComponent<SliderPosition>().sliderValue = rate; 
                     }
 
-
                     foreach (int id in fd.instruments)
-
                     {
-
-
-                        connectFilterInstrument(id, lowpass);
-
-
-
+                        connectFilterInstrument(id, chorusSpawned.transform.GetChild(0).gameObject);
                     }
                 }
                 if (fd.name.Contains("EchoMixer"))
                 {
-                    Instantiate(echo, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
+                    GameObject echoSpawned = Instantiate(echo, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
                     foreach (string p in fd.parameters)
                     {
                         Echo eco = JsonUtility.FromJson<Echo>(p);
@@ -487,63 +390,34 @@ public class FiltersSettings : MonoBehaviour
                         float delay = eco.delay;
                         float dry_mix = eco.dry_mix;
                         float wet_mix = eco.wet_mix;
-                        
-                        echo.transform.GetChild(0).Find("DryMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue = dry_mix;
 
-                        echo.transform.GetChild(0).Find("WetMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue = wet_mix;
-                       
-                        echo.transform.GetChild(0).Find("DelaySlider").gameObject.GetComponent<SliderPosition>().sliderValue = delay;
-                        echo.transform.GetChild(0).Find("DecaySlider").gameObject.GetComponent<SliderPosition>().sliderValue = decay;
-
-                        
+                        echoSpawned.transform.GetChild(0).Find("DryMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue = dry_mix;
+                        echoSpawned.transform.GetChild(0).Find("WetMixSlider").gameObject.GetComponent<SliderPosition>().sliderValue = wet_mix;
+                        echoSpawned.transform.GetChild(0).Find("DelaySlider").gameObject.GetComponent<SliderPosition>().sliderValue = delay;
+                        echoSpawned.transform.GetChild(0).Find("DecaySlider").gameObject.GetComponent<SliderPosition>().sliderValue = decay;  
                     }
-
-
+                    
                     foreach (int id in fd.instruments)
-
                     {
-
-
-                        connectFilterInstrument(id, lowpass);
-
-
-
+                        connectFilterInstrument(id, echoSpawned.transform.GetChild(0).gameObject);
                     }
-
                 }
                 if (fd.name.Contains("DistorsionMixer"))
                 {
-                    Instantiate(distortion, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
+                    GameObject distorsionSpawned = Instantiate(distortion, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
                     foreach (string p in fd.parameters)
                     {
                         Distortion d = JsonUtility.FromJson<Distortion>(p);
                         float level = d.level;
-                        Debug.Log(level);
-                        distortion.transform.GetChild(0).Find("DistorsionSlider").gameObject.GetComponent<SliderPosition>().sliderValue = level;
-
-                        
+                        distorsionSpawned.transform.GetChild(0).Find("DistorsionSlider").gameObject.GetComponent<SliderPosition>().sliderValue = level;
                     }
-
 
                     foreach (int id in fd.instruments)
-
                     {
-
-
-                        connectFilterInstrument(id, lowpass);
-
-
-
+                        connectFilterInstrument(id, distorsionSpawned.transform.GetChild(0).gameObject);
                     }
-
                 }
-
-                
-
-
-
             }
-
         }
     }
 
@@ -564,11 +438,50 @@ public class FiltersSettings : MonoBehaviour
     }
 
     public void connectFilterInstrument(int id, GameObject filter)
-    {
-        
-        GameObject o = findInstrumentById(id);
-        connectingCables.GetComponent<ConnectingCables>().SpawnLinking(o, filter);
-
+    {   
+        GameObject instrument = findInstrumentById(id);
+        connectingCables.GetComponent<ConnectingCables>().SpawnLinking(instrument, filter);
+        if(filter.GetComponent<DistorsionSliderInteraction>() != null)
+        {
+            filter.GetComponent<DistorsionSliderInteraction>().instruments.Add(instrument);
+            instrument.AddComponent(typeof(AudioDistortionFilter));
+            instrument.GetComponent<AudioDistortionFilter>().distortionLevel = filter.GetComponent<DistorsionSliderInteraction>().distorsionLevelStartingValue;
+        } 
+        else if (filter.GetComponent<EchoSliderInteraction>() != null)
+        {
+            filter.GetComponent<EchoSliderInteraction>().instruments.Add(instrument);
+            instrument.AddComponent(typeof(AudioEchoFilter));
+            instrument.GetComponent<AudioEchoFilter>().delay = filter.GetComponent<EchoSliderInteraction>().delayLevelStartingValue;
+            instrument.GetComponent<AudioEchoFilter>().decayRatio = filter.GetComponent<EchoSliderInteraction>().decayRationStartingValue;
+            instrument.GetComponent<AudioEchoFilter>().wetMix = filter.GetComponent<EchoSliderInteraction>().wetMixStartingValue;
+            instrument.GetComponent<AudioEchoFilter>().dryMix = filter.GetComponent<EchoSliderInteraction>().dryMixStartingValue;
+        }
+        else if (filter.GetComponent<LowPassSliderInteraction>() != null)
+        {
+            filter.GetComponent<LowPassSliderInteraction>().instruments.Add(instrument);
+            instrument.AddComponent(typeof(AudioLowPassFilter));
+            instrument.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = filter.GetComponent<LowPassSliderInteraction>().resonanceStartingValue;
+            instrument.GetComponent<AudioLowPassFilter>().cutoffFrequency = filter.GetComponent<LowPassSliderInteraction>().cutOffFrequencyStartingValue;
+        }
+        else if (filter.GetComponent<HighPassSliderInteraction>() != null)
+        {
+            filter.GetComponent<HighPassSliderInteraction>().instruments.Add(instrument);
+            instrument.AddComponent(typeof(AudioHighPassFilter));
+            instrument.GetComponent<AudioHighPassFilter>().highpassResonanceQ = filter.GetComponent<HighPassSliderInteraction>().resonanceStartingValue;
+            instrument.GetComponent<AudioHighPassFilter>().cutoffFrequency = filter.GetComponent<HighPassSliderInteraction>().cutOffFrequencyStartingValue;
+        }
+        else if (filter.GetComponent<ChorusSliderInteraction>() != null)
+        {
+            filter.GetComponent<ChorusSliderInteraction>().instruments.Add(instrument);
+            instrument.AddComponent(typeof(AudioChorusFilter));
+            instrument.GetComponent<AudioChorusFilter>().dryMix = filter.GetComponent<ChorusSliderInteraction>().dryMixStartingValue;
+            instrument.GetComponent<AudioChorusFilter>().wetMix1 = filter.GetComponent<ChorusSliderInteraction>().wetMixStartingValue;
+            instrument.GetComponent<AudioChorusFilter>().wetMix2 = filter.GetComponent<ChorusSliderInteraction>().wetMixStartingValue;
+            instrument.GetComponent<AudioChorusFilter>().wetMix3 = filter.GetComponent<ChorusSliderInteraction>().wetMixStartingValue;
+            instrument.GetComponent<AudioChorusFilter>().delay = filter.GetComponent<ChorusSliderInteraction>().delayStartingValue;
+            instrument.GetComponent<AudioChorusFilter>().rate = filter.GetComponent<ChorusSliderInteraction>().rateStartingValue;
+            instrument.GetComponent<AudioChorusFilter>().depth = filter.GetComponent<ChorusSliderInteraction>().depthStartingValue;
+        }
     }
 
     public GameObject findInstrumentById(int instrumentId) 
@@ -585,7 +498,4 @@ public class FiltersSettings : MonoBehaviour
         }
        return null;
     }
-
-
-
 }
