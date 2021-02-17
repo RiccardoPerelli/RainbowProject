@@ -5,7 +5,7 @@ using UnityEngine.TextCore;
 
 public class ButtonPression : MonoBehaviour
 {
-    public float zOffset = -35f;
+    public float zOffset = -120f;
     public float turnBackSpeed = 10f;
 
     protected float startingYValue;

@@ -11,11 +11,11 @@ public class EchoEffectGenerator : EffectGenerator
         {
             Debug.Log("Collision Detected with the instrument");
             applyEffect(collision);
-            Destroy(this.gameObject, destroyTime);
         }
         else
         {
             Debug.Log("Collision Detected");
+            Destroy(this.gameObject, destroyTime);
         }
     }
 
@@ -42,6 +42,10 @@ public class EchoEffectGenerator : EffectGenerator
         else
         {
             Debug.Log("Effect already applied!");
+            thisAudioSource.clip = effectAlreadyApplied;
+            thisAudioSource.volume = 1.2f;
+            thisAudioSource.Play();
+            Destroy(this.gameObject, 3f);
         }
     }
 }

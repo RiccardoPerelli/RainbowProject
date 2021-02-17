@@ -8,12 +8,26 @@ public class ButtonInteractionPanel : MonoBehaviour
     public GameObject emptyGameObject;
     public GameObject instrumentCanvas;
     public GameObject filterCanvas;
+    public GameObject videoPalette;
+    public GameObject videoSword;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            OnPaletteClicked();
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            OnSwordClicked();
+        }
+    }
 
     public void OnPaletteClicked()
     {
         Debug.Log("Palette Clicked.");
         checkGameObj();
-        //Instantiate(videoPalette, emptyGameObject.transform);
+        Instantiate(videoPalette, emptyGameObject.transform);
     }
 
     public void OnInstrumentClicked()
@@ -34,13 +48,15 @@ public class ButtonInteractionPanel : MonoBehaviour
     {
         Debug.Log("Sword Clicked.");
         checkGameObj();
-        //Instantiate(videoSword, emptyGameObject.transform);
+        Instantiate(videoSword, emptyGameObject.transform);
     }
 
     private void checkGameObj()
     {
-        Transform tf = emptyGameObject.GetComponentsInChildren<Transform>()[0];
-        if (tf != null)
-            Destroy(tf.gameObject);
+        if (emptyGameObject.transform.childCount >= 1)
+        {
+            GameObject oldVideo = emptyGameObject.transform.GetChild(0).gameObject;
+            Destroy(oldVideo.gameObject);
+        }
     }
 }

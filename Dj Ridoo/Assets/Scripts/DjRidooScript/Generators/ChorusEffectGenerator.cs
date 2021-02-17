@@ -9,12 +9,12 @@ public class ChorusEffectGenerator : EffectGenerator
         if (collision.collider.gameObject.tag.Equals("Instrument"))
         {
             Debug.Log("Collision Detected with the instrument");
-            Destroy(this.gameObject, destroyTime);
             applyEffect(collision);
         }
         else
         {
             Debug.Log("Collision Detected");
+            Destroy(this.gameObject, destroyTime);
         }
     }
 
@@ -41,11 +41,15 @@ public class ChorusEffectGenerator : EffectGenerator
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().delay = guiChild.GetComponent<ChorusSliderInteraction>().delayStartingValue;
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().rate = guiChild.GetComponent<ChorusSliderInteraction>().rateStartingValue;
             collision.collider.gameObject.GetComponent<AudioChorusFilter>().depth = guiChild.GetComponent<ChorusSliderInteraction>().depthStartingValue;
+            Destroy(this.gameObject, destroyTime);
         }
         else
         {
             Debug.Log("Effect already applied!");
+            thisAudioSource.clip = effectAlreadyApplied;
+            thisAudioSource.volume = 1.2f;
+            thisAudioSource.Play();
+            Destroy(this.gameObject, 3f);
         }
     }
-
 }

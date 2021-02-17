@@ -6,33 +6,42 @@ public class ButtonInstrumentPanel : MonoBehaviour
 {
     public GameObject emptyGameObject;
     public GameObject canvas;
+    public GameObject videoChitarraC;
+    public GameObject videoChitarraE;
+    public GameObject videoBatteria;
+    public GameObject videoTastiera;
+
+    private void Update()
+    {
+        
+    }
 
     public void OnChitarraCClicked()
     {
         Debug.Log("Chitarra Classica Clicked.");
         checkGameObjIns();
-        //Instantiate(videoChitarraC, emptyGameObject.transform);
+        Instantiate(videoChitarraC, emptyGameObject.transform);
     }
 
     public void OnChitarraEClicked()
     {
         Debug.Log("Chitarra Elettrica Clicked.");
         checkGameObjIns();
-        //Instantiate(videoChitarraE, emptyGameObject.transform);
+        Instantiate(videoChitarraE, emptyGameObject.transform);
     }
 
     public void OnBatteriaClicked()
     {
         Debug.Log("Batteria Clicked.");
         checkGameObjIns();
-        //Instantiate(videoBatteria, emptyGameObject.transform);
+        Instantiate(videoBatteria, emptyGameObject.transform);
     }
 
     public void OnTastieraClicked()
     {
         Debug.Log("Tastiera Clicked.");
         checkGameObjIns();
-        //Instantiate(videoTastiera, emptyGameObject.transform);
+        Instantiate(videoTastiera, emptyGameObject.transform);
     }
 
     public void OnBackInsClicked()

@@ -11,11 +11,11 @@ public class HighPassFilterGenerator : EffectGenerator
         {
             Debug.Log("Collision Detected with the instrument");
             applyEffect(collision);
-            Destroy(this.gameObject, destroyTime);
         }
         else
         {
             Debug.Log("Collision Detected");
+            Destroy(this.gameObject, destroyTime);
         }
     }
 
@@ -36,10 +36,15 @@ public class HighPassFilterGenerator : EffectGenerator
             collision.collider.gameObject.AddComponent(typeof(AudioHighPassFilter));
             collision.collider.gameObject.GetComponent<AudioHighPassFilter>().highpassResonanceQ = guiChild.GetComponent<HighPassSliderInteraction>().resonanceStartingValue;
             collision.collider.gameObject.GetComponent<AudioHighPassFilter>().cutoffFrequency = guiChild.GetComponent<HighPassSliderInteraction>().cutOffFrequencyStartingValue;
+            Destroy(this.gameObject, destroyTime);
         }
         else
         {
             Debug.Log("Effect already applied!");
+            thisAudioSource.clip = effectAlreadyApplied;
+            thisAudioSource.volume = 1.2f;
+            thisAudioSource.Play();
+            Destroy(this.gameObject, 3f);
         }
     }
 }

@@ -14,6 +14,7 @@ public class DistorsionEffectGenerator : EffectGenerator
         else
         {
             Debug.Log("Collision Detected");
+            Destroy(this.gameObject, destroyTime);
         }
     }
 

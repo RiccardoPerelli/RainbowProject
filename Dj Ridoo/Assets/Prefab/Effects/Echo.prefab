@@ -14364,6 +14364,8 @@ MonoBehaviour:
   explosion: {fileID: 8847016492424775185, guid: 096946e2ab2103b42a2210d780249a22,
     type: 3}
   destroyTime: 0.1
+  effectAlreadyApplied: {fileID: 8300000, guid: eeb03c3ecb4df044d8f7edb402b340b8,
+    type: 3}
 --- !u!82 &-4917861231128206158
 AudioSource:
   m_ObjectHideFlags: 0

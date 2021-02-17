@@ -10,10 +10,10 @@ public class LowPassFilterGenerator : EffectGenerator
         {
             Debug.Log("Collision Detected with the instrument");
             applyEffect(collision);
-            Destroy(this.gameObject, destroyTime);
         } else
         {
             Debug.Log("Collision Detected");
+            Destroy(this.gameObject, destroyTime);
         }
     }
 
@@ -34,10 +34,16 @@ public class LowPassFilterGenerator : EffectGenerator
             collision.collider.gameObject.AddComponent(typeof(AudioLowPassFilter));
             collision.collider.gameObject.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = guiChild.GetComponent<LowPassSliderInteraction>().resonanceStartingValue;
             collision.collider.gameObject.GetComponent<AudioLowPassFilter>().cutoffFrequency = guiChild.GetComponent<LowPassSliderInteraction>().cutOffFrequencyStartingValue;
+            Destroy(this.gameObject, destroyTime);
         } 
         else
         {
             Debug.Log("Effect already applied!");
+            Debug.Log("Effect already applied!");
+            thisAudioSource.clip = effectAlreadyApplied;
+            thisAudioSource.volume = 1.2f;
+            thisAudioSource.Play();
+            Destroy(this.gameObject, 3f);
         }
     }
 }

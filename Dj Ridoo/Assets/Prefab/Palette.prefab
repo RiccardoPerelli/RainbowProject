@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5330399321727587802
 RectTransform:
   m_ObjectHideFlags: 0
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74354c9c2fbd92742b9f87a75c2cd49f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zOffset: -35
+  zOffset: -120
   turnBackSpeed: 10
   instrumentMenu: {fileID: 5111212588744748089}
 --- !u!1 &1626472479463765245
@@ -1018,7 +1018,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1526072032571110577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1307,7 +1307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6795269074f188d4581247cc5b22c8de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zOffset: -35
+  zOffset: -120
   turnBackSpeed: 10
   effectMenu: {fileID: 2897409995169210155}
 --- !u!1 &2897409995169210155
@@ -1393,7 +1393,7 @@ GameObject:
   - component: {fileID: 515846302068177745}
   - component: {fileID: 448905294066837699}
   - component: {fileID: 5509060241730880950}
-  - component: {fileID: 5968795823684969924}
+  - component: {fileID: 2783619652772676489}
   m_Layer: 9
   m_Name: SaveBtn
   m_TagString: FirstButton
@@ -1541,7 +1541,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &5968795823684969924
+--- !u!114 &2783619652772676489
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1550,12 +1550,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3008650482309022912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74354c9c2fbd92742b9f87a75c2cd49f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2dd00f31f40b021458dd3eb65dc06649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zOffset: -35
+  zOffset: -120
   turnBackSpeed: 10
-  instrumentMenu: {fileID: 5111212588744748089}
 --- !u!1 &3046759980965449549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,7 +1717,7 @@ GameObject:
   - component: {fileID: 4623192332220491381}
   - component: {fileID: 8402293681894523293}
   - component: {fileID: 1800803341451430973}
-  - component: {fileID: 3907393136608411624}
+  - component: {fileID: 8993548395291820313}
   m_Layer: 9
   m_Name: SavingsBtn
   m_TagString: SaveButton
@@ -1866,7 +1865,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &3907393136608411624
+--- !u!114 &8993548395291820313
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1875,12 +1874,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3119563173552277041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74354c9c2fbd92742b9f87a75c2cd49f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b00381e8085d6242bee0b9dd076ec19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zOffset: -35
+  zOffset: -120
   turnBackSpeed: 10
-  instrumentMenu: {fileID: 5111212588744748089}
+  savingMenu: {fileID: 38654299634387839}
 --- !u!1 &3320044230815921488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2976,7 +2975,7 @@ GameObject:
   - component: {fileID: 6184793185071223009}
   - component: {fileID: 7068988477148839578}
   - component: {fileID: 7965548729001246517}
-  - component: {fileID: 1385650862857323277}
+  - component: {fileID: 8857650450695672981}
   m_Layer: 9
   m_Name: BackBtn
   m_TagString: ThirdButton
@@ -3124,7 +3123,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1385650862857323277
+--- !u!114 &8857650450695672981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3133,12 +3132,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5684398178399450822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74354c9c2fbd92742b9f87a75c2cd49f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d4cf2a4761589c419d6228ca576fcba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zOffset: -35
+  zOffset: -120
   turnBackSpeed: 10
-  instrumentMenu: {fileID: 5111212588744748089}
+  PrincipalMenu: {fileID: 2308889958579396673}
 --- !u!1 &5782064675188316353
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,7 +3657,7 @@ GameObject:
   - component: {fileID: 2051190617712512578}
   - component: {fileID: 1767484901029918785}
   - component: {fileID: 128263478285622480}
-  - component: {fileID: 1624332760869501866}
+  - component: {fileID: 2133753787800356575}
   m_Layer: 9
   m_Name: LoadBtn
   m_TagString: SecondButton
@@ -3806,7 +3805,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
---- !u!114 &1624332760869501866
+--- !u!114 &2133753787800356575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3815,12 +3814,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6089945699646575847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6795269074f188d4581247cc5b22c8de, type: 3}
+  m_Script: {fileID: 11500000, guid: 72ad49e67e8442b4cb1d6f06d0ad5193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zOffset: -35
+  zOffset: -120
   turnBackSpeed: 10
-  effectMenu: {fileID: 2897409995169210155}
 --- !u!1 &6323604487210919936
 GameObject:
   m_ObjectHideFlags: 0
