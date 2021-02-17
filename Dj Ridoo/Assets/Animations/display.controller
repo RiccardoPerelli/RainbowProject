@@ -33,7 +33,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CommandPanel
-  m_Speed: 1
+  m_Speed: 1.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1036346064995473626}
@@ -167,7 +167,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CommandPanel 0
-  m_Speed: -1
+  m_Speed: -1.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 6570518534457829117}
