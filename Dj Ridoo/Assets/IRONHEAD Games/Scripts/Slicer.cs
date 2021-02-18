@@ -43,9 +43,7 @@ public class Slicer : MonoBehaviour
                         Debug.Log("Action Instrument Sliced Called");
                         InstrumentSliced(objectToBeSliced.gameObject);
                     }
-                    if(MixerSliced != null && objectToBeSliced.gameObject.tag.Equals("Echo") || objectToBeSliced.gameObject.tag.Equals("Chorus")
-                        || objectToBeSliced.gameObject.tag.Equals("Distorsion") || objectToBeSliced.gameObject.tag.Equals("LowPass")
-                        || objectToBeSliced.gameObject.tag.Equals("HighPass"))
+                    if(MixerSliced != null && objectToBeSliced.gameObject.tag.Equals("Mixer"))
                     {
                         Debug.Log("Action Filter Sliced Called");
                         MixerSliced(objectToBeSliced.gameObject);
