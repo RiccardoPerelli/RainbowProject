@@ -95,9 +95,9 @@ public class SavingManager : MonoBehaviour
         position.Add(o.transform.position.y);
         position.Add(o.transform.position.z);
 
-        rotation.Add(o.transform.rotation.x);
-        rotation.Add(o.transform.rotation.y);
-        rotation.Add(o.transform.rotation.z);
+        rotation.Add(o.transform.rotation.eulerAngles.x);
+        rotation.Add(o.transform.rotation.eulerAngles.y);
+        rotation.Add(o.transform.rotation.eulerAngles.z);
 
         Debug.Log(o.transform.rotation.x);
         Debug.Log(o.transform.rotation.y);
@@ -308,7 +308,8 @@ public class SavingManager : MonoBehaviour
                 if (fd.name.Contains("LowPassMixer"))
                 {
                     GameObject lowPassSpawned = Instantiate(lowpass, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
-                    foreach(string p in fd.parameters)
+                    lowPassSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
+                    foreach (string p in fd.parameters)
                     {
                         LowPass lp = JsonUtility.FromJson<LowPass>(p);
                         float cutofffreq = lp.cutoff_freq;
@@ -317,7 +318,8 @@ public class SavingManager : MonoBehaviour
                         lowPassSpawned.transform.GetChild(0).Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().sliderValue = cutofffreq;
                         /*lowpass.transform.Find("FrequencySlider").position = new Vector3(lowpass.transform.Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().startingXPosition,
                             cutofffreq, lowpass.transform.Find("FrequencySlider").gameObject.GetComponent<SliderPosition>().startingZPosition);*/
-                        lowPassSpawned.transform.GetChild(0).Find("ResonanceSlider").gameObject.GetComponent<SliderPosition>().sliderValue = resonance;   
+                        lowPassSpawned.transform.GetChild(0).Find("ResonanceSlider").gameObject.GetComponent<SliderPosition>().sliderValue = resonance;
+                        
                     }
 
                     foreach (int id in fd.instruments)
@@ -328,6 +330,7 @@ public class SavingManager : MonoBehaviour
                 if (fd.name.Contains("HighPassMixer"))
                 {
                     GameObject highPassSpawned = Instantiate(highpass, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
+                    highPassSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
                     foreach (string p in fd.parameters)
                     {
                         HighPass hp = JsonUtility.FromJson<HighPass>(p);
@@ -350,6 +353,7 @@ public class SavingManager : MonoBehaviour
                     Debug.Log(RestoreAngles(fd.rotation[1]));
                     Debug.Log(RestoreAngles(fd.rotation[2]));
                     GameObject chorusSpawned = Instantiate(chorus, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
+                    chorusSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
                     foreach (string p in fd.parameters)
                     {
                         Debug.Log(p);
@@ -380,6 +384,7 @@ public class SavingManager : MonoBehaviour
                 if (fd.name.Contains("EchoMixer"))
                 {
                     GameObject echoSpawned = Instantiate(echo, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
+                    echoSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
                     foreach (string p in fd.parameters)
                     {
                         Echo eco = JsonUtility.FromJson<Echo>(p);
@@ -402,6 +407,7 @@ public class SavingManager : MonoBehaviour
                 if (fd.name.Contains("DistorsionMixer"))
                 {
                     GameObject distorsionSpawned = Instantiate(distortion, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
+                    distorsionSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
                     foreach (string p in fd.parameters)
                     {
                         Distortion d = JsonUtility.FromJson<Distortion>(p);
