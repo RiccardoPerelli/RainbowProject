@@ -95,13 +95,11 @@ public class SavingManager : MonoBehaviour
         position.Add(o.transform.position.y);
         position.Add(o.transform.position.z);
 
-        rotation.Add(o.transform.rotation.eulerAngles.x);
-        rotation.Add(o.transform.rotation.eulerAngles.y);
-        rotation.Add(o.transform.rotation.eulerAngles.z);
+        rotation.Add(ConvertAngles(o.transform.rotation.eulerAngles.x));
+        rotation.Add(ConvertAngles(o.transform.rotation.eulerAngles.y));
+        rotation.Add(ConvertAngles(o.transform.rotation.eulerAngles.z));
 
-        Debug.Log(o.transform.rotation.x);
-        Debug.Log(o.transform.rotation.y);
-        Debug.Log(o.transform.rotation.z);
+        
         ins.position = position;
         ins.rotation = rotation;
 
@@ -143,14 +141,14 @@ public class SavingManager : MonoBehaviour
         position.Add(filterReference.transform.position.y);
         position.Add(filterReference.transform.position.z);
 
-        rotation.Add(filterReference.transform.rotation.eulerAngles.x);
-        rotation.Add(filterReference.transform.rotation.eulerAngles.y);
-        rotation.Add(filterReference.transform.rotation.eulerAngles.z);
+        rotation.Add(ConvertAngles(filterReference.transform.rotation.eulerAngles.x));
+        rotation.Add(ConvertAngles(filterReference.transform.rotation.eulerAngles.y));
+        rotation.Add(ConvertAngles(filterReference.transform.rotation.eulerAngles.z));
         //rotation.Add(filterReference.transform.rotation.eulerAngles.w);
 
         Debug.Log(filterReference.transform.rotation.x);
         Debug.Log(filterReference.transform.rotation.y);
-        Debug.Log(filterReference.transform.rotation.z);
+        Debug.Log("rotation_save" + ConvertAngles(filterReference.transform.rotation.z));
         fd.position = position;
         fd.rotation = rotation;
 
@@ -272,27 +270,27 @@ public class SavingManager : MonoBehaviour
 
                 if (player.name.Contains("ElectricGuitar"))
                 {
-                    GameObject o = Instantiate(eletricGuitar, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
+                    GameObject o = Instantiate(eletricGuitar, new Vector3(player.position[0], player.position[1], player.position[2]), Quaternion.Euler(player.rotation[0], player.rotation[1], player.rotation[2]), connectingCables.transform);
                     o.GetComponent<IdChecker>().id = player.id;
                 }
                 else if (player.name.Contains("ClassicGuitar"))
                 {
-                    GameObject o1 = Instantiate(classicGuitar, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
+                    GameObject o1 = Instantiate(classicGuitar, new Vector3(player.position[0], player.position[1], player.position[2]), Quaternion.Euler(player.rotation[0], player.rotation[1], player.rotation[2]), connectingCables.transform);
                     o1.GetComponent<IdChecker>().id = player.id;
                 }
                 else if (player.name.Contains("Drums"))
                 {
-                    GameObject o2 = Instantiate(drums, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
+                    GameObject o2 = Instantiate(drums, new Vector3(player.position[0], player.position[1], player.position[2]), Quaternion.Euler(player.rotation[0], player.rotation[1], player.rotation[2]), connectingCables.transform);
                     o2.GetComponent<IdChecker>().id = player.id;
                 }
                 else if (player.name.Contains("Tastiera"))
                 {
-                    GameObject o3 = Instantiate(tastiera, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
+                    GameObject o3 = Instantiate(tastiera, new Vector3(player.position[0], player.position[1], player.position[2]), Quaternion.Euler(player.rotation[0], player.rotation[1], player.rotation[2]), connectingCables.transform);
                     o3.GetComponent<IdChecker>().id = player.id;
                 }
                 else if (player.name.Contains("Microfone"))
                 {
-                    GameObject o4 = Instantiate(microfone, new Vector3(player.position[0], player.position[1], player.position[2]), new Quaternion(player.rotation[0], player.rotation[1], player.rotation[2], 1), connectingCables.transform);
+                    GameObject o4 = Instantiate(microfone, new Vector3(player.position[0], player.position[1], player.position[2]), Quaternion.Euler(player.rotation[0], player.rotation[1], player.rotation[2]), connectingCables.transform);
                     o4.GetComponent<IdChecker>().id = player.id;
                 }
             }
@@ -307,8 +305,9 @@ public class SavingManager : MonoBehaviour
   
                 if (fd.name.Contains("LowPassMixer"))
                 {
-                    GameObject lowPassSpawned = Instantiate(lowpass, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
-                    lowPassSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
+                    GameObject lowPassSpawned = Instantiate(lowpass, new Vector3(fd.position[0], fd.position[1], fd.position[2]), Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]));
+                    
+                    //lowPassSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
                     foreach (string p in fd.parameters)
                     {
                         LowPass lp = JsonUtility.FromJson<LowPass>(p);
@@ -329,8 +328,8 @@ public class SavingManager : MonoBehaviour
                 }
                 if (fd.name.Contains("HighPassMixer"))
                 {
-                    GameObject highPassSpawned = Instantiate(highpass, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
-                    highPassSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
+                    GameObject highPassSpawned = Instantiate(highpass, new Vector3(fd.position[0], fd.position[1], fd.position[2]), Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]));
+                    //highPassSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
                     foreach (string p in fd.parameters)
                     {
                         HighPass hp = JsonUtility.FromJson<HighPass>(p);
@@ -352,8 +351,8 @@ public class SavingManager : MonoBehaviour
                     Debug.Log(RestoreAngles(fd.rotation[0]));
                     Debug.Log(RestoreAngles(fd.rotation[1]));
                     Debug.Log(RestoreAngles(fd.rotation[2]));
-                    GameObject chorusSpawned = Instantiate(chorus, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
-                    chorusSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
+                    GameObject chorusSpawned = Instantiate(chorus, new Vector3(fd.position[0], fd.position[1], fd.position[2]), Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]));
+                    //chorusSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
                     foreach (string p in fd.parameters)
                     {
                         Debug.Log(p);
@@ -383,8 +382,8 @@ public class SavingManager : MonoBehaviour
                 }
                 if (fd.name.Contains("EchoMixer"))
                 {
-                    GameObject echoSpawned = Instantiate(echo, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
-                    echoSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
+                    GameObject echoSpawned = Instantiate(echo, new Vector3(fd.position[0], fd.position[1], fd.position[2]), Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]));
+                    //echoSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
                     foreach (string p in fd.parameters)
                     {
                         Echo eco = JsonUtility.FromJson<Echo>(p);
@@ -406,8 +405,11 @@ public class SavingManager : MonoBehaviour
                 }
                 if (fd.name.Contains("DistorsionMixer"))
                 {
-                    GameObject distorsionSpawned = Instantiate(distortion, new Vector3(fd.position[0], fd.position[1], fd.position[2]), new Quaternion(fd.rotation[0], fd.rotation[1], fd.rotation[2], 1));
-                    distorsionSpawned.transform.rotation = Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
+                    GameObject distorsionSpawned = Instantiate(distortion, new Vector3(fd.position[0], fd.position[1], fd.position[2]), Quaternion.Euler(fd.rotation[0], fd.rotation[1], fd.rotation[2]));
+                    Debug.Log("rotation" + fd.rotation[0]);
+                    Debug.Log("rotation" + fd.rotation[1]);
+                    Debug.Log("rotation" + fd.rotation[2]);
+                    //distorsionSpawned.transform.eulerAngles = new Vector3(fd.rotation[0], fd.rotation[1], fd.rotation[2]);
                     foreach (string p in fd.parameters)
                     {
                         Distortion d = JsonUtility.FromJson<Distortion>(p);
