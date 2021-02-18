@@ -41,8 +41,6 @@ public class DistorsionEffectGenerator : EffectGenerator
             thisAudioSource.clip = effectAlreadyApplied;
             thisAudioSource.volume = 1.2f;
             thisAudioSource.Play();
-            OVRInput.SetControllerVibration(1, 1, OVRInput.Controller.LTouch);
-            OVRInput.SetControllerVibration(1, 1, OVRInput.Controller.RTouch);
             Destroy(this.gameObject, 3f);
         }
     }

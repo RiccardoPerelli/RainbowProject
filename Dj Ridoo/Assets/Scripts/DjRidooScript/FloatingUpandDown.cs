@@ -8,7 +8,10 @@ public class FloatingUpandDown : MonoBehaviour
     public float frequency = 0.5f;
     Vector3 posOffset = new Vector3();
     Vector3 tempPos = new Vector3();
-    bool floatup;
+
+    private bool vibrationStarted = false;
+    private GameObject grabbingObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +27,26 @@ public class FloatingUpandDown : MonoBehaviour
             tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
 
             transform.position = tempPos;
-        } 
+        }
         else
         {
             posOffset = transform.position;
+        }
+        InitializeVibration();
+    }
+
+    private void InitializeVibration()
+    {
+        if (gameObject.GetComponent<OVRGrabbable>().isGrabbed && !vibrationStarted)
+        {
+            grabbingObject = gameObject.GetComponent<OVRGrabbable>().grabbedBy.gameObject;
+            vibrationStarted = !vibrationStarted;
+            StartCoroutine(grabbingObject.GetComponent<OculusHaptics>().VibrateTime(VibrationForce.Medium, 0.3f));
+        }
+        else if (!gameObject.GetComponent<OVRGrabbable>().isGrabbed && vibrationStarted)
+        {
+            StartCoroutine(grabbingObject.GetComponent<OculusHaptics>().VibrateTime(VibrationForce.Hard, 0.3f));
+            vibrationStarted = !vibrationStarted;
         }
     }
 }
