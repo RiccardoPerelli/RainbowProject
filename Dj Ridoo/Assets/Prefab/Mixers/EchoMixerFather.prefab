@@ -366,6 +366,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EchoMixer
       objectReference: {fileID: 0}
+    - target: {fileID: 7623970409695875784, guid: 4f0220170b803fb4da432dd47433edb7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1029064618186758738, guid: 4f0220170b803fb4da432dd47433edb7, type: 3}
     - {fileID: -1414662263419993249, guid: 4f0220170b803fb4da432dd47433edb7, type: 3}
