@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -234015107870408016}
   m_Layer: 8
   m_Name: Chorus
-  m_TagString: Untagged
+  m_TagString: Essence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
