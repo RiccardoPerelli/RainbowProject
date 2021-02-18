@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwitchHandSwordSimplified : MonoBehaviour
 {
 
+    public GameObject RightControllerAnchor;
     public GameObject sword;
 
     bool switched = false;
@@ -17,12 +18,12 @@ public class SwitchHandSwordSimplified : MonoBehaviour
             if (switched == false)
             {
                 sword.SetActive(true);
-                //StartCoroutine("DeactiveHand");
-                //StartCoroutine(FadeHand(handMat, 0));
                 switched = true;
+                StartCoroutine(RightControllerAnchor.GetComponent<OculusHaptics>().VibrateTime(VibrationForce.Light, 0.3f));
             }
             else
             {
+                StartCoroutine(RightControllerAnchor.GetComponent<OculusHaptics>().VibrateTime(VibrationForce.Light, 0.3f));
                 sword.SetActive(false);
                 switched = false;
             }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChorusEffectGenerator : EffectGenerator
 {
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.tag.Equals("Instrument"))
@@ -49,8 +50,6 @@ public class ChorusEffectGenerator : EffectGenerator
             thisAudioSource.clip = effectAlreadyApplied;
             thisAudioSource.volume = 1.2f;
             thisAudioSource.Play();
-            OVRInput.SetControllerVibration(1, 1, OVRInput.Controller.LTouch);
-            OVRInput.SetControllerVibration(1, 1, OVRInput.Controller.RTouch);
             Destroy(this.gameObject, 3f);
         }
     }

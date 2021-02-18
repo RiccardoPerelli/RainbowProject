@@ -8,6 +8,5 @@ public class SliceListener : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         slicer.isTouched = true;
-        OVRInput.SetControllerVibration(1, 0.5f, OVRInput.Controller.RTouch);
     }
 }
