@@ -27,6 +27,9 @@ TagManager:
   - Chorus
   - Mixer
   - SaveButton
+  - Essence
+  - LHand
+  - RHand
   layers:
   - Default
   - TransparentFX
