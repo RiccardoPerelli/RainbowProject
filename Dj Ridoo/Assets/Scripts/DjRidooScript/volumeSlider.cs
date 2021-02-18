@@ -15,6 +15,7 @@ public class volumeSlider : MonoBehaviour
 	public void Start()
 	{
 		sliderValueText.text = slider.value.ToString();
+		parentObj = gameObject.transform.parent;
 		slider.value = parentObj.gameObject.GetComponent<AudioSource>().volume;
 		//Adds a listener to the main slider and invokes a method when the value changes.
 		slider.onValueChanged.AddListener(OnSliderValueChanged);
@@ -23,7 +24,6 @@ public class volumeSlider : MonoBehaviour
 	public void OnSliderValueChanged(float value)
 	{
 		sliderValueText.text = value.ToString();
-		parentObj = gameObject.transform.parent;
 		parentObj.gameObject.GetComponent<AudioSource>().volume = value;
 	}
 
