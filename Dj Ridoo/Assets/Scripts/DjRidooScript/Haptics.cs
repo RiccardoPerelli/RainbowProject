@@ -16,7 +16,10 @@ public class Haptics : MonoBehaviour
         {
             vibrateHand(0.3f);
         }
-
+        if (coll.gameObject.tag == "Slider")
+        {
+            vibrateHand(0.3f);
+        }
     }
 
     private void OnTriggerEnter(Collider coll)
@@ -30,19 +33,20 @@ public class Haptics : MonoBehaviour
         {
             vibrateHand(0.5f);
         }
-
-        if(coll.gameObject.tag == "Slider")
-        {
-            vibrateHand(0.3f);
-        }
     }
 
     private void vibrateHand(float amplitude)
     {
         if (gameObject.tag == "LHand")
+        {
+            print("vibrazione mano sx");
             OVRInput.SetControllerVibration(1, amplitude, OVRInput.Controller.LTouch);
+        }
+            
         if (gameObject.tag == "RHand")
+        {
+            print("vibrazione mano dx");
             OVRInput.SetControllerVibration(1, amplitude, OVRInput.Controller.RTouch);
-        print("vibrazione!");
+        }
     }
 }
