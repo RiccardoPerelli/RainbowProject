@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4c9a1b497f1ce4993acdcc86907b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisParent: {fileID: 0}
 --- !u!82 &6487458583346371247
 AudioSource:
   m_ObjectHideFlags: 0
@@ -407,17 +408,17 @@ PrefabInstance:
     - target: {fileID: 1653655417726920886, guid: 3f97179ec7b859847a63b76e249b5c4a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.007133835
+      value: 0.010853416
       objectReference: {fileID: 0}
     - target: {fileID: 1653655417726920886, guid: 3f97179ec7b859847a63b76e249b5c4a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.055096798
+      value: 0.08382427
       objectReference: {fileID: 0}
     - target: {fileID: 1653655417726920886, guid: 3f97179ec7b859847a63b76e249b5c4a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.058688395
+      value: 0.089288525
       objectReference: {fileID: 0}
     - target: {fileID: 5388121590955858831, guid: 3f97179ec7b859847a63b76e249b5c4a,
         type: 3}

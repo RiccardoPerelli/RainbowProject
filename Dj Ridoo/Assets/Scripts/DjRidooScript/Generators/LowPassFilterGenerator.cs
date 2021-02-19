@@ -10,9 +10,18 @@ public class LowPassFilterGenerator : EffectGenerator
         {
             Debug.Log("Collision Detected with the instrument");
             applyEffect(collision);
-        } else
+        }
+        else if (collision.collider.gameObject.tag.Equals("Mixer") || collision.collider.gameObject.tag.Equals("Mixer"))
         {
             Debug.Log("Collision Detected");
+            thisAudioSource.clip = doubleFilter;
+            thisAudioSource.volume = 1.2f;
+            thisAudioSource.Play();
+            Destroy(this.gameObject, 3f);
+            Destroy(this.gameObject, destroyTime);
+        }
+        else
+        {
             Destroy(this.gameObject, destroyTime);
         }
     }

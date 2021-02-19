@@ -9,6 +9,7 @@ public abstract class EffectGenerator : MonoBehaviour
     public GameObject explosion;
     public float destroyTime;
     public AudioClip effectAlreadyApplied;
+    public AudioClip doubleFilter; 
 
     protected GameObject location;
     protected AudioSource thisAudioSource;

@@ -5,12 +5,14 @@ using UnityEngine;
 public class GrabChecker : MonoBehaviour
 {
 
+    public GameObject thisParent;
     private AudioSource thisAudio;
 
     // Start is called before the first frame update
     void Start()
     {
         thisAudio = gameObject.GetComponent<AudioSource>();
+        thisParent = gameObject.transform.parent.gameObject;
     }
 
     // Update is called once per frame
@@ -27,6 +29,7 @@ public class GrabChecker : MonoBehaviour
             else if(!thisAudio.isPlaying)
             {
                 thisAudio.Play();
+                gameObject.transform.parent = thisParent.transform;
             }
         }
     }

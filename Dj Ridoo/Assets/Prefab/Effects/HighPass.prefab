@@ -104,6 +104,7 @@ MonoBehaviour:
   destroyTime: 0.1
   effectAlreadyApplied: {fileID: 8300000, guid: eeb03c3ecb4df044d8f7edb402b340b8,
     type: 3}
+  doubleFilter: {fileID: 8300000, guid: f156c063b28b306438c9ed3c7753f81e, type: 3}
 --- !u!82 &9159545675592798545
 AudioSource:
   m_ObjectHideFlags: 0
