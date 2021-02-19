@@ -18,16 +18,15 @@ public class ButtonPression : MonoBehaviour
         startingXValue = gameObject.GetComponent<RectTransform>().anchoredPosition3D.x;
     }
 
-    // Update is called once per frame
-    void Update()
+    protected void CheckActivation()
     {
-        /*if (touching)
+        /*if (gameObject.transform.parent.gameObject.activeSelf && !gameObject.activeSelf)
         {
-            CheckPosition();
+            gameObject.SetActive(true);
         }
-        else if (zOffset < gameObject.GetComponent<RectTransform>().anchoredPosition3D.z)
+        else if (!gameObject.transform.parent.gameObject.activeSelf && gameObject.activeSelf)
         {
-            LerpPosition();
+            gameObject.SetActive(false);
         }*/
     }
 

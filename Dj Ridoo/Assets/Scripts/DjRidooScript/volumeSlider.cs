@@ -15,16 +15,15 @@ public class volumeSlider : MonoBehaviour
 	public void Start()
 	{
 		sliderValueText.text = slider.value.ToString();
-
-		//Adds a listener to the main slider and invokes a method when the value changes.
-		slider.onValueChanged.AddListener(OnSliderValueChanged);
+		parentObj = gameObject.transform.parent;
+		slider.value = parentObj.gameObject.GetComponent<AudioSource>().volume;
 	}
 
-	public void OnSliderValueChanged(float value)
-	{
-		sliderValueText.text = value.ToString();
-		parentObj = gameObject.transform.parent;
-		parentObj.gameObject.GetComponent<AudioSource>().volume = value;
+	void FixedUpdate()
+    {
+		sliderValueText.text = slider.value.ToString("N2");
+		print(slider.value);
+		parentObj.gameObject.GetComponent<AudioSource>().volume = slider.value;
 	}
 
 }

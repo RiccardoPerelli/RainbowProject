@@ -14,6 +14,7 @@ public class SpawnInstrumentButtonPression : ButtonPression
         {
             TriggerAction();
         }
+        CheckActivation();
     }
 
     protected override void TriggerAction()

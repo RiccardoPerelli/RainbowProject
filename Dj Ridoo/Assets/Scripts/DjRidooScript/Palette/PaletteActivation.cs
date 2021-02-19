@@ -6,6 +6,12 @@ public class PaletteActivation : MonoBehaviour
 {
     private Animator _animator;
     bool activated;
+
+    public GameObject menuPanel;
+    public GameObject savingPanel;
+    public GameObject instrumentPanel;
+    public GameObject mixerPanel;
+
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -18,11 +24,31 @@ public class PaletteActivation : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.Button.Four) || Input.GetKeyDown(KeyCode.Alpha0)){
             if (!activated)
             {
+                menuPanel.SetActive(true);
+                savingPanel.SetActive(false);
+                instrumentPanel.SetActive(false);
+                mixerPanel.SetActive(false);
                 Activate();
                 activated = true;
             }
             else
             {
+                if (menuPanel.activeSelf)
+                {
+                    menuPanel.SetActive(false);
+                }  
+                else if (savingPanel.activeSelf)
+                {
+                    menuPanel.SetActive(false);
+                }
+                else if (savingPanel.activeSelf)
+                {
+                    instrumentPanel.SetActive(false);
+                }
+                else if (savingPanel.activeSelf)
+                {
+                    mixerPanel.SetActive(false);
+                }
                 Deactivate();
                 activated = false;
             }

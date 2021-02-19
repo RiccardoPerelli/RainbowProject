@@ -11,6 +11,7 @@ public class Slicer : MonoBehaviour
     public static event Action<GameObject> MixerSliced;
     public Material MaterialAfterSlice;
     public LayerMask sliceMask;
+    public GameObject RightControllerAnchor;
     AudioSource audioData;
 
     public bool isTouched;
@@ -34,6 +35,7 @@ public class Slicer : MonoBehaviour
                 if (objectToBeSliced.gameObject != null && slicedObject != null)
                 {
                     audioData.Play(0);
+                    StartCoroutine(RightControllerAnchor.GetComponent<OculusHaptics>().VibrateTime(VibrationForce.Hard, 0.6f));
                     GameObject upperHullGameobject = slicedObject.CreateUpperHull(objectToBeSliced.gameObject, MaterialAfterSlice);
                     GameObject lowerHullGameobject = slicedObject.CreateLowerHull(objectToBeSliced.gameObject, MaterialAfterSlice);
                     upperHullGameobject.transform.position = objectToBeSliced.transform.position;
@@ -43,9 +45,7 @@ public class Slicer : MonoBehaviour
                         Debug.Log("Action Instrument Sliced Called");
                         InstrumentSliced(objectToBeSliced.gameObject);
                     }
-                    if(MixerSliced != null && objectToBeSliced.gameObject.tag.Equals("Echo") || objectToBeSliced.gameObject.tag.Equals("Chorus")
-                        || objectToBeSliced.gameObject.tag.Equals("Distorsion") || objectToBeSliced.gameObject.tag.Equals("LowPass")
-                        || objectToBeSliced.gameObject.tag.Equals("HighPass"))
+                    if(MixerSliced != null && objectToBeSliced.gameObject.tag.Equals("Mixer"))
                     {
                         Debug.Log("Action Filter Sliced Called");
                         MixerSliced(objectToBeSliced.gameObject);

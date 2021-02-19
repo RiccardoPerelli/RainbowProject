@@ -6,10 +6,12 @@ public class ButtonInteractionPanel : MonoBehaviour
 {
 
     public GameObject emptyGameObject;
-    public GameObject instrumentCanvas;
+    public GameObject videoInstrument;
     public GameObject filterCanvas;
     public GameObject videoPalette;
     public GameObject videoSword;
+    public GameObject videoEffect;
+    public GameObject videoSave;
 
     private void Update()
     {
@@ -33,15 +35,17 @@ public class ButtonInteractionPanel : MonoBehaviour
     public void OnInstrumentClicked()
     {
         Debug.Log("Strumenti Clicked.");
-        gameObject.SetActive(false);
-        instrumentCanvas.SetActive(true);
+        checkGameObj();
+        Instantiate(videoInstrument, emptyGameObject.transform);
     }
 
     public void OnEffectClicked()
     {
+        checkGameObj();
+        Instantiate(videoEffect, emptyGameObject.transform);
         gameObject.SetActive(false);
         filterCanvas.SetActive(true);
-        Debug.Log("Strumenti Clicked.");
+        Debug.Log("Effetti Clicked.");
     }
 
     public void OnSwordClicked()
@@ -49,6 +53,13 @@ public class ButtonInteractionPanel : MonoBehaviour
         Debug.Log("Sword Clicked.");
         checkGameObj();
         Instantiate(videoSword, emptyGameObject.transform);
+    }
+
+    public void OnSakvataggioClicked()
+    {
+        Debug.Log("Salvataggio Clicked.");
+        checkGameObj();
+        Instantiate(videoSave, emptyGameObject.transform);
     }
 
     private void checkGameObj()

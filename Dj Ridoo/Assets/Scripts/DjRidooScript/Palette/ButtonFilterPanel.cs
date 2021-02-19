@@ -6,17 +6,17 @@ public class ButtonFilterPanel : MonoBehaviour
 {
     public GameObject emptyGameObject;
     public GameObject canvas;
-    public GameObject videoIntroduzione;
+    public GameObject videoDistortion;
     public GameObject videoLow;
     public GameObject videoHigh;
     public GameObject videoChorus;
     public GameObject videoEcho;
 
-    public void OnIntroduzioneClicked()
+    public void OnDistortionClicked()
     {
-        Debug.Log("Introduzione Clicked.");
+        Debug.Log("Distortion Clicked.");
         checkGameObjFil();
-        Instantiate(videoIntroduzione, emptyGameObject.transform);
+        Instantiate(videoDistortion, emptyGameObject.transform);
     }
 
     public void OnLowClicked()
@@ -56,8 +56,10 @@ public class ButtonFilterPanel : MonoBehaviour
 
     private void checkGameObjFil()
     {
-        Transform tf = emptyGameObject.GetComponentsInChildren<Transform>()[0];
-        if (tf != null)
-            Destroy(tf.gameObject);
+        if (emptyGameObject.transform.childCount >= 1)
+        {
+            GameObject oldVideo = emptyGameObject.transform.GetChild(0).gameObject;
+            Destroy(oldVideo.gameObject);
+        }
     }
 }
