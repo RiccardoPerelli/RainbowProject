@@ -12,25 +12,33 @@ public class FilterSlicedChecker : MonoBehaviour
  
     private void RemoveEffects(GameObject mixer)
     {
-        if (mixer.transform.GetChild(0).GetComponent<LowPassSliderInteraction>() != null)
+        if (mixer.transform.childCount > 0)
         {
-            Destroy(gameObject.GetComponent<AudioLowPassFilter>());
+            if (mixer.transform.GetChild(0).GetComponent<LowPassSliderInteraction>() != null)
+            {
+                Destroy(gameObject.GetComponent<AudioLowPassFilter>());
+            }
+            else if (mixer.transform.GetChild(0).GetComponent<HighPassSliderInteraction>() != null)
+            {
+                Destroy(gameObject.GetComponent<AudioHighPassFilter>());
+            }
+            else if (mixer.transform.GetChild(0).GetComponent<DistorsionSliderInteraction>() != null)
+            {
+                Destroy(gameObject.GetComponent<AudioDistortionFilter>());
+            }
+            else if (mixer.transform.GetChild(0).GetComponent<EchoSliderInteraction>() != null)
+            {
+                Destroy(gameObject.GetComponent<AudioEchoFilter>());
+            }
+            else if (mixer.transform.GetChild(0).GetComponent<ChorusSliderInteraction>() != null)
+            {
+                Destroy(gameObject.GetComponent<AudioChorusFilter>());
+            }
         }
-        else if (mixer.transform.GetChild(0).GetComponent<HighPassSliderInteraction>() != null)
-        {
-            Destroy(gameObject.GetComponent<AudioHighPassFilter>());
-        }
-        else if (mixer.transform.GetChild(0).GetComponent<DistorsionSliderInteraction>() != null)
-        {
-            Destroy(gameObject.GetComponent<AudioDistortionFilter>());
-        }
-        else if (mixer.transform.GetChild(0).GetComponent<EchoSliderInteraction>() != null)
-        {
-            Destroy(gameObject.GetComponent<AudioEchoFilter>());
-        }
-        else if (mixer.transform.GetChild(0).GetComponent<ChorusSliderInteraction>() != null)
-        {
-            Destroy(gameObject.GetComponent<AudioChorusFilter>());
-        }
+    }
+
+    private void OnDestroy()
+    {
+        Slicer.MixerSliced -= RemoveEffects;
     }
 }

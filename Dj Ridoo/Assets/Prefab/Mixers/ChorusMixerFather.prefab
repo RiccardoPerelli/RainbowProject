@@ -518,6 +518,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 5582394799526326664, guid: b271dc916a8a7aa4391b97194c83dc4a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5810032791765422557, guid: b271dc916a8a7aa4391b97194c83dc4a,
         type: 3}
       propertyPath: m_Layer
@@ -549,6 +554,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSizeBase
       value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028527940898044893, guid: b271dc916a8a7aa4391b97194c83dc4a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6294256482824890655, guid: b271dc916a8a7aa4391b97194c83dc4a,
         type: 3}
@@ -648,6 +658,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7622351023485194056, guid: b271dc916a8a7aa4391b97194c83dc4a, type: 3}
+    - {fileID: 6310638234990574068, guid: b271dc916a8a7aa4391b97194c83dc4a, type: 3}
+    - {fileID: 2720740427698443549, guid: b271dc916a8a7aa4391b97194c83dc4a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b271dc916a8a7aa4391b97194c83dc4a, type: 3}
 --- !u!4 &78999634539286377 stripped
 Transform:

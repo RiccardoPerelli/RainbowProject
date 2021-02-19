@@ -536,6 +536,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7838280424720190757, guid: 550e98a0e76bdaf4e945576b780b44b3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8283745215195549221, guid: 550e98a0e76bdaf4e945576b780b44b3,
         type: 3}
       propertyPath: m_Layer
@@ -566,7 +571,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4178547576251016846, guid: 550e98a0e76bdaf4e945576b780b44b3, type: 3}
+    - {fileID: 5090525411863089572, guid: 550e98a0e76bdaf4e945576b780b44b3, type: 3}
+    - {fileID: 9079652477718523331, guid: 550e98a0e76bdaf4e945576b780b44b3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 550e98a0e76bdaf4e945576b780b44b3, type: 3}
 --- !u!4 &335467069147223159 stripped
 Transform:

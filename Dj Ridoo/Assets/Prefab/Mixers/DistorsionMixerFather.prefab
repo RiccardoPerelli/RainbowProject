@@ -429,6 +429,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6469535994641806838, guid: c13c29e330159de47944040fef0a2e7e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469535994641806838, guid: c13c29e330159de47944040fef0a2e7e,
+        type: 3}
+      propertyPath: m_grabPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6788052677611397850, guid: c13c29e330159de47944040fef0a2e7e,
         type: 3}
       propertyPath: m_Layer
@@ -459,7 +469,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1398336293128525683, guid: c13c29e330159de47944040fef0a2e7e, type: 3}
+    - {fileID: 9178623115872943351, guid: c13c29e330159de47944040fef0a2e7e, type: 3}
+    - {fileID: 4613347269987810767, guid: c13c29e330159de47944040fef0a2e7e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c13c29e330159de47944040fef0a2e7e, type: 3}
 --- !u!4 &7679106453354529032 stripped
 Transform:
