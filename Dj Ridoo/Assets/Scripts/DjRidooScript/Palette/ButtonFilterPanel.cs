@@ -56,8 +56,10 @@ public class ButtonFilterPanel : MonoBehaviour
 
     private void checkGameObjFil()
     {
-        Transform tf = emptyGameObject.GetComponentsInChildren<Transform>()[0];
-        if (tf != null)
-            Destroy(tf.gameObject);
+        if (emptyGameObject.transform.childCount >= 1)
+        {
+            GameObject oldVideo = emptyGameObject.transform.GetChild(0).gameObject;
+            Destroy(oldVideo.gameObject);
+        }
     }
 }

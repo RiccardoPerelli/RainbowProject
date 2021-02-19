@@ -29,14 +29,14 @@ public class ButtonInteractionPanel : MonoBehaviour
     {
         Debug.Log("Palette Clicked.");
         checkGameObj();
-        Instantiate(videoInstrument, emptyGameObject.transform);
+        Instantiate(videoPalette, emptyGameObject.transform);
     }
 
     public void OnInstrumentClicked()
     {
         Debug.Log("Strumenti Clicked.");
         checkGameObj();
-        Instantiate(videoPalette, emptyGameObject.transform);
+        Instantiate(videoInstrument, emptyGameObject.transform);
     }
 
     public void OnEffectClicked()

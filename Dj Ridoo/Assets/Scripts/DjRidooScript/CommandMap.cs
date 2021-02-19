@@ -9,6 +9,7 @@ public class CommandMap : MonoBehaviour
     private AudioSource audioSource;
 
     public GameObject user;
+    public float minDistance = 2f;
 
     private bool check = false;
 
@@ -24,7 +25,7 @@ public class CommandMap : MonoBehaviour
         if (_animator == null)
             return;
 
-        if(user.transform.position.x <= 2.5f && user.transform.position.z <= 2.5f)
+        if(Vector3.Distance(gameObject.transform.position, user.transform.position) <= minDistance)
         {
             _animator.SetBool("Open", true);
             if (check == false)
