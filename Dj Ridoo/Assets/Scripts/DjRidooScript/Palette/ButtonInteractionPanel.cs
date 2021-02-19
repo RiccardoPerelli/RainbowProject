@@ -6,7 +6,7 @@ public class ButtonInteractionPanel : MonoBehaviour
 {
 
     public GameObject emptyGameObject;
-    public GameObject instrumentCanvas;
+    public GameObject videoInstrument;
     public GameObject filterCanvas;
     public GameObject videoPalette;
     public GameObject videoSword;
@@ -27,14 +27,14 @@ public class ButtonInteractionPanel : MonoBehaviour
     {
         Debug.Log("Palette Clicked.");
         checkGameObj();
-        Instantiate(videoPalette, emptyGameObject.transform);
+        Instantiate(videoInstrument, emptyGameObject.transform);
     }
 
     public void OnInstrumentClicked()
     {
         Debug.Log("Strumenti Clicked.");
-        gameObject.SetActive(false);
-        instrumentCanvas.SetActive(true);
+        checkGameObj();
+        Instantiate(videoPalette, emptyGameObject.transform);
     }
 
     public void OnEffectClicked()
