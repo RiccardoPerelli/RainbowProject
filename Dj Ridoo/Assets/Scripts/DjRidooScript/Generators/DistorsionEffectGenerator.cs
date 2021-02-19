@@ -33,6 +33,7 @@ public class DistorsionEffectGenerator : EffectGenerator
             Destroy(expl, 3); // delete the explosion after 3 seconds
             FindObjectOfType<LightMover>().MakeMove();
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
+            //gui.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
             GameObject guiChild = gui.transform.GetChild(0).gameObject;
             collision.collider.gameObject.GetComponentInParent<ConnectingCables>().SpawnLinking(collision.collider.gameObject, guiChild);
             if (GameObject.FindGameObjectWithTag("Player") != null)

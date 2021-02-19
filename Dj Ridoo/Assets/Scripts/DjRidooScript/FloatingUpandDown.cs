@@ -15,13 +15,13 @@ public class FloatingUpandDown : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        posOffset = transform.position;
+        //posOffset = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!gameObject.GetComponent<OVRGrabbable>().isGrabbed)
+        /*if (!gameObject.GetComponent<OVRGrabbable>().isGrabbed)
         {
             tempPos = posOffset;
             tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
@@ -31,6 +31,11 @@ public class FloatingUpandDown : MonoBehaviour
         else
         {
             posOffset = transform.position;
+        }*/
+        gameObject.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
+        if(gameObject.transform.GetChild(0).gameObject.GetComponent<DistorsionSliderInteraction>() != null)
+        {
+            gameObject.transform.Rotate(-90, 0, 0);
         }
         InitializeVibration();
     }
