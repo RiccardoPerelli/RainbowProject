@@ -331,6 +331,7 @@ GameObject:
   - component: {fileID: 3741589587126830020}
   - component: {fileID: 4693662944768005999}
   - component: {fileID: 6646654005151180321}
+  - component: {fileID: -4009900139859258214}
   m_Layer: 9
   m_Name: Microfone
   m_TagString: Instrument
@@ -400,7 +401,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6208603613791326498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6995f0325a2d1b4992cf41288ed772b, type: 3}
   m_Name: 
@@ -532,6 +533,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+--- !u!114 &-4009900139859258214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6208603613791326498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338b57844757aee4e9f13180fcd6805f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7005313778824537793
 GameObject:
   m_ObjectHideFlags: 0

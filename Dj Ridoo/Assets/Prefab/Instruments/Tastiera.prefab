@@ -174,6 +174,7 @@ GameObject:
   - component: {fileID: 2782165362134759958}
   - component: {fileID: 7911792883992201162}
   - component: {fileID: -450775273619917412}
+  - component: {fileID: 6346068679040293604}
   m_Layer: 9
   m_Name: Tastiera
   m_TagString: Instrument
@@ -257,7 +258,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450180388388286869}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6995f0325a2d1b4992cf41288ed772b, type: 3}
   m_Name: 
@@ -402,6 +403,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+--- !u!114 &6346068679040293604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450180388388286869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990a0b6d667a9ec4d8df45e1ac71bce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &621187907988893758
 GameObject:
   m_ObjectHideFlags: 0

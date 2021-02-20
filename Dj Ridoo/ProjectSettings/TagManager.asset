@@ -30,6 +30,12 @@ TagManager:
   - Essence
   - LHand
   - RHand
+  - Microfone
+  - ClassicGuitar
+  - ElectricGuitar
+  - DrumsGuitar
+  - Tastiera
+  - Drums
   layers:
   - Default
   - TransparentFX
