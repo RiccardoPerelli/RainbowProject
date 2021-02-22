@@ -9,8 +9,9 @@ public class ConnectingCables : MonoBehaviour
 	#region Class members
 
 	public GameObject rightHandCollisionChecker;
+    public ParticleSystem particleFlow;
 
-	private List<GameObject> startPoint = new List<GameObject>();
+    private List<GameObject> startPoint = new List<GameObject>();
 	private List<GameObject> endPoint = new List<GameObject>();
 	[SerializeField] private Material cableMaterial;
 	private GameObject startTmpObj;
@@ -35,6 +36,8 @@ public class ConnectingCables : MonoBehaviour
 	//Audio
 	private AudioClip plug;
 	private AudioClip swordHit;
+
+    
 
 	#endregion
 
@@ -79,6 +82,7 @@ public class ConnectingCables : MonoBehaviour
         if (render)
         {
             RenderMultipleLine();
+            
         }
 
     }
@@ -175,6 +179,7 @@ public class ConnectingCables : MonoBehaviour
                 startTmpObj.GetComponent<AudioDistortionFilter>().distortionLevel = endTmpObj.GetComponent<DistorsionSliderInteraction>().distorsionLevelStartingValue;
             }
 
+
             //endTmpObj.AddComponent<AudioSource>();
             //AudioSource sound = startTmpObj.GetComponent<AudioSource>();
             //sound.clip = plug;
@@ -201,6 +206,7 @@ public class ConnectingCables : MonoBehaviour
         startPoint[countCable].AddComponent<CableComponent>();
         startPoint[countCable].GetComponent<CableComponent>().endPoint = endPoint[countCable].transform;
         startPoint[countCable].GetComponent<CableComponent>().cableMaterial = cableMaterial;
+        startPoint[countCable].GetComponent<CableComponent>().particleSys = particleFlow;
 
         render = false;
         cutable = true;
@@ -212,7 +218,7 @@ public class ConnectingCables : MonoBehaviour
 		endTmpObj = endPoint;
 		Debug.Log("Spawning Link!");
 		RenderMultipleLine();
-	}
+    }
 
     void FixedUpdate()
     {
