@@ -30,6 +30,7 @@ TagManager:
   - Essence
   - LHand
   - RHand
+  - Particle
   layers:
   - Default
   - TransparentFX

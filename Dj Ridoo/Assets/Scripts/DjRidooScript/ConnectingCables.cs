@@ -9,7 +9,6 @@ public class ConnectingCables : MonoBehaviour
 	#region Class members
 
 	public GameObject rightHandCollisionChecker;
-    public ParticleSystem particleFlow;
 
     private List<GameObject> startPoint = new List<GameObject>();
 	private List<GameObject> endPoint = new List<GameObject>();
@@ -37,6 +36,9 @@ public class ConnectingCables : MonoBehaviour
 	private AudioClip plug;
 	private AudioClip swordHit;
 
+
+    //ParticleSystem
+    public ParticleSystem particleSystem;
     
 
 	#endregion
@@ -192,21 +194,25 @@ public class ConnectingCables : MonoBehaviour
     public void RenderMultipleLine()
     {
         print("Inizializzo collegamento");
-        startPoint.Add(new GameObject("line" + startPoint.Count));
+        GameObject lineS = new GameObject("line" + startPoint.Count);
+        startPoint.Add(lineS);
+        particleSystem.GetComponent<LineAnimator>().lineObject = lineS;
+
         countCable++;
         print(countCable);
 
         startPoint[countCable].transform.parent = startTmpObj.transform;
         startPoint[countCable].transform.position = startTmpObj.transform.position;
 
-        endPoint.Add(new GameObject("line" + endPoint.Count));
+        GameObject lineE = new GameObject("line" + endPoint.Count);
+        endPoint.Add(lineE);
+
         endPoint[countCable].transform.parent = endTmpObj.transform;
         endPoint[countCable].transform.position = endTmpObj.transform.position;
 
         startPoint[countCable].AddComponent<CableComponent>();
         startPoint[countCable].GetComponent<CableComponent>().endPoint = endPoint[countCable].transform;
         startPoint[countCable].GetComponent<CableComponent>().cableMaterial = cableMaterial;
-        startPoint[countCable].GetComponent<CableComponent>().particleSys = particleFlow;
 
         render = false;
         cutable = true;
@@ -216,7 +222,8 @@ public class ConnectingCables : MonoBehaviour
     {
 		startTmpObj = startPoint;
 		endTmpObj = endPoint;
-		Debug.Log("Spawning Link!");
+        particleSystem = Instantiate(particleSystem, startTmpObj.transform);
+        Debug.Log("Spawning Link!");
 		RenderMultipleLine();
     }
 
@@ -232,6 +239,7 @@ public class ConnectingCables : MonoBehaviour
                     if (hit2.collider.tag.Equals("Sword"))
                     {
                         //print("Sword detected");
+
                         hitObjStart = startPoint[i];
                         startPoint.RemoveAt(i);
                         hitObjEnd = endPoint[i];

@@ -15,7 +15,7 @@ public class CableComponent : MonoBehaviour
 	[SerializeField] private int totalSegments = 50;
 	[SerializeField] private float segmentsPerUnit = 2f;
 	private int segments = 0;
-	[SerializeField] private float cableWidth = 0.01f;
+	[SerializeField] private float cableWidth = 0.02f;
 
 	// Solver config
 	[SerializeField] private int verletIterations = 1;
@@ -26,13 +26,6 @@ public class CableComponent : MonoBehaviour
 
 	private LineRenderer line;
 	private CableParticle[] points;
-
-	//particle system
-	public ParticleSystem particleSys;
-	public float speed;
-	private Vector3[] positions = new Vector3[397];
-	private Vector3[] pos;
-	private int index = 0;
 	#endregion
 
 
@@ -42,10 +35,6 @@ public class CableComponent : MonoBehaviour
 	{
 		InitCableParticles();
 		InitLineRenderer();
-
-		pos = GetLinePointsInWorldSpace();
-		ParticleSystem ps = Instantiate(particleSys);
-		ps.transform.position = pos[index];
 	}
 
 	/**
@@ -100,7 +89,6 @@ public class CableComponent : MonoBehaviour
 	void Update()
 	{
 		RenderCable();
-		Move();
 	}
 
 	/**
@@ -237,23 +225,5 @@ public class CableComponent : MonoBehaviour
 	
 
 	}
-
-	Vector3[] GetLinePointsInWorldSpace()
-    {
-		line.GetPositions(positions);
-		return positions;
-    }
-
-	void Move()
-    {
-		particleSys.transform.position = Vector3.MoveTowards(particleSys.transform.position, pos[index], speed * Time.deltaTime);
-		if(particleSys.transform.position == pos[index])
-        {
-			index += 1;
-        }
-		if (index == pos.Length)
-			index = 0; 
-	}
-
 	#endregion
 }
