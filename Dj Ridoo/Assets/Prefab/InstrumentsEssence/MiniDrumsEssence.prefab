@@ -14501,12 +14501,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23eefa2a88ee6204cbfd35321c0b9d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instrumentToSpawn: {fileID: 952495719747478317, guid: 79b1c80ddf6ff414094e365273e6c2a0,
+  instrumentToSpawn: {fileID: 7028972186159488557, guid: 319e6eaecd0e4fc43aea5d4a8b8d2c02,
     type: 3}
   explosion: {fileID: 805166908495680492, guid: 995e408467d2a22448c8ce4b298c20b3,
     type: 3}
   destroyTime: 0.1
-  offset: {x: 0, y: 1.3, z: 0}
+  offset: {x: 0, y: 0, z: 0}
   lookAtOffset: {x: 0, y: 0, z: 0}
   i: 0
 --- !u!1001 &777684150558521999

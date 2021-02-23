@@ -957,6 +957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  name: ClassicGuitar
 --- !u!1 &5719150680870502963
 GameObject:
   m_ObjectHideFlags: 0

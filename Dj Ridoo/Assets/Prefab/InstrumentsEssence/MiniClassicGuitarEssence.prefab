@@ -200,7 +200,7 @@ MonoBehaviour:
     type: 3}
   destroyTime: 0.1
   offset: {x: 0, y: 0.6, z: 0}
-  lookAtOffset: {x: -90, y: 0, z: 0}
+  lookAtOffset: {x: 90, y: 0, z: 0}
   i: 0
 --- !u!1 &3663275696488566994
 GameObject:

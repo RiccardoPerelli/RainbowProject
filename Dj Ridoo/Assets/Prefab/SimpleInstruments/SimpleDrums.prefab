@@ -263,6 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  name: Drums
 --- !u!1001 &396260093185422358
 PrefabInstance:
   m_ObjectHideFlags: 0

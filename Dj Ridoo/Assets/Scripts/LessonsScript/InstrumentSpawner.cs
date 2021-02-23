@@ -32,8 +32,13 @@ public class InstrumentSpawner : MonoBehaviour
         FindObjectOfType<LightMover>().MakeMove();
         GameObject instrument = Instantiate(instrumentToSpawn, collision.GetContact(0).point + offset, Quaternion.identity,
             GameObject.FindGameObjectWithTag("CablesHandler").transform) as GameObject;
-        if (!instrumentToSpawn.name.Equals("SimpleDrums") && !instrumentToSpawn.name.Equals("Microfone") || !instrumentToSpawn.name.Equals("Tastiera")) {
-            instrument.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
+        if (instrument.GetComponent<IdChecker>() != null)
+        {
+            if (!instrument.GetComponent<IdChecker>().name.Equals("Drums") && 
+                !instrument.GetComponent<IdChecker>().name.Equals("Microfone") && !instrument.GetComponent<IdChecker>().name.Equals("Tastiera"))
+            {
+                instrument.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
+            }
         }
         instrument.transform.Rotate(lookAtOffset);
         i++;

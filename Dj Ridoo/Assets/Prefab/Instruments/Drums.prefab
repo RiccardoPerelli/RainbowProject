@@ -1917,6 +1917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  name: Drums
 --- !u!1 &4173819933505187822
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,4 +4,5 @@ using UnityEngine;
 public class IdChecker : MonoBehaviour
 {
     public int id;
+    public string name;
 }

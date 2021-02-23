@@ -280,6 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  name: ElectricGuitar
 --- !u!1001 &711381017254954165
 PrefabInstance:
   m_ObjectHideFlags: 0

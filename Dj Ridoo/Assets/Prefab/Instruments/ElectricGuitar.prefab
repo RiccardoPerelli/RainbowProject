@@ -804,6 +804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  name: ElectricGuitar
 --- !u!1 &3397370219493697336
 GameObject:
   m_ObjectHideFlags: 0
