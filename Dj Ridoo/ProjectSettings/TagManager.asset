@@ -31,6 +31,14 @@ TagManager:
   - LHand
   - RHand
   - Particle
+  - Microfone
+  - ClassicGuitar
+  - ElectricGuitar
+  - DrumsGuitar
+  - Tastiera
+  - Drums
+  - Ground
+  - CablesHandler
   layers:
   - Default
   - TransparentFX

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1600763309614646008}
   - component: {fileID: 141467694631083647}
   - component: {fileID: 141467694631083646}
-  - component: {fileID: 5294171544124755080}
   - component: {fileID: 8476988177010353659}
   - component: {fileID: -4989793442263321297}
   - component: {fileID: 6487458583346371247}
@@ -34,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 952495719747478317}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.046720635, y: 0.031682815, z: 0.046720635}
+  m_LocalScale: {x: 0.1418466, y: 0.09842261, z: 0.1418466}
   m_Children:
   - {fileID: 8142584141550889000}
   - {fileID: 5343391172370556836}
@@ -125,20 +124,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5294171544124755080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952495719747478317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6995f0325a2d1b4992cf41288ed772b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplitude: 0.1
-  frequency: 0.5
 --- !u!114 &8476988177010353659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  name: Drums
 --- !u!1001 &396260093185422358
 PrefabInstance:
   m_ObjectHideFlags: 0

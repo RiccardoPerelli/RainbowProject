@@ -22,7 +22,6 @@ public class volumeSlider : MonoBehaviour
 	void FixedUpdate()
     {
 		sliderValueText.text = slider.value.ToString("N2");
-		print(slider.value);
 		parentObj.gameObject.GetComponent<AudioSource>().volume = slider.value;
 	}
 

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7945672465056295966}
   - component: {fileID: -3455724519411362550}
   - component: {fileID: -8282903468645656852}
-  - component: {fileID: 5465495984674743640}
   - component: {fileID: -4473506595883861533}
   - component: {fileID: -913519218472436586}
   - component: {fileID: 2038280039262850325}
@@ -35,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 8449966153977548235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0015, y: 0.2, z: 0.0015}
+  m_LocalScale: {x: 0.002113619, y: 0.2818159, z: 0.002113619}
   m_Children:
   - {fileID: 9052477220938078347}
   m_Father: {fileID: 0}
@@ -130,20 +129,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 101.63334, y: 10.162811, z: 418.53647}
   m_Center: {x: 35.93591, y: 0.0012402534, z: 3.4790802}
---- !u!114 &5465495984674743640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8449966153977548235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6995f0325a2d1b4992cf41288ed772b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplitude: 0.1
-  frequency: 0.5
 --- !u!114 &-4473506595883861533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  name: ElectricGuitar
 --- !u!1001 &711381017254954165
 PrefabInstance:
   m_ObjectHideFlags: 0
