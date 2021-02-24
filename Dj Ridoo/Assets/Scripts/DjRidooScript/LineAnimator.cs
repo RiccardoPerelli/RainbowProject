@@ -11,13 +11,11 @@ public class LineAnimator : MonoBehaviour
     private Vector3[] linePoints;
     private int pointsCount;
     private bool check = false;
+    private bool started = false;
 
-    private void Start()
-    {
-        
+    private int i = 0;
 
-        
-    }
+    private Coroutine particleMov;
 
     private void Update()
     {
@@ -32,19 +30,25 @@ public class LineAnimator : MonoBehaviour
             if (lineRenderer != null)
                 check = true;
         }
-        else
+        else if (!started)
         {
-            // Store a copy of lineRenderer's points in linePoints array
-            pointsCount = lineRenderer.positionCount;
-            linePoints = new Vector3[pointsCount];
-            for (int i = 0; i < pointsCount; i++)
+            started = true;
+            if (lineRenderer != null)
             {
-                linePoints[i] = lineRenderer.GetPosition(i);
+                pointsCount = lineRenderer.positionCount;
+                linePoints = new Vector3[pointsCount];
+                for (int j = 0; j < pointsCount; j++)
+                {
+                    linePoints[j] = lineRenderer.GetPosition(j);
+                }
+                if (particleMov != null)
+                {
+                    Debug.Log("started!");
+                    StopCoroutine(particleMov);
+                }
+                particleMov = StartCoroutine(AnimateLine());
             }
-
-            StartCoroutine(AnimateLine());
         }
-        
     }
 
     private IEnumerator AnimateLine()
@@ -53,22 +57,41 @@ public class LineAnimator : MonoBehaviour
 
         for (int i = pointsCount - 1; i > 0 ; i--)
         {
-            float startTime = Time.time;
-
-            Vector3 startPosition = linePoints[i];
-            Vector3 endPosition = linePoints[i - 1];
-
-            Vector3 pos = startPosition;
-            while (pos != endPosition)
+            if (lineObject != null && lineRenderer != null)
             {
-                float t = (Time.time - startTime) / segmentDuration;
-                pos = Vector3.Lerp(startPosition, endPosition, t);
+                pointsCount = lineRenderer.positionCount;
+                linePoints = new Vector3[pointsCount];
+                for (int j = 0; j < pointsCount; j++)
+                {
+                    linePoints[j] = lineRenderer.GetPosition(j);
+                }
+                float startTime = Time.time;
 
-                // animate all other points except point at index i
-                for (int j = i + 1; j < pointsCount; j++)
-                    transform.position = Vector3.MoveTowards(transform.position, pos, t);
+                if (linePoints[i] != null)
+                {
+                    Debug.Log("running");
 
-                yield return null;
+                    Vector3 startPosition = linePoints[i];
+                    Vector3 endPosition = linePoints[i - 1];
+                    Vector3 pos = startPosition;
+                    while (pos != endPosition)
+                    {
+                        float t = (Time.time - startTime) / segmentDuration;
+                        pos = Vector3.Lerp(startPosition, endPosition, t);
+
+                        // animate all other points except point at index i
+                        for (int j = i + 1; j < pointsCount; j++)
+                            transform.position = Vector3.MoveTowards(transform.position, pos, t);
+
+                        yield return null;
+                    }
+
+                }
+
+                if (i == 1)
+                {
+                    i = pointsCount - 1;
+                }
             }
         }
     }

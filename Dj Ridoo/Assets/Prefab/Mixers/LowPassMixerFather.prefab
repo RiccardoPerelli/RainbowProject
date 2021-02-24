@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7525431562601011982}
   - component: {fileID: 6501876103244274586}
   - component: {fileID: -2662160688265377941}
+  - component: {fileID: -5571414604861863088}
   m_Layer: 9
   m_Name: LowPassMixerFather
   m_TagString: Mixer
@@ -250,6 +251,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.1
   frequency: 0.5
+--- !u!114 &-5571414604861863088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042039079258134242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32b8c643acc8c041bf6b4c381303434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4939998219375242687
 PrefabInstance:
   m_ObjectHideFlags: 0
