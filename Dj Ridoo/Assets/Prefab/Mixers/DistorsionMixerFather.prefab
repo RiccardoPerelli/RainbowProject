@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 4674138239932866425}
   - component: {fileID: 4807346040286678946}
   - component: {fileID: 6789427829696872599}
+  - component: {fileID: 7927490256228516712}
   - component: {fileID: 1835178357849813523}
   - component: {fileID: 4851820453671017228}
   - component: {fileID: 5756150192172597143}
-  - component: {fileID: 7927490256228516712}
   m_Layer: 9
   m_Name: DistorsionMixerFather
   m_TagString: Mixer
@@ -118,11 +118,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6619486089376382636}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 8.322229, y: 20.303076, z: 12.769398}
   m_Center: {x: -0.001953125, y: -0.34192285, z: 0.23540694}
+--- !u!114 &7927490256228516712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6619486089376382636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32b8c643acc8c041bf6b4c381303434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1835178357849813523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,18 +263,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.1
   frequency: 0.5
---- !u!114 &7927490256228516712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6619486089376382636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32b8c643acc8c041bf6b4c381303434, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7029845668670007431
 PrefabInstance:
   m_ObjectHideFlags: 0

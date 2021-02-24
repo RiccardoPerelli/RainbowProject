@@ -39,6 +39,7 @@ public class ConnectingCables : MonoBehaviour
 
     //ParticleSystem
     public ParticleSystem particleSystem;
+    private ParticleSystem tmpParticleSystem;
     
 
 	#endregion
@@ -196,7 +197,7 @@ public class ConnectingCables : MonoBehaviour
         print("Inizializzo collegamento");
         GameObject lineS = new GameObject("line" + startPoint.Count);
         startPoint.Add(lineS);
-        particleSystem.GetComponent<LineAnimator>().lineObject = lineS;
+        tmpParticleSystem.GetComponent<LineAnimator>().lineObject = lineS;
 
         countCable++;
         print(countCable);
@@ -222,7 +223,7 @@ public class ConnectingCables : MonoBehaviour
     {
 		startTmpObj = startPoint;
 		endTmpObj = endPoint;
-        particleSystem = Instantiate(particleSystem, startTmpObj.transform);
+        tmpParticleSystem = Instantiate(particleSystem, startTmpObj.transform);
         Debug.Log("Spawning Link!");
 		RenderMultipleLine();
     }

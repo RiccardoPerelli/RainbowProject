@@ -92,6 +92,11 @@ public class LineAnimator : MonoBehaviour
                 {
                     i = pointsCount - 1;
                 }
+            } 
+            else
+            {
+                //Destroy(lineObject);
+                Destroy(this.gameObject);
             }
         }
     }
