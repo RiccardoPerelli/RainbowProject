@@ -14506,7 +14506,7 @@ MonoBehaviour:
   explosion: {fileID: 805166908495680492, guid: 995e408467d2a22448c8ce4b298c20b3,
     type: 3}
   destroyTime: 0.1
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 1.1, z: 0}
   lookAtOffset: {x: 0, y: 0, z: 0}
   i: 0
 --- !u!1001 &777684150558521999
