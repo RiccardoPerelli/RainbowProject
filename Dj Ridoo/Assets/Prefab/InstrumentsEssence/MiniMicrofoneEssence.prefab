@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23eefa2a88ee6204cbfd35321c0b9d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instrumentToSpawn: {fileID: 6208603613791326498, guid: 590f0b1db17a56047a27fc2f5065acfa,
+  instrumentToSpawn: {fileID: 8044790309933648757, guid: 6a69facbef45ce643aeeb67315d0ac93,
     type: 3}
   explosion: {fileID: 7373860103541246407, guid: 386fc977f9e249a47b9d818b7436d289,
     type: 3}

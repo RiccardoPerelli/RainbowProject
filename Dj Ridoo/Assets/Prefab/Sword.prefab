@@ -111,6 +111,7 @@ MonoBehaviour:
   sliceMask:
     serializedVersion: 2
     m_Bits: 512
+  RightControllerAnchor: {fileID: 0}
   isTouched: 0
 --- !u!1 &2316456928977122900
 GameObject:
@@ -124,12 +125,12 @@ GameObject:
   - component: {fileID: 2316456928976284244}
   - component: {fileID: 2316456928975186068}
   m_Layer: 0
-  m_Name: Sword 1
+  m_Name: Sword
   m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2316456928977087092
 Transform:
   m_ObjectHideFlags: 0
