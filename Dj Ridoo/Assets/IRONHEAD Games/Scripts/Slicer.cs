@@ -18,6 +18,7 @@ public class Slicer : MonoBehaviour
 
     //Instrument Destroy Effects
     public GameObject expl;
+    private GameObject explTmp;
     public AudioClip audioClip;
     private AudioSource audioSource;
 
@@ -48,11 +49,11 @@ public class Slicer : MonoBehaviour
                     if (InstrumentSliced != null && objectToBeSliced.gameObject.tag.Equals("Instrument"))
                     {
                         Debug.Log("Action Instrument Sliced Called");
-                        expl = Instantiate(expl, objectToBeSliced.gameObject.transform.position, Quaternion.identity);
-                        audioSource = expl.AddComponent<AudioSource>();
+                        explTmp = Instantiate(expl, objectToBeSliced.gameObject.transform.position, Quaternion.identity);
+                        audioSource = explTmp.AddComponent<AudioSource>();
                         audioSource.clip = audioClip;
                         audioSource.Play();
-                        Destroy(expl, 5.0f);
+                        Destroy(explTmp, 5.0f);
                         InstrumentSliced(objectToBeSliced.gameObject);
                     }
                     if(MixerSliced != null && objectToBeSliced.gameObject.tag.Equals("Mixer"))
