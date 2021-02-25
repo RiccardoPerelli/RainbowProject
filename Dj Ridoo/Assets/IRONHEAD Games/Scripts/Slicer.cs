@@ -48,11 +48,11 @@ public class Slicer : MonoBehaviour
                     if (InstrumentSliced != null && objectToBeSliced.gameObject.tag.Equals("Instrument"))
                     {
                         Debug.Log("Action Instrument Sliced Called");
-                        expl = Instantiate(expl, objectToBeSliced.gameObject.transform.position, Quaternion.identity);
-                        audioSource = expl.AddComponent<AudioSource>();
+                        GameObject explTmp = Instantiate(expl, objectToBeSliced.gameObject.transform.position, Quaternion.identity);
+                        audioSource = explTmp.AddComponent<AudioSource>();
                         audioSource.clip = audioClip;
                         audioSource.Play();
-                        Destroy(expl, 5.0f);
+                        Destroy(explTmp, 5.0f);
                         InstrumentSliced(objectToBeSliced.gameObject);
                     }
                     if(MixerSliced != null && objectToBeSliced.gameObject.tag.Equals("Mixer"))
