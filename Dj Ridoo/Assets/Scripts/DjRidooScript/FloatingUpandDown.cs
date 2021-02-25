@@ -12,10 +12,13 @@ public class FloatingUpandDown : MonoBehaviour
     private bool vibrationStarted = false;
     private GameObject grabbingObject;
 
+    private bool firstTime;
+
     // Start is called before the first frame update
     void Start()
     {
         //posOffset = transform.position;
+        firstTime = true;
     }
 
     // Update is called once per frame
@@ -32,10 +35,13 @@ public class FloatingUpandDown : MonoBehaviour
         {
             posOffset = transform.position;
         }*/
-        gameObject.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
-        if(gameObject.transform.GetChild(0).gameObject.GetComponent<DistorsionSliderInteraction>() != null)
+        
+        //gameObject.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
+        
+        if (gameObject.transform.GetChild(0).gameObject.GetComponent<DistorsionSliderInteraction>() != null && firstTime)
         {
             gameObject.transform.Rotate(-90, 0, 0);
+            firstTime = false;
         }
         InitializeVibration();
     }

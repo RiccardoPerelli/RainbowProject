@@ -31,14 +31,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6619486089376382636}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.06, y: 0.02, z: 0.06}
   m_Children:
   - {fileID: 7679106453354529032}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &7438021060455590835
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -419,13 +419,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 4f159a333be049646aa2c7259b6bcc70,
+      objectReference: {fileID: 11400000, guid: 81ea2c20a16a93a43b425a37c920be6c,
         type: 2}
     - target: {fileID: 5007126441111191774, guid: c13c29e330159de47944040fef0a2e7e,
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 6956081301523398439, guid: 4f159a333be049646aa2c7259b6bcc70,
+      objectReference: {fileID: 4506567127330489287, guid: 81ea2c20a16a93a43b425a37c920be6c,
         type: 2}
     - target: {fileID: 5153604273995557031, guid: c13c29e330159de47944040fef0a2e7e,
         type: 3}
