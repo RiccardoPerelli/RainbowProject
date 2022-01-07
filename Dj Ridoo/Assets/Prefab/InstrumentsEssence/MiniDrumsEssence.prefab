@@ -14501,7 +14501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547086c1eaf29c34c9f5426818da79ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instrumentToSpawn: {fileID: 1223821819900553745, guid: a596b94d4e1fc8b498718af46c91a523,
+  instrumentToSpawn: {fileID: 4158644931104454461, guid: 8f8ef61bbf57fac4ab5b956a3b981df2,
     type: 3}
   destroyTime: 0.3
   offset: {x: 0, y: 5, z: 0}
