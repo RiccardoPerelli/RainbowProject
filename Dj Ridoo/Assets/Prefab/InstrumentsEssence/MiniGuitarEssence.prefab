@@ -194,7 +194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547086c1eaf29c34c9f5426818da79ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instrumentToSpawn: {fileID: 6812533604328082942}
+  instrumentToSpawn: {fileID: 2904156856587607574, guid: f34f2ea5489cc474180fc4f576798d7a,
+    type: 3}
   destroyTime: 0.1
   offset: {x: 0, y: 5, z: 0}
   lookAtOffset: {x: 0, y: 0, z: 0}
@@ -14622,12 +14623,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b90050a3c9cc9747acde5dea38d7852, type: 3}
---- !u!1 &6812533604328082942 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8527855817731016902, guid: 0b90050a3c9cc9747acde5dea38d7852,
-    type: 3}
-  m_PrefabInstance: {fileID: 2941972707173467448}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6179268080948172612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9012502214843519612, guid: 0b90050a3c9cc9747acde5dea38d7852,
