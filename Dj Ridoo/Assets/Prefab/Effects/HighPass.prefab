@@ -99,8 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EffectUI: {fileID: 5249719367446749155, guid: 5ac1daa69713b2247b98403be187d6d8,
     type: 3}
-  explosion: {fileID: 7373860103541246407, guid: 386fc977f9e249a47b9d818b7436d289,
-    type: 3}
   destroyTime: 0.1
   effectAlreadyApplied: {fileID: 8300000, guid: eeb03c3ecb4df044d8f7edb402b340b8,
     type: 3}
@@ -161,7 +159,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

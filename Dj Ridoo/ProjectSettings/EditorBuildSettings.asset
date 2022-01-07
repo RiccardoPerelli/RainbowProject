@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SandBox.unity
     guid: 19da4feecd45d61438c5accd65ef219c
   - enabled: 1
-    path: Assets/Scenes/DjRidoo Ambient.unity
+    path: Assets/Scenes/Game.unity
     guid: e2ec5db54aede664f933e633c9de7d4b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 08960c7531e3095418eec72e215fe2a8,
