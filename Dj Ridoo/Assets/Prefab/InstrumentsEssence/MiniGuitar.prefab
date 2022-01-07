@@ -59,20 +59,20 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2828599903160134703, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: -4045501137677484514, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: 1336448998267934900, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: -3846018093981099296, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: 6860523640353306538, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: 574424548021981603, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: 585949181947184181, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: -6922793697723135513, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: 941123134038054237, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: 4465744658864671785, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: -6629797300637803691, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: -3393285467408276074, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: -5842009205236739807, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
-  - {fileID: 1203140332473211431, guid: 73d946ed18fd84f4484cb59b2fad373a, type: 3}
+  - {fileID: 2100000, guid: 2380b45230635466c8a7ac45dd715155, type: 2}
+  - {fileID: 2100000, guid: 0663dffd3f29c473081cbeb71f7463fd, type: 2}
+  - {fileID: 2100000, guid: 08028d8cc69b6477194ee62753d64540, type: 2}
+  - {fileID: 2100000, guid: 8ed0b9878a61d0d478a3f5a19f253084, type: 2}
+  - {fileID: 2100000, guid: c3ab140c616780f429353c2d9c2d4f36, type: 2}
+  - {fileID: 2100000, guid: e0ebc991f8e184034a9f472120fe14ae, type: 2}
+  - {fileID: 2100000, guid: d3af3499130764522a88d6ac8b5a8472, type: 2}
+  - {fileID: -6922793697723135513, guid: baa344d3fa441884eb300ac111d563cb, type: 3}
+  - {fileID: 2100000, guid: 2d44ada198f11427ca9ff6f8bb551036, type: 2}
+  - {fileID: 2100000, guid: fbdc806a5f7c86b45bcad29133b9e9d3, type: 2}
+  - {fileID: 2100000, guid: 06cde3d73adf1c449b6edfb64c934767, type: 2}
+  - {fileID: 2100000, guid: 4f18eace828644040926c7b1fd660b3e, type: 2}
+  - {fileID: 2100000, guid: a98e35eef325141df9acd32addd68da1, type: 2}
+  - {fileID: 2100000, guid: 25da8f86751da4c0dab0deef378d8ded, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8527855817731016902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72a81d79fd8a09943829c6444d6262ca, type: 3}
+  m_Script: {fileID: 11500000, guid: d46e5613d49e150459ec27a6cc88bdec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationSpeed: 10

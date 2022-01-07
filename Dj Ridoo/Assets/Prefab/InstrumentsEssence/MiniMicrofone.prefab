@@ -327,7 +327,6 @@ GameObject:
   - component: {fileID: 5994918303428728661}
   - component: {fileID: 7965256571874121452}
   - component: {fileID: 2958537454363663736}
-  - component: {fileID: 9189435307437331372}
   - component: {fileID: 2695836884919550218}
   - component: {fileID: 6315875364182152609}
   - component: {fileID: 5384310781574571247}
@@ -393,20 +392,6 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 7965256571874121452}
---- !u!114 &9189435307437331372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4660142240348591084}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6995f0325a2d1b4992cf41288ed772b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplitude: 0.1
-  frequency: 0.5
 --- !u!54 &2695836884919550218
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -532,6 +517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  name: 
 --- !u!114 &6835544680560465492
 MonoBehaviour:
   m_ObjectHideFlags: 0
