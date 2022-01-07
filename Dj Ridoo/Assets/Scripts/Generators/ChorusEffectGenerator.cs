@@ -30,8 +30,6 @@ public class ChorusEffectGenerator : EffectGenerator
     {
         if (collision.collider.gameObject.GetComponent<AudioChorusFilter>() == null)
         {
-            GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
-            Destroy(expl, 3); // delete the explosion after 3 seconds
             Debug.Log("light mover starting!");
             FindObjectOfType<LightMover>().MakeMove();
             Debug.Log("light mover finishing!");

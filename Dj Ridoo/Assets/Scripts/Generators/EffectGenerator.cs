@@ -6,7 +6,6 @@ using UnityEngine.Audio;
 public abstract class EffectGenerator : MonoBehaviour
 {
     public GameObject EffectUI;
-    public GameObject explosion;
     public float destroyTime;
     public AudioClip effectAlreadyApplied;
     public AudioClip doubleFilter; 

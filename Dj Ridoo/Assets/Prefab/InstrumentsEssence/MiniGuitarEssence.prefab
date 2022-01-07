@@ -196,8 +196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instrumentToSpawn: {fileID: 2904156856587607574, guid: f34f2ea5489cc474180fc4f576798d7a,
     type: 3}
-  destroyTime: 0.1
-  offset: {x: 0, y: 5, z: 0}
+  destroyTime: 0
+  offset: {x: 0, y: 0.2, z: 0}
   lookAtOffset: {x: 0, y: 0, z: 0}
   i: 0
 --- !u!1 &1826554345201790669

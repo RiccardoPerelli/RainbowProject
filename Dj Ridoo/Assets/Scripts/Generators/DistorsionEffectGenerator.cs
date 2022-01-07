@@ -29,8 +29,6 @@ public class DistorsionEffectGenerator : EffectGenerator
     {
         if (collision.collider.gameObject.GetComponent<AudioDistortionFilter>() == null)
         {
-            GameObject expl = Instantiate(explosion, collision.collider.gameObject.transform.position, Quaternion.identity);
-            Destroy(expl, 3); // delete the explosion after 3 seconds
             FindObjectOfType<LightMover>().MakeMove();
             GameObject gui = Instantiate(EffectUI, location.transform.position, Quaternion.identity) as GameObject;
             //gui.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
