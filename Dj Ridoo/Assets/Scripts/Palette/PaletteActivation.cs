@@ -8,7 +8,6 @@ public class PaletteActivation : MonoBehaviour
     bool activated;
 
     public GameObject menuPanel;
-    public GameObject savingPanel;
     public GameObject instrumentPanel;
     public GameObject mixerPanel;
 
@@ -25,7 +24,6 @@ public class PaletteActivation : MonoBehaviour
             if (!activated)
             {
                 menuPanel.SetActive(true);
-                savingPanel.SetActive(false);
                 instrumentPanel.SetActive(false);
                 mixerPanel.SetActive(false);
                 Activate();
@@ -36,18 +34,6 @@ public class PaletteActivation : MonoBehaviour
                 if (menuPanel.activeSelf)
                 {
                     menuPanel.SetActive(false);
-                }  
-                else if (savingPanel.activeSelf)
-                {
-                    menuPanel.SetActive(false);
-                }
-                else if (savingPanel.activeSelf)
-                {
-                    instrumentPanel.SetActive(false);
-                }
-                else if (savingPanel.activeSelf)
-                {
-                    mixerPanel.SetActive(false);
                 }
                 Deactivate();
                 activated = false;
