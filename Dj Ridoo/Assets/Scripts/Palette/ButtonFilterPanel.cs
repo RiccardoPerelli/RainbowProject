@@ -5,7 +5,6 @@ using UnityEngine;
 public class ButtonFilterPanel : MonoBehaviour
 {
     public GameObject emptyGameObject;
-    public GameObject canvas;
     public GameObject videoDistortion;
     public GameObject videoLow;
     public GameObject videoHigh;
@@ -51,7 +50,6 @@ public class ButtonFilterPanel : MonoBehaviour
     {
         Debug.Log("Back Clicked.");
         gameObject.SetActive(false);
-        canvas.SetActive(true);
     }
 
     private void checkGameObjFil()
