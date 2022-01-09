@@ -26,6 +26,10 @@ public class PointerController : MonoBehaviour
         {
             gameObject.GetComponent<AudioSource>().Play(0);
         }
+        else if (TutorialManager.tutorialStep == 4 && other.gameObject.tag.Equals("Slider"))
+        {
+            TutorialManager.tutorialStep++;
+        }
     }
 
 }

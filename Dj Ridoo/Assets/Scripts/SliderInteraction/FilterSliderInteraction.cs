@@ -27,6 +27,11 @@ public class FilterSliderInteraction : SliderInteraction
 		if(risonanza != null)
 			risonanza.text = "Risonanza: " + resonanceStartingValue.ToString();
 
+        if (TutorialManager.tutorialStep == 3)
+        {
+			TutorialManager.tutorialStep++;
+        }
+
 		frequencySlider.value = cutOffFrequencyStartingValue / CUT_OFF_FREQUENCY_MAX_VALUE;
 		resonanceSlider.value = resonanceStartingValue / RESONANCE_MAX_VALUE;
 

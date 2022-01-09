@@ -13,43 +13,37 @@ public class ButtonFilterPanel : MonoBehaviour
 
     public void OnDistortionClicked()
     {
-        Debug.Log("Distortion Clicked.");
         checkGameObjFil();
+        checkTutorialStep();
         Instantiate(videoDistortion, emptyGameObject.transform);
     }
 
     public void OnLowClicked()
     {
-        Debug.Log("LowPass Clicked.");
         checkGameObjFil();
+        checkTutorialStep();
         Instantiate(videoLow, emptyGameObject.transform);
     }
 
     public void OnHighClicked()
     {
-        Debug.Log("HighPass Clicked.");
         checkGameObjFil();
+        checkTutorialStep();
         Instantiate(videoHigh, emptyGameObject.transform);
     }
 
     public void OnChorusClicked()
     {
-        Debug.Log("Chorus Clicked.");
         checkGameObjFil();
+        checkTutorialStep();
         Instantiate(videoChorus, emptyGameObject.transform);
     }
 
     public void OnEchoClicked()
     {
-        Debug.Log("Echo Clicked.");
         checkGameObjFil();
+        checkTutorialStep();
         Instantiate(videoEcho, emptyGameObject.transform);
-    }
-
-    public void OnBackFilClicked()
-    {
-        Debug.Log("Back Clicked.");
-        gameObject.SetActive(false);
     }
 
     private void checkGameObjFil()
@@ -58,6 +52,14 @@ public class ButtonFilterPanel : MonoBehaviour
         {
             GameObject oldVideo = emptyGameObject.transform.GetChild(0).gameObject;
             Destroy(oldVideo.gameObject);
+        }
+    }
+
+    private void checkTutorialStep()
+    {
+        if(TutorialManager.tutorialStep == 1)
+        {
+            TutorialManager.tutorialStep++;
         }
     }
 }

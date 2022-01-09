@@ -459,6 +459,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 8377371757334859380, guid: c13c29e330159de47944040fef0a2e7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slider
+      objectReference: {fileID: 0}
     - target: {fileID: 8599473198136910139, guid: c13c29e330159de47944040fef0a2e7e,
         type: 3}
       propertyPath: m_Layer

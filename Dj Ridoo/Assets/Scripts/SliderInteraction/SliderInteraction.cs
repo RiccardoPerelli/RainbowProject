@@ -7,11 +7,6 @@ public abstract class SliderInteraction : MonoBehaviour
 
     public List<GameObject> instruments;
 
-    private void Update()
-    {
-        Debug.Log("instrument lists size: " + instruments.Count);
-    }
-
     public void RemoveObjectFromList(GameObject gameObjectToRemove)
     {
         if (gameObjectToRemove.tag.Equals("Instrument"))

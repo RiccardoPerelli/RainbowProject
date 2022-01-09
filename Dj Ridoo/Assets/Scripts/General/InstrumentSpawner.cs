@@ -16,6 +16,10 @@ public class InstrumentSpawner : MonoBehaviour
         if (collision.collider.gameObject.tag.Equals("Ground") && i == 0)
         {
             Debug.Log("Collision Detected with the ground");
+            if (TutorialManager.tutorialStep==2)
+            {
+                TutorialManager.tutorialStep++;
+            }
             SpawnInstrument(collision);
         }
         else

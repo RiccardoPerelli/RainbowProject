@@ -277,6 +277,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 522968021390491457, guid: b271dc916a8a7aa4391b97194c83dc4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slider
+      objectReference: {fileID: 0}
     - target: {fileID: 1239921063869320448, guid: b271dc916a8a7aa4391b97194c83dc4a,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -473,10 +478,20 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 4157511468959816660, guid: b271dc916a8a7aa4391b97194c83dc4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slider
+      objectReference: {fileID: 0}
     - target: {fileID: 4500953169548751920, guid: b271dc916a8a7aa4391b97194c83dc4a,
         type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500953169548751920, guid: b271dc916a8a7aa4391b97194c83dc4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slider
       objectReference: {fileID: 0}
     - target: {fileID: 5118156062099995002, guid: b271dc916a8a7aa4391b97194c83dc4a,
         type: 3}
@@ -518,6 +533,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 5352869962018506095, guid: b271dc916a8a7aa4391b97194c83dc4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slider
+      objectReference: {fileID: 0}
     - target: {fileID: 5582394799526326664, guid: b271dc916a8a7aa4391b97194c83dc4a,
         type: 3}
       propertyPath: m_Enabled
@@ -528,10 +548,20 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 5810032791765422557, guid: b271dc916a8a7aa4391b97194c83dc4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slider
+      objectReference: {fileID: 0}
     - target: {fileID: 5885251224261703232, guid: b271dc916a8a7aa4391b97194c83dc4a,
         type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5885251224261703232, guid: b271dc916a8a7aa4391b97194c83dc4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slider
       objectReference: {fileID: 0}
     - target: {fileID: 5917382715358827385, guid: b271dc916a8a7aa4391b97194c83dc4a,
         type: 3}
@@ -613,6 +643,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752713904012965813, guid: b271dc916a8a7aa4391b97194c83dc4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slider
       objectReference: {fileID: 0}
     - target: {fileID: 7968568709381972707, guid: b271dc916a8a7aa4391b97194c83dc4a,
         type: 3}

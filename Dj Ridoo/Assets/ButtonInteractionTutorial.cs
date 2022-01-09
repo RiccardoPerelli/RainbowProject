@@ -1,38 +1,63 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonInteractionTutorial : MonoBehaviour
 {
 
+    public GameObject tutorialText;
+    public GameObject tutorialButtonNext;
     public string[] pages;
+
+    private TextMeshPro currentText;
     int currentPage;
 
-    void previousButtonAction()
+    void Start()
     {
-        //To-do: select previous page/text
-        if(currentPage <= pages.Length)
+        currentPage = 0;
+        tutorialText.GetComponent<TMP_Text>().text = pages[currentPage];
+    }
+
+    public void previousButtonAction()
+    {
+        if(currentPage == 0)
         {
             return;
         }
         else
         {
             currentPage--;
-            //to-do: cambiare testo del canvas con pages[currentPage]
+            tutorialText.GetComponent<TMP_Text>().text = pages[currentPage];
         }
     }
 
-    void nextButtonAction()
+    public void nextButtonAction()
     {
-        //To-do: select next page/Text
-        if(currentPage >= pages.Length) 
+        if (TutorialManager.tutorialStep == 0)
         {
-            return;
+            TutorialManager.tutorialStep++;
+            Debug.Log("Primo step del tutorial " + TutorialManager.tutorialStep);
+        }
+        currentPage++;
+        if(currentPage < pages.Length)
+        {
+            tutorialButtonNext.GetComponent<TMP_Text>().text = "Next";
+            tutorialText.GetComponent<TMP_Text>().text = pages[currentPage];
+        } 
+        else if(currentPage == pages.Length && TutorialManager.tutorialStep == 4)
+        {
+            tutorialButtonNext.GetComponent<TMP_Text>().text = "Concert!";
         }
         else
         {
-            currentPage++;
-            //to-do: cambiare testo del canvas con pages[currentPage]
+            if(TutorialManager.tutorialStep == 5)
+            {
+                SceneManager.LoadScene("Concert", LoadSceneMode.Single);
+            }
+            else
+            {
+                currentPage--;
+            }
         }
     }
 }

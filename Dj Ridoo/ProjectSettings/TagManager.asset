@@ -39,6 +39,7 @@ TagManager:
   - Drums
   - Ground
   - CablesHandler
+  - Slider
   layers:
   - Default
   - TransparentFX
